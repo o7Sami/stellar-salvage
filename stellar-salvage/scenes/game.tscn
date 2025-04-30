@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://bubgx7mni4ef1"]
+
+[ext_resource type="PackedScene" uid="uid://5p8ghecvq12h" path="res://scenes/main_character.tscn" id="1_uwrxv"]
+[ext_resource type="Script" uid="uid://bb53hcxd3yyae" path="res://scripts/game_manager.gd" id="3_lbhrr"]
+[ext_resource type="PackedScene" uid="uid://rwa1dycg2jvw" path="res://scenes/life.tscn" id="3_lnu2h"]
+
+[node name="Game" type="Node2D"]
+position = Vector2(0, -1)
+
+[node name="GameManager" type="Node" parent="."]
+script = ExtResource("3_lbhrr")
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("1_uwrxv")]
+z_index = 1
+position = Vector2(-23, -59)
+
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
+position = Vector2(21, 39)
+limit_right = 800
+limit_bottom = 400
+limit_smoothed = true
+
+[node name="CanvasLayer" parent="." instance=ExtResource("3_lnu2h")]
