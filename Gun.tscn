@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://dnpj205i7i7td"]
+
+[ext_resource type="Texture2D" uid="uid://dlfuylee5q1rc" path="res://assets/Waffe Placeholder.png" id="1_jpqjm"]
+[ext_resource type="Script" uid="uid://2626sj8cg3ou" path="res://Gun.gd" id="2_fry05"]
+
+[node name="Gun" type="Sprite2D"]
+position = Vector2(1, 0)
+texture = ExtResource("1_jpqjm")
+centered = false
+offset = Vector2(0, -7.525)
+script = ExtResource("2_fry05")
+
+[node name="Marker2D" type="Marker2D" parent="."]
+position = Vector2(28, -1)

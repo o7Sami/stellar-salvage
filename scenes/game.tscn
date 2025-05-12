@@ -1,6 +1,7 @@
-[gd_scene load_steps=9 format=3 uid="uid://bnexpt0jx7mws"]
+[gd_scene load_steps=10 format=3 uid="uid://bnexpt0jx7mws"]
 
 [ext_resource type="PackedScene" uid="uid://7v2xeusb4eh6" path="res://scenes/player.tscn" id="1_uwrxv"]
+[ext_resource type="Script" uid="uid://2626sj8cg3ou" path="res://Gun.gd" id="2_u5sy4"]
 [ext_resource type="Texture2D" uid="uid://b7ma55urv4buf" path="res://assets/sprites/world_tileset.png" id="2_yqjtg"]
 [ext_resource type="PackedScene" uid="uid://bpkv2hifwjvwr" path="res://scenes/hindernis_1.tscn" id="3_lnu2h"]
 [ext_resource type="PackedScene" uid="uid://02ue7my3paia" path="res://scenes/hindernis_2.tscn" id="4_lbhrr"]
@@ -144,6 +145,7 @@ sources/0 = SubResource("TileSetAtlasSource_lnu2h")
 
 [node name="Player" parent="." instance=ExtResource("1_uwrxv")]
 position = Vector2(48, 0)
+script = ExtResource("2_u5sy4")
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 position = Vector2(-1, -6)

@@ -1,7 +1,8 @@
-[gd_scene load_steps=9 format=3 uid="uid://7v2xeusb4eh6"]
+[gd_scene load_steps=10 format=3 uid="uid://7v2xeusb4eh6"]
 
 [ext_resource type="Texture2D" uid="uid://bclkqi5trud5y" path="res://assets/sprites/knight.png" id="1_3vyb7"]
 [ext_resource type="Script" uid="uid://d3a3vs6t86eud" path="res://scripts/player.gd" id="1_g2els"]
+[ext_resource type="PackedScene" uid="uid://dnpj205i7i7td" path="res://Gun.tscn" id="3_qhqgy"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_g2els"]
 size = Vector2(11, 15)
@@ -58,3 +59,6 @@ sprite_frames = SubResource("SpriteFrames_fjrip")
 animation = &"idle"
 autoplay = "idle"
 frame_progress = 0.0288207
+
+[node name="Gun" parent="." instance=ExtResource("3_qhqgy")]
+position = Vector2(-10, -7)
