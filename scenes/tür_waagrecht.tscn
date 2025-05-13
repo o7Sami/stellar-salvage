@@ -33,7 +33,7 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="tür waagrecht" type="Area2D"]
+[node name="tür waagrecht" type="StaticBody2D"]
 script = ExtResource("1_6rbl7")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -42,5 +42,5 @@ shape = SubResource("RectangleShape2D_pil1o")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_oxjsj")
-animation = &"geschlossen"
+animation = &"offen"
 autoplay = "geschlossen"
