@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://bwh3r386rt5py"]
+
+[ext_resource type="Script" uid="uid://4vh31kgjbies" path="res://scenes/sichtfeld_begrenzung.gd" id="1_j4pi4"]
+[ext_resource type="Texture2D" uid="uid://cvw5700sykxo" path="res://2D_starfield_1.png" id="2_4m7c4"]
+[ext_resource type="PackedScene" uid="uid://bwiu6sq088syk" path="res://scenes/delete_zone.tscn" id="3_4m7c4"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_alpw3"]
+size = Vector2(599, 325)
+
+[node name="sichtfeld begrenzung" type="Node2D"]
+z_index = 1
+position = Vector2(37, 202)
+script = ExtResource("1_j4pi4")
+
+[node name="abdeckung" type="Sprite2D" parent="."]
+z_index = -5
+position = Vector2(-525, -225.5)
+scale = Vector2(0.296387, 0.162598)
+texture = ExtResource("2_4m7c4")
+
+[node name="delete zone" parent="." instance=ExtResource("3_4m7c4")]
+position = Vector2(-656, -170)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="delete zone"]
+position = Vector2(131.5, -55.5)
+shape = SubResource("RectangleShape2D_alpw3")

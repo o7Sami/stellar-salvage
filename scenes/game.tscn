@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://bnexpt0jx7mws"]
+[gd_scene load_steps=11 format=3 uid="uid://bnexpt0jx7mws"]
 
 [ext_resource type="PackedScene" uid="uid://7v2xeusb4eh6" path="res://scenes/player.tscn" id="1_uwrxv"]
 [ext_resource type="Texture2D" uid="uid://b7ma55urv4buf" path="res://assets/sprites/world_tileset.png" id="2_yqjtg"]
@@ -6,6 +6,8 @@
 [ext_resource type="PackedScene" uid="uid://02ue7my3paia" path="res://scenes/hindernis_2.tscn" id="4_lbhrr"]
 [ext_resource type="PackedScene" uid="uid://ds43hc1nltge4" path="res://scenes/tür_senkrecht.tscn" id="5_iywne"]
 [ext_resource type="PackedScene" uid="uid://dcrjr8pvavg7b" path="res://scenes/tür_waagrecht.tscn" id="6_p57ef"]
+[ext_resource type="PackedScene" uid="uid://bwh3r386rt5py" path="res://scenes/sichtfeld_begrenzung.tscn" id="7_gee14"]
+[ext_resource type="PackedScene" uid="uid://b6xdcpif2u8e0" path="res://scenes/killzone.tscn" id="8_0tnpc"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lnu2h"]
 texture = ExtResource("2_yqjtg")
@@ -146,7 +148,7 @@ sources/0 = SubResource("TileSetAtlasSource_lnu2h")
 position = Vector2(48, 0)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
-position = Vector2(-1, -6)
+position = Vector2(-2, -6)
 zoom = Vector2(4, 4)
 limit_left = -197
 limit_top = -195
@@ -188,7 +190,13 @@ position = Vector2(408, -40)
 position = Vector2(-183, -23)
 
 [node name="tür waagrecht" parent="." instance=ExtResource("6_p57ef")]
-position = Vector2(104, -184)
+position = Vector2(105, -184)
 
 [node name="tür waagrecht2" parent="." instance=ExtResource("6_p57ef")]
 position = Vector2(136, 135)
+
+[node name="sichtfeld begrenzung" parent="." instance=ExtResource("7_gee14")]
+z_index = 5
+position = Vector2(526, 410)
+
+[node name="Killzone" parent="." instance=ExtResource("8_0tnpc")]
