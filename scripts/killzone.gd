@@ -1,16 +1,13 @@
 extends Area2D
-var getroffen: bool = false
+
 @onready var timer: Timer = $Timer
+#@onready var player2: CharacterBody2D = $"."
 
 func _on_body_entered(_player) -> void:
-	if getroffen == false:
-		_player.Health -= 1
-		print("You Died!") 
-		getroffen = true
-		timer.start()
-
-
+	print("You Died!") 
+	timer.start()
+	#player2.tot = true
 
 
 func _on_timer_timeout() -> void:
-	getroffen = false
+	get_tree().reload_current_scene()

@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://b7ma55urv4buf" path="res://assets/sprites/world_tileset.png" id="1_jyegd"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pil1o"]
-size = Vector2(17, 15)
+size = Vector2(17, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_6rbl7"]
 atlas = ExtResource("1_jyegd")
@@ -33,11 +33,11 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="tür waagrecht" type="Area2D"]
+[node name="tür waagrecht" type="StaticBody2D"]
 script = ExtResource("1_6rbl7")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-0.5, 1.5)
+position = Vector2(-0.5, 1)
 shape = SubResource("RectangleShape2D_pil1o")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
