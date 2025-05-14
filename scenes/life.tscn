@@ -1,12 +1,52 @@
-[gd_scene load_steps=2 format=3 uid="uid://rwa1dycg2jvw"]
+[gd_scene load_steps=7 format=3 uid="uid://rwa1dycg2jvw"]
 
 [ext_resource type="Texture2D" uid="uid://b6sk82m7a12cs" path="res://assets/fruit.png" id="1_tf86k"]
+[ext_resource type="Script" uid="uid://dsx0kodwk1s1u" path="res://scripts/life.gd" id="1_vhvcv"]
 
-[node name="CanvasLayer" type="CanvasLayer"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_jotl1"]
+atlas = ExtResource("1_tf86k")
+region = Rect2(0, 48, 16, 16)
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(59.7813, 22.5)
-scale = Vector2(2.4375, 2.4375)
-texture = ExtResource("1_tf86k")
-region_enabled = true
-region_rect = Rect2(0, 0, 47.2735, 16.8583)
+[sub_resource type="AtlasTexture" id="AtlasTexture_nva4y"]
+atlas = ExtResource("1_tf86k")
+region = Rect2(0, 48, 32, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_13s43"]
+atlas = ExtResource("1_tf86k")
+region = Rect2(0, 48, 64, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_j0ilo"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jotl1")
+}],
+"loop": true,
+"name": &"1Life",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nva4y")
+}],
+"loop": true,
+"name": &"2Life",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_13s43")
+}],
+"loop": true,
+"name": &"3Life",
+"speed": 5.0
+}]
+
+[node name="Life" type="CanvasLayer"]
+script = ExtResource("1_vhvcv")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(196, 51)
+scale = Vector2(6.125, 6.125)
+sprite_frames = SubResource("SpriteFrames_j0ilo")
+animation = &"3Life"
