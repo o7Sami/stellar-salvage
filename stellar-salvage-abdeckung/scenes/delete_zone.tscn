@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://bwiu6sq088syk"]
+
+[ext_resource type="Script" uid="uid://b64xdk5oyefit" path="res://delete_zone.gd" id="1_nwjio"]
+
+[node name="delete zone" type="Area2D"]
+collision_mask = 2
+script = ExtResource("1_nwjio")
