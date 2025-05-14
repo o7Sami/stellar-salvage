@@ -33,7 +33,7 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="Tür senkrecht" type="Area2D"]
+[node name="Tür senkrecht" type="StaticBody2D"]
 collision_layer = 3
 collision_mask = 3
 script = ExtResource("1_dtrmt")
