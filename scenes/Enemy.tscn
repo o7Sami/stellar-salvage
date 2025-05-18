@@ -1,7 +1,8 @@
-[gd_scene load_steps=18 format=3 uid="uid://bcrmmbd577035"]
+[gd_scene load_steps=20 format=3 uid="uid://bcrmmbd577035"]
 
 [ext_resource type="Script" uid="uid://b44w8b5qdjkdy" path="res://scripts/enemy.gd" id="1_55jtl"]
-[ext_resource type="Texture2D" uid="uid://cifqoijdfi8mi" path="res://assets/Idle (32x32).png" id="2_mpr68"]
+[ext_resource type="Texture2D" uid="uid://cifqoijdfi8mi" path="res://Idle (32x32).png" id="2_mpr68"]
+[ext_resource type="PackedScene" uid="uid://c6xb53fgg3xcb" path="res://scenes/agro.tscn" id="3_ft8do"]
 [ext_resource type="PackedScene" uid="uid://b6xdcpif2u8e0" path="res://scenes/killzone.tscn" id="3_mpr68"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_1fftc"]
@@ -92,6 +93,9 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_nxeij"]
 size = Vector2(15, 17)
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_ft8do"]
+radius = 69.0652
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ft8do"]
 size = Vector2(15, 17)
 
@@ -112,17 +116,25 @@ position = Vector2(0.5, -8.5)
 shape = SubResource("RectangleShape2D_nxeij")
 
 [node name="NavigationAgent2D" type="NavigationAgent2D" parent="."]
-debug_enabled = true
 
 [node name="Timer" type="Timer" parent="."]
 wait_time = 0.5
 autostart = true
 
+[node name="Agro" parent="." instance=ExtResource("3_ft8do")]
+collision_layer = 7
+collision_mask = 7
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Agro"]
+position = Vector2(0, -8)
+shape = SubResource("CircleShape2D_ft8do")
+
 [node name="Killzone" parent="." instance=ExtResource("3_mpr68")]
+position = Vector2(-12, 1)
 collision_layer = 2
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Killzone"]
-position = Vector2(0.5, -8.5)
+position = Vector2(12.5, -9.5)
 shape = SubResource("RectangleShape2D_ft8do")
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
