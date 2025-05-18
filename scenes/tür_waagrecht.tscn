@@ -44,3 +44,11 @@ shape = SubResource("RectangleShape2D_pil1o")
 sprite_frames = SubResource("SpriteFrames_oxjsj")
 animation = &"geschlossen"
 autoplay = "geschlossen"
+
+[node name="RayCastDown" type="RayCast2D" parent="."]
+target_position = Vector2(0, 15)
+collision_mask = 2
+
+[node name="RayCastUp" type="RayCast2D" parent="."]
+target_position = Vector2(0, -13)
+collision_mask = 2
