@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://bnexpt0jx7mws"]
+[gd_scene load_steps=11 format=3 uid="uid://bnexpt0jx7mws"]
 
 [ext_resource type="PackedScene" uid="uid://7v2xeusb4eh6" path="res://scenes/player.tscn" id="1_uwrxv"]
 [ext_resource type="Texture2D" uid="uid://b7ma55urv4buf" path="res://assets/sprites/world_tileset.png" id="2_yqjtg"]
@@ -6,6 +6,8 @@
 [ext_resource type="PackedScene" uid="uid://02ue7my3paia" path="res://scenes/hindernis_2.tscn" id="4_lbhrr"]
 [ext_resource type="PackedScene" uid="uid://ds43hc1nltge4" path="res://scenes/tür_senkrecht.tscn" id="5_iywne"]
 [ext_resource type="PackedScene" uid="uid://dcrjr8pvavg7b" path="res://scenes/tür_waagrecht.tscn" id="6_p57ef"]
+[ext_resource type="PackedScene" uid="uid://dmtnl16k6k7du" path="res://Waffe.tscn" id="7_gee14"]
+[ext_resource type="PackedScene" uid="uid://bcbvv43x0lecd" path="res://Bullet.tscn" id="8_0tnpc"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lnu2h"]
 texture = ExtResource("2_yqjtg")
@@ -271,3 +273,8 @@ position = Vector2(342, -2)
 
 [node name="Hindernis 1" parent="Hindernisse" instance=ExtResource("3_lnu2h")]
 position = Vector2(325, -276)
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("7_gee14")]
+position = Vector2(17, 5)
+
+[node name="Node2D" parent="." instance=ExtResource("8_0tnpc")]
