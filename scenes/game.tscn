@@ -168,17 +168,11 @@ layer_0/tile_data = PackedInt32Array(589812, 524288, 1, 589813, 524288, 0, 58981
 
 [node name="Türen" type="Node" parent="."]
 
-[node name="Tür senkrecht6" parent="Türen" instance=ExtResource("5_iywne")]
-position = Vector2(407, -440)
-
 [node name="Tür senkrecht" parent="Türen" instance=ExtResource("5_iywne")]
-position = Vector2(407, -40)
+position = Vector2(407, -23)
 
 [node name="Tür senkrecht2" parent="Türen" instance=ExtResource("5_iywne")]
 position = Vector2(-185, -23)
-
-[node name="tür waagrecht" parent="Türen" instance=ExtResource("6_p57ef")]
-position = Vector2(105, -185)
 
 [node name="tür waagrecht2" parent="Türen" instance=ExtResource("6_p57ef")]
 position = Vector2(136, 135)
@@ -186,26 +180,11 @@ position = Vector2(136, 135)
 [node name="tür waagrecht3" parent="Türen" instance=ExtResource("6_p57ef")]
 position = Vector2(88, -185)
 
-[node name="tür waagrecht4" parent="Türen" instance=ExtResource("6_p57ef")]
-position = Vector2(153, 135)
-
-[node name="Tür senkrecht3" parent="Türen" instance=ExtResource("5_iywne")]
-position = Vector2(-185, -40)
-
-[node name="Tür senkrecht4" parent="Türen" instance=ExtResource("5_iywne")]
-position = Vector2(407, -23)
-
 [node name="Tür senkrecht5" parent="Türen" instance=ExtResource("5_iywne")]
 position = Vector2(407, -423)
 
 [node name="Tür senkrecht7" parent="Türen" instance=ExtResource("5_iywne")]
 position = Vector2(-185, -311)
-
-[node name="Tür senkrecht8" parent="Türen" instance=ExtResource("5_iywne")]
-position = Vector2(-185, -328)
-
-[node name="Tür senkrecht9" parent="Türen" instance=ExtResource("5_iywne")]
-position = Vector2(-777, -344)
 
 [node name="Tür senkrecht10" parent="Türen" instance=ExtResource("5_iywne")]
 position = Vector2(-777, -327)
@@ -213,29 +192,14 @@ position = Vector2(-777, -327)
 [node name="tür waagrecht5" parent="Türen" instance=ExtResource("6_p57ef")]
 position = Vector2(-488, -185)
 
-[node name="tür waagrecht6" parent="Türen" instance=ExtResource("6_p57ef")]
-position = Vector2(-471, -185)
-
 [node name="Tür senkrecht11" parent="Türen" instance=ExtResource("5_iywne")]
 position = Vector2(-777, -7)
-
-[node name="Tür senkrecht12" parent="Türen" instance=ExtResource("5_iywne")]
-position = Vector2(-777, -24)
 
 [node name="tür waagrecht7" parent="Türen" instance=ExtResource("6_p57ef")]
 position = Vector2(-520, 135)
 
-[node name="tür waagrecht8" parent="Türen" instance=ExtResource("6_p57ef")]
-position = Vector2(-503, 135)
-
-[node name="Tür senkrecht13" parent="Türen" instance=ExtResource("5_iywne")]
-position = Vector2(-185, 360)
-
 [node name="Tür senkrecht14" parent="Türen" instance=ExtResource("5_iywne")]
 position = Vector2(-185, 377)
-
-[node name="Tür senkrecht15" parent="Türen" instance=ExtResource("5_iywne")]
-position = Vector2(407, 264)
 
 [node name="Tür senkrecht16" parent="Türen" instance=ExtResource("5_iywne")]
 position = Vector2(407, 281)
@@ -243,14 +207,8 @@ position = Vector2(407, 281)
 [node name="tür waagrecht9" parent="Türen" instance=ExtResource("6_p57ef")]
 position = Vector2(728, 135)
 
-[node name="tür waagrecht10" parent="Türen" instance=ExtResource("6_p57ef")]
-position = Vector2(745, 135)
-
 [node name="tür waagrecht11" parent="Türen" instance=ExtResource("6_p57ef")]
 position = Vector2(760, -185)
-
-[node name="tür waagrecht12" parent="Türen" instance=ExtResource("6_p57ef")]
-position = Vector2(777, -185)
 
 [node name="Hindernisse" type="Node" parent="."]
 
