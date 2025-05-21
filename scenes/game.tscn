@@ -289,12 +289,3 @@ position = Vector2(44, -103)
 position = Vector2(19, -82)
 
 [node name="Schlüssel Anzeige" parent="." instance=ExtResource("9_0tnpc")]
-
-[node name="Schlüsselanzahl" type="Label" parent="Schlüssel Anzeige"]
-unique_name_in_owner = true
-offset_left = 167.0
-offset_top = -84.0
-offset_right = 189.0
-offset_bottom = -61.0
-text = "a"
-horizontal_alignment = 2
