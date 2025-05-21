@@ -1,10 +1,10 @@
-[gd_scene load_steps=8 format=3 uid="uid://dcrjr8pvavg7b"]
+[gd_scene load_steps=7 format=3 uid="uid://dcrjr8pvavg7b"]
 
 [ext_resource type="Script" uid="uid://bstgnsydsbayy" path="res://scripts/tür_waagrecht.gd" id="1_6rbl7"]
 [ext_resource type="Texture2D" uid="uid://b7ma55urv4buf" path="res://assets/sprites/world_tileset.png" id="1_jyegd"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pil1o"]
-size = Vector2(33, 16)
+size = Vector2(17, 15)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_6rbl7"]
 atlas = ExtResource("1_jyegd")
@@ -33,28 +33,14 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_6rbl7"]
-size = Vector2(33, 26)
-
-[node name="tür waagrecht" type="StaticBody2D"]
+[node name="tür waagrecht" type="Area2D"]
 script = ExtResource("1_6rbl7")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(7.5, 1)
+position = Vector2(-0.5, 1.5)
 shape = SubResource("RectangleShape2D_pil1o")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(8, 0)
-scale = Vector2(2, 1)
 sprite_frames = SubResource("SpriteFrames_oxjsj")
 animation = &"geschlossen"
 autoplay = "geschlossen"
-
-[node name="Öffnungsbereich" type="Area2D" parent="."]
-position = Vector2(7.5, 1)
-collision_mask = 2
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Öffnungsbereich"]
-shape = SubResource("RectangleShape2D_6rbl7")
-
-[connection signal="body_entered" from="Öffnungsbereich" to="." method="_on_öffnungsbereich_body_entered"]
