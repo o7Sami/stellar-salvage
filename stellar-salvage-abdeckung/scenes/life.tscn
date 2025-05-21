@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://rwa1dycg2jvw"]
+
+[ext_resource type="Texture2D" uid="uid://b6sk82m7a12cs" path="res://assets/fruit.png" id="1_tf86k"]
+
+[node name="CanvasLayer" type="CanvasLayer"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(59.7813, 22.5)
+scale = Vector2(2.4375, 2.4375)
+texture = ExtResource("1_tf86k")
+region_enabled = true
+region_rect = Rect2(0, 0, 47.2735, 16.8583)
