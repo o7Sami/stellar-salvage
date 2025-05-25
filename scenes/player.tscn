@@ -157,7 +157,7 @@ animations = [{
 "loop": true,
 "name": &"running",
 "speed": 8.0
-
+}]
 [node name="Player" type="CharacterBody2D"]
 z_index = 5
 collision_layer = 6
