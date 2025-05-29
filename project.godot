@@ -13,7 +13,7 @@ config_version=5
 config/name="Stellar Salvage"
 run/main_scene="uid://bnexpt0jx7mws"
 config/features=PackedStringArray("4.4", "GL Compatibility")
-config/icon="res://icon.svg"
+config/icon="res://assets/sprites/icon.svg"
 
 [input]
 
