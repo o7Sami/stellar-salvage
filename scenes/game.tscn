@@ -1,10 +1,10 @@
 [gd_scene load_steps=14 format=3 uid="uid://bnexpt0jx7mws"]
 
-[ext_resource type="Script" uid="uid://nlurm3dm33bo" path="res://scripts/gamer_manager.gd" id="1_u5sy4"]
+[ext_resource type="Script" path="res://scripts/gamer_manager.gd" id="1_u5sy4"]
 [ext_resource type="PackedScene" uid="uid://7v2xeusb4eh6" path="res://scenes/player.tscn" id="1_uwrxv"]
 [ext_resource type="Texture2D" uid="uid://b7ma55urv4buf" path="res://assets/sprites/world_tileset.png" id="2_yqjtg"]
 [ext_resource type="PackedScene" uid="uid://bpkv2hifwjvwr" path="res://scenes/hindernis_1.tscn" id="3_lnu2h"]
-[ext_resource type="PackedScene" uid="uid://dk8ix1u3qgyvm" path="res://gun.tscn" id="3_vtaks"]
+[ext_resource type="PackedScene" uid="uid://dk8ix1u3qgyvm" path="res://scenes/gun.tscn" id="3_vtaks"]
 [ext_resource type="PackedScene" uid="uid://02ue7my3paia" path="res://scenes/hindernis_2.tscn" id="4_lbhrr"]
 [ext_resource type="PackedScene" uid="uid://ds43hc1nltge4" path="res://scenes/tür_senkrecht.tscn" id="5_iywne"]
 [ext_resource type="PackedScene" uid="uid://dcrjr8pvavg7b" path="res://scenes/tür_waagrecht.tscn" id="6_p57ef"]
@@ -294,10 +294,12 @@ position = Vector2(-492, -322)
 [node name="hindernis 6" parent="Hindernisse" instance=ExtResource("4_lbhrr")]
 position = Vector2(4, 384)
 
-[node name="Schlüssel" parent="." instance=ExtResource("8_gee14")]
+[node name="Schlüssel" type="Node" parent="."]
+
+[node name="Schlüssel" parent="Schlüssel" instance=ExtResource("8_gee14")]
 position = Vector2(44, -103)
 
-[node name="Schlüssel2" parent="." instance=ExtResource("8_gee14")]
+[node name="Schlüssel2" parent="Schlüssel" instance=ExtResource("8_gee14")]
 position = Vector2(19, -82)
 
-[node name="Schlüssel Anzeige" parent="." instance=ExtResource("9_0tnpc")]
+[node name="Schlüssel Anzeige" parent="Schlüssel" instance=ExtResource("9_0tnpc")]
