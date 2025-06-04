@@ -11,16 +11,9 @@ func _process(delta: float) -> void:
 	pass
 
 
-
-
-func _on_options_pressed() -> void:
-	print("options")
-
-
-func _on_exit_pressed() -> void:
-	#print("exit")
-	get_tree().quit()
-
-
-func _on_button_pressed() -> void:
+func _on_nochmal_pressed() -> void:
 	get_tree().change_scene_to_file("res://scenes/game.tscn")
+
+
+func _on_startscreen_pressed() -> void:
+	get_tree().change_scene_to_file("res://scenes/main_menu.tscn")
