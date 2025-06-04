@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://bqd5vqf4uobva"]
+
+[ext_resource type="Texture2D" uid="uid://b6sk82m7a12cs" path="res://assets/sprites/fruit.png" id="1_l0qp3"]
+
+[node name="HeartGUI" type="Panel"]
+self_modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(11, 13)
+offset_right = 32.0
+offset_bottom = 37.0
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(17, 18)
+scale = Vector2(2.54467, 2.32334)
+texture = ExtResource("1_l0qp3")
+hframes = 4
+vframes = 4
+frame = 12
