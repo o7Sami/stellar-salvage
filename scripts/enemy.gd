@@ -15,3 +15,8 @@ func _physics_process(delta: float) -> void:
 
 func makePath() -> void:
 	navigation_agent_2d.target_position = player.global_position
+
+
+func _on_schaden_area_entered(area: Area2D) -> void:
+	if area.is_in_group("Bullet"):
+		print("aua")

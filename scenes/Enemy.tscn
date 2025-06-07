@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=3 uid="uid://bcrmmbd577035"]
+[gd_scene load_steps=21 format=3 uid="uid://bcrmmbd577035"]
 
 [ext_resource type="Script" uid="uid://b44w8b5qdjkdy" path="res://scripts/enemy.gd" id="1_55jtl"]
 [ext_resource type="Texture2D" uid="uid://cifqoijdfi8mi" path="res://assets/sprites/Idle (32x32).png" id="2_mpr68"]
@@ -99,6 +99,9 @@ radius = 69.0652
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ft8do"]
 size = Vector2(15, 17)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5wwv6"]
+size = Vector2(15, 17)
+
 [node name="Enemy" type="CharacterBody2D"]
 motion_mode = 1
 wall_min_slide_angle = 0.0
@@ -138,5 +141,12 @@ collision_layer = 2
 position = Vector2(12.5, -9.5)
 shape = SubResource("RectangleShape2D_ft8do")
 
+[node name="Schaden" type="Area2D" parent="." groups=["Bullet"]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Schaden"]
+position = Vector2(0.5, -8.5)
+shape = SubResource("RectangleShape2D_5wwv6")
+
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
 [connection signal="body_exited" from="Agro" to="." method="_on_agro_body_exited"]
+[connection signal="area_entered" from="Schaden" to="." method="_on_schaden_area_entered"]

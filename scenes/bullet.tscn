@@ -5,7 +5,7 @@
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_v8qja"]
 
-[node name="Bullet" type="Area2D"]
+[node name="Bullet" type="Area2D" groups=["Enemy"]]
 script = ExtResource("1_v8qja")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
@@ -20,5 +20,5 @@ rotation = 1.5708
 scale = Vector2(0.215, 0.215)
 shape = SubResource("CapsuleShape2D_v8qja")
 
-[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
 [connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]
