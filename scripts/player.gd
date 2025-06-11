@@ -1,10 +1,12 @@
 extends CharacterBody2D
 @onready var sprite_2d: AnimatedSprite2D = $Sprite2D
 @onready var currentHealth = Maxhealth
-@export var Maxhealth = 3
+@export var Maxhealth = 4
+@onready var timer: Timer = $Timer
+
 
 const SPEED = 100.0
-
+signal Healthchanged
 
 
 func get_input():
