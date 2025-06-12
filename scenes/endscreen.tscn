@@ -1,0 +1,99 @@
+[gd_scene load_steps=7 format=3 uid="uid://dyq5w6apw8xjs"]
+
+[ext_resource type="Script" uid="uid://eb8eor552jmy" path="res://scripts/endscreen.gd" id="1_dt0yg"]
+[ext_resource type="Texture2D" uid="uid://updsul6yuuyr" path="res://assets/sprites/frame_0_delay-0.04s.png" id="2_cuen1"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_dt0yg"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5j82o"]
+bg_color = Color(0.699653, 0.699654, 0.699653, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7s65u"]
+bg_color = Color(0.43134, 0.43134, 0.43134, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jev7x"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[node name="Endscreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_dt0yg")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -150.0
+offset_top = -35.0
+offset_right = 150.0
+offset_bottom = 35.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="Nochmal" type="Button" parent="MarginContainer/VBoxContainer"]
+texture_filter = 2
+layout_mode = 2
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_styles/focus = SubResource("StyleBoxEmpty_dt0yg")
+theme_override_styles/hover = SubResource("StyleBoxFlat_5j82o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_7s65u")
+theme_override_styles/normal = SubResource("StyleBoxFlat_jev7x")
+text = "Neustart"
+
+[node name="Startscreen" type="Button" parent="MarginContainer/VBoxContainer"]
+texture_filter = 2
+layout_mode = 2
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_styles/focus = SubResource("StyleBoxEmpty_dt0yg")
+theme_override_styles/hover = SubResource("StyleBoxFlat_5j82o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_7s65u")
+theme_override_styles/normal = SubResource("StyleBoxFlat_jev7x")
+text = "Hauptmenü"
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -250.0
+offset_top = -198.0
+offset_right = 250.0
+offset_bottom = -98.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.972549, 0, 0, 1)
+theme_override_font_sizes/font_size = 120
+text = "GAME OVER"
+
+[node name="Frame0Delay-0_04s" type="Sprite2D" parent="."]
+modulate = Color(0.650128, 0.650128, 0.650128, 1)
+z_index = -10
+position = Vector2(545, 242)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("2_cuen1")
+flip_h = true
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Nochmal" to="." method="_on_nochmal_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Startscreen" to="." method="_on_startscreen_pressed"]
