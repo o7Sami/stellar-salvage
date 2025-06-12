@@ -148,21 +148,6 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_vue75")
 action_mode = 0
 text = "Spiel starten"
 
-[node name="Tutorial" type="Button" parent="MarginContainer/VBoxContainer"]
-texture_filter = 2
-layout_mode = 2
-size_flags_vertical = 3
-theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
-theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 27
-theme_override_styles/focus = SubResource("StyleBoxEmpty_l6cm7")
-theme_override_styles/hover = SubResource("StyleBoxFlat_8ln24")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_rtw2f")
-theme_override_styles/normal = SubResource("StyleBoxFlat_vue75")
-text = "Tutorial"
-
 [node name="optionen" type="Button" parent="MarginContainer/VBoxContainer"]
 texture_filter = 2
 layout_mode = 2
@@ -195,7 +180,5 @@ text = "Verlassen"
 
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Start" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Start" to="." method="_on_start_pressed"]
-[connection signal="pressed" from="MarginContainer/VBoxContainer/Tutorial" to="." method="_on_exit_pressed"]
-[connection signal="pressed" from="MarginContainer/VBoxContainer/Tutorial" to="." method="_on_tutorial_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/optionen" to="." method="_on_options_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/verlassen" to="." method="_on_exit_pressed"]
