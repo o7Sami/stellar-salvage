@@ -1,6 +1,7 @@
+
 [gd_scene load_steps=17 format=3 uid="uid://bnexpt0jx7mws"]
 
-[ext_resource type="Script" uid="uid://nlurm3dm33bo" path="res://scripts/gamer_manager.gd" id="1_u5sy4"]
+
 [ext_resource type="PackedScene" uid="uid://7v2xeusb4eh6" path="res://scenes/player.tscn" id="1_uwrxv"]
 [ext_resource type="Texture2D" uid="uid://b7ma55urv4buf" path="res://assets/sprites/world_tileset.png" id="2_yqjtg"]
 [ext_resource type="PackedScene" uid="uid://bpkv2hifwjvwr" path="res://scenes/hindernis_1.tscn" id="3_lnu2h"]
@@ -10,9 +11,11 @@
 [ext_resource type="PackedScene" uid="uid://dcrjr8pvavg7b" path="res://scenes/tür_waagrecht.tscn" id="6_p57ef"]
 [ext_resource type="PackedScene" uid="uid://dw8sbhlmxhxbf" path="res://scenes/schlüssel.tscn" id="8_gee14"]
 [ext_resource type="PackedScene" uid="uid://crqcvfuwov7tb" path="res://scenes/schlüssel_anzeige.tscn" id="9_0tnpc"]
+
 [ext_resource type="PackedScene" uid="uid://crg4gjwhvvuqq" path="res://scenes/raumschiffteil.tscn" id="11_dinhu"]
 [ext_resource type="PackedScene" uid="uid://c8bw258exya2i" path="res://scenes/levelteleporter.tscn" id="12_kvuet"]
 [ext_resource type="PackedScene" uid="uid://bpqft4qm0goxq" path="res://scenes/raumschiffteil_anzeige.tscn" id="13_kvuet"]
+
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_gee14"]
 vertices = PackedVector2Array(8, 8, -8, 8, -8, -8, 8, -8)
@@ -156,6 +159,7 @@ navigation_layer_0/layers = 1
 sources/0 = SubResource("TileSetAtlasSource_vtaks")
 
 [node name="Game" type="Node2D"]
+script = ExtResource("1_dinhu")
 
 [node name="GameManager" type="Node" parent="."]
 unique_name_in_owner = true
@@ -301,6 +305,7 @@ position = Vector2(19, -82)
 
 [node name="Schlüssel Anzeige" parent="Schlüssel" instance=ExtResource("9_0tnpc")]
 
+
 [node name="Level" type="Node" parent="."]
 
 [node name="Levelteleporter" parent="Level" instance=ExtResource("12_kvuet")]
@@ -310,3 +315,4 @@ position = Vector2(-266, -15)
 position = Vector2(-53, -42)
 
 [node name="Raumschiffteil_Anzeige" parent="Level" instance=ExtResource("13_kvuet")]
+
