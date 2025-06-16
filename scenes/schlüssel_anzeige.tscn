@@ -1,7 +1,7 @@
 [gd_scene load_steps=16 format=3 uid="uid://crqcvfuwov7tb"]
 
 [ext_resource type="Texture2D" uid="uid://bmpqem4iqa4v6" path="res://assets/sprites/coin.png" id="1_2e3y2"]
-[ext_resource type="Script" path="res://scripts/schlüssel_anzeige.gd" id="1_ryoqp"]
+[ext_resource type="Script" uid="uid://wgvfb5gwnge5" path="res://scripts/schlüssel_anzeige.gd" id="1_ryoqp"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ryoqp"]
 atlas = ExtResource("1_2e3y2")
@@ -99,7 +99,7 @@ animations = [{
 script = ExtResource("1_ryoqp")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(1050, 30)
+position = Vector2(1050, 21)
 scale = Vector2(3.28125, 3.28125)
 sprite_frames = SubResource("SpriteFrames_h1as7")
 autoplay = "default"
@@ -111,9 +111,10 @@ anchor_left = 0.36
 anchor_top = 0.161
 anchor_right = 0.36
 anchor_bottom = 0.161
-offset_left = 665.28
-offset_top = -90.328
-offset_right = 712.28
-offset_bottom = -56.328
+offset_left = 660.28
+offset_top = -98.328
+offset_right = 707.28
+offset_bottom = -64.328
+scale = Vector2(1.14516, 1.14516)
 text = "0"
 horizontal_alignment = 2
