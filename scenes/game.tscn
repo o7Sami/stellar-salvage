@@ -1,8 +1,7 @@
 [gd_scene load_steps=16 format=3 uid="uid://bnexpt0jx7mws"]
 
 [ext_resource type="Script" uid="uid://ck2ivsxpihufp" path="res://scripts/game.gd" id="1_dinhu"]
-[ext_resource type="Script" path="res://scripts/gamer_manager.gd" id="1_u5sy4"]
-
+[ext_resource type="Script" uid="uid://nlurm3dm33bo" path="res://scripts/gamer_manager.gd" id="1_u5sy4"]
 [ext_resource type="PackedScene" uid="uid://7v2xeusb4eh6" path="res://scenes/player.tscn" id="1_uwrxv"]
 [ext_resource type="Texture2D" uid="uid://b7ma55urv4buf" path="res://assets/sprites/world_tileset.png" id="2_yqjtg"]
 [ext_resource type="PackedScene" uid="uid://bpkv2hifwjvwr" path="res://scenes/hindernis_1.tscn" id="3_lnu2h"]
