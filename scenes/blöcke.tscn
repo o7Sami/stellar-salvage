@@ -1,0 +1,47 @@
+[gd_scene load_steps=8 format=3 uid="uid://clurnb1k5axha"]
+
+[ext_resource type="Script" uid="uid://da3hf2ylea4n4" path="res://node_2d.gd" id="1_rjkkw"]
+[ext_resource type="Texture2D" uid="uid://coxl47ryvv3g0" path="res://assets/icon.svg" id="2_ypad4"]
+[ext_resource type="Script" uid="uid://ckxgjhyxkmo62" path="res://links.gd" id="3_sjeu5"]
+[ext_resource type="Script" uid="uid://v71n77655vsv" path="res://rechts.gd" id="4_xncrr"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0hol4"]
+size = Vector2(23.75, 20.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_q6r6c"]
+size = Vector2(8.125, 29.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kdubu"]
+size = Vector2(7, 27.5)
+
+[node name="block" type="CharacterBody2D"]
+script = ExtResource("1_rjkkw")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(368, 129)
+shape = SubResource("RectangleShape2D_0hol4")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(369, 129)
+scale = Vector2(0.257813, 0.257813)
+texture = ExtResource("2_ypad4")
+
+[node name="links" type="Area2D" parent="."]
+script = ExtResource("3_sjeu5")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="links"]
+position = Vector2(358.938, 129)
+shape = SubResource("RectangleShape2D_q6r6c")
+
+[node name="rechts" type="Area2D" parent="."]
+position = Vector2(149, 133)
+script = ExtResource("4_xncrr")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="rechts"]
+position = Vector2(231.5, -3.75)
+shape = SubResource("RectangleShape2D_kdubu")
+
+[connection signal="body_entered" from="links" to="." method="_on_links_body_entered"]
+[connection signal="body_exited" from="links" to="." method="_on_links_body_exited"]
+[connection signal="body_entered" from="rechts" to="." method="_on_rechts_body_entered"]
+[connection signal="body_exited" from="rechts" to="." method="_on_rechts_body_exited"]
