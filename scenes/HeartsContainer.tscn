@@ -4,5 +4,5 @@
 
 [node name="HeartsContainer" type="HBoxContainer"]
 scale = Vector2(0.972957, 0.992868)
-theme_override_constants/separation = 21
+theme_override_constants/separation = 27
 script = ExtResource("1_eygju")
