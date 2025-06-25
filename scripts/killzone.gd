@@ -1,15 +1,12 @@
 extends Area2D
 
-signal Healthchanged
 @onready var timer: Timer = $Timer
-
+#@onready var player2: CharacterBody2D = $"."
 
 func _on_body_entered(_player) -> void:
-	_player.currentHealth -= 1
-	print(_player.currentHealth)
-	_player.Healthchanged.emit(_player.currentHealth)
-	if _player.currentHealth == 0:
-		timer.start()
+	print("You Died!") 
+	timer.start()
+	#player2.tot = true
 
 
 func _on_timer_timeout() -> void:
