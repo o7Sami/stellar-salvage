@@ -1,6 +1,6 @@
-extends Panel
+extends Area2D
 
-@onready var sprite_2d: Sprite2D = $Sprite2D
+@onready var game_manager: Node = %GameManager
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -11,6 +11,7 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	pass
 
-func update(whole: bool):
-	if whole: sprite_2d.frame = 12
-	else: sprite_2d.frame = 14
+
+func _on_body_entered(body: Node2D) -> void:
+	game_manager.add_Raumschiffteil()
+	queue_free()
