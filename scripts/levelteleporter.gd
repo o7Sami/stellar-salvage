@@ -20,5 +20,9 @@ func _on_body_entered(body: Node2D) -> void:
 				get_tree().change_scene_to_file("res://scenes/welt_3.tscn")
 			if Global.Raumschiffteile_gesamt == 3:
 				get_tree().change_scene_to_file("res://scenes/welt_4.tscn")
+			if Global.Raumschiffteile_gesamt == 4:
+				Global.Raumschiffteile_gesamt = 0
+				Global.aktuelle_Scene = 0
+				get_tree().change_scene_to_file("res://scenes/gewonnen_screen.tscn")
 			game_manager.naechsteScene()
 		
