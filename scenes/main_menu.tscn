@@ -180,5 +180,7 @@ text = "Verlassen"
 
 
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Start" to="." method="_on_start_pressed"]
-[connection signal="pressed" from="MarginContainer/VBoxContainer/optionen" to="." method="_on_options_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Tutorial" to="." method="_on_tutorial_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/optionen" to="." method="_on_optionen_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/verlassen" to="." method="_on_verlassen_pressed"]
 
