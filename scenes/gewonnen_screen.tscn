@@ -1,0 +1,99 @@
+[gd_scene load_steps=7 format=3 uid="uid://cvklgyfll8ykh"]
+
+[ext_resource type="Script" uid="uid://bmm6evht8tk8d" path="res://scripts/gewonnen_screen.gd" id="1_vseld"]
+[ext_resource type="Texture2D" uid="uid://updsul6yuuyr" path="res://assets/sprites/frame_0_delay-0.04s.png" id="2_vgnxi"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_hy4p1"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_havla"]
+bg_color = Color(0.699653, 0.699654, 0.699653, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lr8l7"]
+bg_color = Color(0.43134, 0.43134, 0.43134, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3sqtc"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[node name="Gewonnen screen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_vseld")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -150.0
+offset_top = -35.0
+offset_right = 150.0
+offset_bottom = 35.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="Spiel starten" type="Button" parent="MarginContainer/VBoxContainer"]
+texture_filter = 2
+layout_mode = 2
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_styles/focus = SubResource("StyleBoxEmpty_hy4p1")
+theme_override_styles/hover = SubResource("StyleBoxFlat_havla")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_lr8l7")
+theme_override_styles/normal = SubResource("StyleBoxFlat_3sqtc")
+text = "Nochmal spielen"
+
+[node name="Hauptmenü" type="Button" parent="MarginContainer/VBoxContainer"]
+texture_filter = 2
+layout_mode = 2
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_styles/focus = SubResource("StyleBoxEmpty_hy4p1")
+theme_override_styles/hover = SubResource("StyleBoxFlat_havla")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_lr8l7")
+theme_override_styles/normal = SubResource("StyleBoxFlat_3sqtc")
+text = "Hauptmenü"
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -250.0
+offset_top = -198.0
+offset_right = 250.0
+offset_bottom = -98.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.972549, 0, 0, 1)
+theme_override_font_sizes/font_size = 120
+text = "Gewonnen!"
+
+[node name="Frame0Delay-0_04s" type="Sprite2D" parent="."]
+modulate = Color(0.650128, 0.650128, 0.650128, 1)
+z_index = -10
+position = Vector2(545, 242)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("2_vgnxi")
+flip_h = true
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Spiel starten" to="." method="_on_spiel_starten_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Hauptmenü" to="." method="_on_hauptmenü_pressed"]
