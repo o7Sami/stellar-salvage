@@ -15,4 +15,3 @@ func _on_optionen_pressed() -> void:
 
 func _on_verlassen_pressed() -> void:
 	get_tree().quit()
-

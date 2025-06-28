@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://bnexpt0jx7mws"]
+[gd_scene load_steps=15 format=3 uid="uid://bnexpt0jx7mws"]
 
 [ext_resource type="Script" uid="uid://nlurm3dm33bo" path="res://scripts/gamer_manager.gd" id="1_u5sy4"]
 [ext_resource type="PackedScene" uid="uid://7v2xeusb4eh6" path="res://scenes/player.tscn" id="1_uwrxv"]
@@ -10,6 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://dcrjr8pvavg7b" path="res://scenes/tür_waagrecht.tscn" id="6_p57ef"]
 [ext_resource type="PackedScene" uid="uid://dw8sbhlmxhxbf" path="res://scenes/schlüssel.tscn" id="8_gee14"]
 [ext_resource type="PackedScene" uid="uid://crqcvfuwov7tb" path="res://scenes/schlüssel_anzeige.tscn" id="9_0tnpc"]
+[ext_resource type="AudioStream" uid="uid://bn6ufbwyvdiy2" path="res://assets/sounds/fridge-freezer-groaning-and-making-noises-341201.ogg" id="11_kvpfn"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_gee14"]
 vertices = PackedVector2Array(8, 8, -8, 8, -8, -8, 8, -8)
@@ -303,3 +304,12 @@ position = Vector2(44, -103)
 position = Vector2(19, -82)
 
 [node name="Schlüssel Anzeige" parent="Schlüssel" instance=ExtResource("9_0tnpc")]
+
+[node name="Sounds" type="Node2D" parent="."]
+
+[node name="Hintergrund" type="AudioStreamPlayer" parent="Sounds"]
+stream = ExtResource("11_kvpfn")
+volume_db = -23.424
+autoplay = true
+
+[connection signal="finished" from="Sounds/Hintergrund" to="Sounds/Hintergrund" method="_on_finished"]
