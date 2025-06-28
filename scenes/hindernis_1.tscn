@@ -1,62 +1,67 @@
 [gd_scene load_steps=10 format=3 uid="uid://bpkv2hifwjvwr"]
 
 [ext_resource type="Script" uid="uid://j1mqip6n13xr" path="res://scripts/hindernis_1.gd" id="1_nlker"]
-[ext_resource type="Texture2D" uid="uid://cyfh53tjy35de" path="res://assets/sprites/slime_purple.png" id="1_wbj40"]
+
+
 [ext_resource type="PackedScene" uid="uid://b6xdcpif2u8e0" path="res://scenes/killzone.tscn" id="2_h2xr6"]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_wbj40"]
-atlas = ExtResource("1_wbj40")
-region = Rect2(0, 24, 24, 24)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_h2xr6"]
-atlas = ExtResource("1_wbj40")
-region = Rect2(24, 24, 24, 24)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_nlker"]
-atlas = ExtResource("1_wbj40")
-region = Rect2(48, 24, 24, 24)
+[ext_resource type="Texture2D" uid="uid://b5bm61b8vhmnd" path="res://assets/sprites/Hindernisse.png" id="2_nlker"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_4xulb"]
-atlas = ExtResource("1_wbj40")
-region = Rect2(72, 24, 24, 24)
+atlas = ExtResource("2_nlker")
+region = Rect2(0, 0, 250, 250)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gkv4h"]
+atlas = ExtResource("2_nlker")
+region = Rect2(250, 0, 250, 250)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7s4j8"]
+atlas = ExtResource("2_nlker")
+region = Rect2(500, 0, 250, 250)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_86xc0"]
+atlas = ExtResource("2_nlker")
+region = Rect2(750, 0, 250, 250)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_gkv4h"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_wbj40")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_h2xr6")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_nlker")
-}, {
-"duration": 1.0,
 "texture": SubResource("AtlasTexture_4xulb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gkv4h")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7s4j8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_86xc0")
 }],
 "loop": true,
 "name": &"default",
-"speed": 8.0
+"speed": 15.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_nlker"]
-size = Vector2(10, 12)
+size = Vector2(10, 8)
 
 [node name="Hindernis 1" type="Node2D"]
 script = ExtResource("1_nlker")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(2, -12)
+position = Vector2(2.06, -4.39)
+scale = Vector2(0.04, 0.04)
 sprite_frames = SubResource("SpriteFrames_gkv4h")
 autoplay = "default"
-frame_progress = 0.579099
+frame_progress = 0.92038
 
 [node name="Killzone" parent="." instance=ExtResource("2_h2xr6")]
-position = Vector2(2, -12)
+position = Vector2(2.185, -12.645)
+scale = Vector2(0.915, 1.035)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone"]
-position = Vector2(0, 6)
+position = Vector2(0, 8)
+scale = Vector2(1.14, 1.25)
 shape = SubResource("RectangleShape2D_nlker")
 
 [node name="RayCastRight" type="RayCast2D" parent="."]
