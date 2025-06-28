@@ -1,6 +1,8 @@
-extends Panel
+extends CanvasLayer
 
-@onready var sprite_2d: Sprite2D = $Sprite2D
+@onready var game_manager: Node = %GameManager
+@onready var raumschiffteilanzahl: Label = %Raumschiffteilanzahl
+
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -9,8 +11,4 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	pass
-
-func update(whole: bool):
-	if whole: sprite_2d.frame = 12
-	else: sprite_2d.frame = 14
+	raumschiffteilanzahl.text = str(Global.Raumschiffteile_gesamt)

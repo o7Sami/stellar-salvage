@@ -4,9 +4,9 @@
 [ext_resource type="PackedScene" uid="uid://7v2xeusb4eh6" path="res://scenes/player.tscn" id="2_4kmhl"]
 [ext_resource type="PackedScene" uid="uid://dk8ix1u3qgyvm" path="res://scenes/gun.tscn" id="3_cq4me"]
 [ext_resource type="Texture2D" uid="uid://b7ma55urv4buf" path="res://assets/sprites/world_tileset.png" id="4_6yjpi"]
-[ext_resource type="PackedScene" uid="uid://crqcvfuwov7tb" path="res://scenes/schlüssel_anzeige.tscn" id="5_cq4me"]
-[ext_resource type="PackedScene" uid="uid://dw8sbhlmxhxbf" path="res://scenes/schlüssel.tscn" id="6_6yjpi"]
-[ext_resource type="PackedScene" uid="uid://ds43hc1nltge4" path="res://scenes/tür_senkrecht.tscn" id="7_gbqnl"]
+[ext_resource type="PackedScene" uid="uid://crqcvfuwov7tb" path="res://scenes/schl├╝ssel_anzeige.tscn" id="5_cq4me"]
+[ext_resource type="PackedScene" uid="uid://dw8sbhlmxhxbf" path="res://scenes/schl├╝ssel.tscn" id="6_6yjpi"]
+[ext_resource type="PackedScene" uid="uid://ds43hc1nltge4" path="res://scenes/t├╝r_senkrecht.tscn" id="7_gbqnl"]
 [ext_resource type="PackedScene" uid="uid://bpkv2hifwjvwr" path="res://scenes/hindernis_1.tscn" id="8_0epgs"]
 [ext_resource type="PackedScene" uid="uid://02ue7my3paia" path="res://scenes/hindernis_2.tscn" id="9_g2equ"]
 [ext_resource type="PackedScene" uid="uid://c8bw258exya2i" path="res://scenes/levelteleporter.tscn" id="10_ej4tf"]
@@ -253,7 +253,7 @@ offset_right = 279.0
 offset_bottom = 67.0
 theme_override_font_sizes/font_size = 10
 text = "Oben rechts deine 
-Schlüssel"
+Keycards"
 
 [node name="Label5" type="Label" parent="Labels"]
 texture_filter = 2
@@ -262,7 +262,7 @@ offset_top = -59.0
 offset_right = 450.0
 offset_bottom = -28.0
 theme_override_font_sizes/font_size = 10
-text = "Sammle Schlüssel
+text = "Sammle Keycards
 in den Leveln"
 
 [node name="Label6" type="Label" parent="Labels"]

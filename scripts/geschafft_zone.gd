@@ -1,6 +1,5 @@
-extends Panel
+extends Area2D
 
-@onready var sprite_2d: Sprite2D = $Sprite2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -11,6 +10,7 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	pass
 
-func update(whole: bool):
-	if whole: sprite_2d.frame = 12
-	else: sprite_2d.frame = 14
+
+func _on_body_entered(body: Node2D) -> void:
+	Global.Raumschiffteile_gesamt -=1
+	get_tree().change_scene_to_file("res://scenes/tutorial_geschafft_screen.tscn")
