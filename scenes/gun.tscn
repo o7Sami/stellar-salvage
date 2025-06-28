@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://dk8ix1u3qgyvm"]
+[gd_scene load_steps=4 format=3 uid="uid://dk8ix1u3qgyvm"]
 
 [ext_resource type="Script" uid="uid://d4fdmltm5u4k8" path="res://scripts/gun.gd" id="1_dk5gl"]
 [ext_resource type="Texture2D" uid="uid://ehnqm2bdxx02" path="res://assets/sprites/Waffe.png" id="2_kw0bs"]
+[ext_resource type="AudioStream" uid="uid://c8ov3lhjl3v7a" path="res://assets/sounds/Shooting sound.wav" id="3_gp1hk"]
 
 [node name="Gun" type="Node2D"]
 script = ExtResource("1_dk5gl")
@@ -13,3 +14,6 @@ texture = ExtResource("2_kw0bs")
 
 [node name="Marker2D" type="Marker2D" parent="."]
 position = Vector2(11, -6)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_gp1hk")
