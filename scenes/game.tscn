@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://bnexpt0jx7mws"]
+[gd_scene load_steps=18 format=3 uid="uid://bnexpt0jx7mws"]
 
 [ext_resource type="Script" uid="uid://nlurm3dm33bo" path="res://scripts/gamer_manager.gd" id="1_u5sy4"]
 [ext_resource type="PackedScene" uid="uid://7v2xeusb4eh6" path="res://scenes/player.tscn" id="1_uwrxv"]
@@ -13,6 +13,7 @@
 [ext_resource type="PackedScene" uid="uid://crg4gjwhvvuqq" path="res://scenes/raumschiffteil.tscn" id="11_kvuet"]
 [ext_resource type="PackedScene" uid="uid://bpqft4qm0goxq" path="res://scenes/raumschiffteil_anzeige.tscn" id="12_trtic"]
 [ext_resource type="PackedScene" uid="uid://c8bw258exya2i" path="res://scenes/levelteleporter.tscn" id="13_ir15t"]
+[ext_resource type="AudioStream" uid="uid://cdsqbi8p3vmj1" path="res://assets/sounds/fridge-freezer-groaning-and-making-noises-341201.ogg" id="14_trtic"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_gee14"]
 vertices = PackedVector2Array(8, 8, -8, 8, -8, -8, 8, -8)
@@ -316,3 +317,12 @@ position = Vector2(5, -42)
 
 [node name="Levelteleporter" parent="Level" instance=ExtResource("13_ir15t")]
 position = Vector2(-261, -26)
+
+[node name="Sounds" type="Node2D" parent="."]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Sounds"]
+stream = ExtResource("14_trtic")
+volume_db = -17.325
+autoplay = true
+mix_target = 1
+parameters/looping = true
