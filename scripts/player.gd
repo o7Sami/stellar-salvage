@@ -10,6 +10,8 @@ const SPEED = 100.0
 func get_input():
 	var input_direction = Input.get_vector("links", "rechts", "oben", "runter")
 	velocity = input_direction * SPEED
+	
+
 
 
 func _physics_process(delta):

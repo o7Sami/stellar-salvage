@@ -301,4 +301,4 @@ position = Vector2(19, -82)
 [node name="Schlüssel Anzeige" parent="." instance=ExtResource("9_0tnpc")]
 
 [node name="block" parent="." instance=ExtResource("10_vtaks")]
-position = Vector2(-350, -32)
+position = Vector2(19, -37)
