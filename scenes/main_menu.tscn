@@ -1,12 +1,8 @@
-[gd_scene load_steps=12 format=3 uid="uid://nsaxxhmxdd0u"]
+[gd_scene load_steps=11 format=3 uid="uid://nsaxxhmxdd0u"]
 
 [ext_resource type="Script" uid="uid://blq7h7gc0rp5g" path="res://scripts/main_menu.gd" id="1_ekxnf"]
-[ext_resource type="Texture2D" uid="uid://b7ma55urv4buf" path="res://assets/sprites/world_tileset.png" id="1_l6cm7"]
+[ext_resource type="Texture2D" uid="uid://d4dct5ifv400i" path="res://assets/sprites/Weltall.png" id="2_bqqt6"]
 [ext_resource type="PackedScene" uid="uid://7v2xeusb4eh6" path="res://scenes/player.tscn" id="3_bqqt6"]
-
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ekxnf"]
-texture = ExtResource("1_l6cm7")
-modulate_color = Color(0.497474, 0.497474, 0.497474, 1)
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_bqqt6"]
 normal = Vector2(0.999993, 0.00386844)
@@ -73,15 +69,10 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_ekxnf")
 
-[node name="Panel" type="Panel" parent="."]
-z_index = -10
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_styles/panel = SubResource("StyleBoxTexture_ekxnf")
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(574, 326)
+scale = Vector2(1.00152, 1.00152)
+texture = ExtResource("2_bqqt6")
 
 [node name="Label" type="Label" parent="."]
 z_index = 1

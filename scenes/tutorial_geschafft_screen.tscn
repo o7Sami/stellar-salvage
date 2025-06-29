@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=3 uid="uid://byea1jkavitxu"]
 
 [ext_resource type="Script" uid="uid://b43dggyiq8qkf" path="res://scripts/tutorial_geschafft_screen.gd" id="1_lt3ow"]
-[ext_resource type="Texture2D" uid="uid://updsul6yuuyr" path="res://assets/sprites/frame_0_delay-0.04s.png" id="1_udq28"]
+[ext_resource type="Texture2D" uid="uid://bcxxwmf4wh58h" path="res://assets/sprites/Weltall+Raumschiff.png" id="2_lt3ow"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_lt3ow"]
 
@@ -72,27 +72,24 @@ text = "Hauptmenü"
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 1
-anchors_preset = 8
+anchors_preset = 5
 anchor_left = 0.5
-anchor_top = 0.5
 anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -250.0
-offset_top = -198.0
-offset_right = 250.0
-offset_bottom = -98.0
+offset_left = -494.0
+offset_top = 66.0
+offset_right = 833.0
+offset_bottom = 231.0
 grow_horizontal = 2
-grow_vertical = 2
-theme_override_colors/font_color = Color(0.972549, 0, 0, 1)
+theme_override_colors/font_color = Color(0.431373, 0.290196, 0.945098, 1)
 theme_override_font_sizes/font_size = 120
-text = "Geschafft"
+text = "Tutorial geschafft"
 
 [node name="Frame0Delay-0_04s" type="Sprite2D" parent="."]
 modulate = Color(0.650128, 0.650128, 0.650128, 1)
 z_index = -10
-position = Vector2(545, 242)
-scale = Vector2(1.5, 1.5)
-texture = ExtResource("1_udq28")
+position = Vector2(602, 159)
+scale = Vector2(0.96875, 0.96875)
+texture = ExtResource("2_lt3ow")
 flip_h = true
 
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Spiel starten" to="." method="_on_spiel_starten_pressed"]

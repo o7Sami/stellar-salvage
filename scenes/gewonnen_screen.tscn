@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=3 uid="uid://cvklgyfll8ykh"]
 
 [ext_resource type="Script" uid="uid://bmm6evht8tk8d" path="res://scripts/gewonnen_screen.gd" id="1_vseld"]
-[ext_resource type="Texture2D" uid="uid://updsul6yuuyr" path="res://assets/sprites/frame_0_delay-0.04s.png" id="2_vgnxi"]
+[ext_resource type="Texture2D" uid="uid://ujrsb8gykn05" path="res://assets/sprites/Weltall+Raumschiff2.png" id="2_vseld"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_hy4p1"]
 
@@ -83,16 +83,16 @@ offset_right = 250.0
 offset_bottom = -98.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_colors/font_color = Color(0.972549, 0, 0, 1)
+theme_override_colors/font_color = Color(0.25098, 0.160784, 0.909804, 1)
 theme_override_font_sizes/font_size = 120
-text = "Gewonnen!"
+text = "Gewonnen !"
 
 [node name="Frame0Delay-0_04s" type="Sprite2D" parent="."]
 modulate = Color(0.650128, 0.650128, 0.650128, 1)
 z_index = -10
-position = Vector2(545, 242)
-scale = Vector2(1.5, 1.5)
-texture = ExtResource("2_vgnxi")
+position = Vector2(577.458, 342.875)
+scale = Vector2(0.573542, 0.573542)
+texture = ExtResource("2_vseld")
 flip_h = true
 
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Spiel starten" to="." method="_on_spiel_starten_pressed"]
