@@ -25,4 +25,12 @@ func _on_body_entered(body: Node2D) -> void:
 				Global.aktuelle_Scene = 0
 				get_tree().change_scene_to_file("res://scenes/gewonnen_screen.tscn")
 			game_manager.naechsteScene()
+			
 		
+
+
+
+
+
+func _on_audio_stream_player_2d_tree_entered() -> void:
+	$AudioStreamPlayer2D.play()

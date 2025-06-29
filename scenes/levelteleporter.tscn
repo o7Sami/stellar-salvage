@@ -1,7 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://c8bw258exya2i"]
+[gd_scene load_steps=7 format=3 uid="uid://c8bw258exya2i"]
 
 [ext_resource type="Script" uid="uid://bi2i62mfafmg4" path="res://scripts/levelteleporter.gd" id="1_gsisb"]
 [ext_resource type="Texture2D" uid="uid://cj7b8opfkysy8" path="res://assets/sprites/icon.svg" id="2_lerw4"]
+[ext_resource type="AudioStream" uid="uid://drouh0eud85wf" path="res://assets/sounds/Aufnahme-_6_.ogg" id="3_lerw4"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_lpy5l"]
 atlas = ExtResource("2_lerw4")
@@ -34,4 +35,10 @@ sprite_frames = SubResource("SpriteFrames_npywg")
 position = Vector2(27, 25.75)
 shape = SubResource("RectangleShape2D_bw1wr")
 
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_lerw4")
+attenuation = 0.90125
+
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]
+[connection signal="tree_entered" from="AudioStreamPlayer2D" to="." method="_on_audio_stream_player_2d_tree_entered"]
