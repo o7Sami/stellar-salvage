@@ -4,7 +4,6 @@ extends CharacterBody2D
 
 const SPEED = 100.0
 
-#var tot = false
 
 
 func get_input():

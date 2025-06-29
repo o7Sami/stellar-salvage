@@ -1,8 +1,58 @@
-[gd_scene load_steps=29 format=3 uid="uid://5p8ghecvq12h"]
+[gd_scene load_steps=29 format=3 uid="uid://bqeifc5rfxntg"]
 
-[ext_resource type="Script" uid="uid://ilhvpqfgkv4x" path="res://scripts/main_character.gd" id="1_ig48j"]
-[ext_resource type="Texture2D" uid="uid://cifqoijdfi8mi" path="res://assets/Idle (32x32).png" id="2_tqm6u"]
-[ext_resource type="Texture2D" uid="uid://cniyph8gkdeav" path="res://assets/Run (32x32).png" id="3_e6tc2"]
+[ext_resource type="Texture2D" uid="uid://cifqoijdfi8mi" path="res://assets/sprites/Idle (32x32).png" id="2_tqm6u"]
+[ext_resource type="Texture2D" uid="uid://cniyph8gkdeav" path="res://assets/sprites/Run (32x32).png" id="3_e6tc2"]
+
+[sub_resource type="GDScript" id="GDScript_ig48j"]
+script/source = "extends CharacterBody2D
+
+@export var speed = 400
+@onready var sprite_2d : AnimatedSprite2D = $Sprite2D
+var life = 3
+
+func get_input():
+	var input_direction = Input.get_vector(\"left\", \"right\", \"up\", \"down\")
+	velocity = input_direction * speed
+
+
+func _physics_process(delta):
+	get_input()
+	move_and_slide()
+	animation()
+	
+func animation():
+	var isLeft = velocity.x < 0
+	sprite_2d.flip_h = isLeft
+	if Input.is_action_pressed(\"left\"):
+		sprite_2d.animation = \"running\"
+	if Input.is_action_just_released(\"left\"):
+		sprite_2d.animation = \"idle\"
+	if Input.is_action_pressed(\"right\"):
+		sprite_2d.animation = \"running\"
+	if Input.is_action_just_released(\"right\"):
+		sprite_2d.animation = \"idle\"
+	if Input.is_action_pressed(\"up\"):
+		sprite_2d.animation = \"running\"
+	if Input.is_action_just_released(\"up\"):
+		sprite_2d.animation = \"idle\"
+	if Input.is_action_pressed(\"down\"):
+		sprite_2d.animation = \"running\"
+	if Input.is_action_just_released(\"down\"):
+		sprite_2d.animation = \"idle\"
+
+func _on_body_entered(body):
+	print(\"You died!\")
+	# life -= 1
+	#if life == 3:
+		#sprite_2d = \"3_hearts\"
+	#if life == 2:
+		#sprite_2d = \"2_hearts\"
+	#if life == 1:
+		#sprite_2d = \"1_hearts\"
+	#if life < 1:
+		#Engine.time_scale = 0.5
+		#body.get_node(\"CollisionShape2D\").queue_free()
+"
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_k0aba"]
 atlas = ExtResource("2_tqm6u")
@@ -182,7 +232,7 @@ animations = [{
 size = Vector2(45, 62)
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
-script = ExtResource("1_ig48j")
+script = SubResource("GDScript_ig48j")
 
 [node name="Sprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1

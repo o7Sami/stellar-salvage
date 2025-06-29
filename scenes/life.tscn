@@ -1,6 +1,6 @@
-[gd_scene load_steps=2 format=3 uid="uid://rwa1dycg2jvw"]
+[gd_scene load_steps=2 format=3 uid="uid://ceav6cscgjpwd"]
 
-[ext_resource type="Texture2D" uid="uid://b6sk82m7a12cs" path="res://assets/fruit.png" id="1_tf86k"]
+[ext_resource type="Texture2D" uid="uid://b6sk82m7a12cs" path="res://assets/sprites/fruit.png" id="1_tf86k"]
 
 [node name="CanvasLayer" type="CanvasLayer"]
 
