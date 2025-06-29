@@ -1,0 +1,8 @@
+[gd_scene load_steps=0 format=3 uid="uid://dj5rrlki1iqyc"]
+
+[node name="Area2D" type="Area2D"]
+position = Vector2(3, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
