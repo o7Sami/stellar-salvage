@@ -1,8 +1,9 @@
 extends CharacterBody2D
 @onready var sprite_2d: AnimatedSprite2D = $Sprite2D
+@export var Maxhealth: int = 3
+@onready var currentHealth: int = Maxhealth
 
-
-const SPEED = 100.0
+const SPEED = 100
 
 
 

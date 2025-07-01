@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://crg4gjwhvvuqq"]
 
-[ext_resource type="Script" uid="uid://cfdg63rbgskxd" path="res://scripts/raumschiffteil.gd" id="1_pfebv"]
+[ext_resource type="Script" path="res://scripts/raumschiffteil.gd" id="1_pfebv"]
 [ext_resource type="Texture2D" uid="uid://dknwusjed1gj0" path="res://assets/sprites/platforms.png" id="2_hugtd"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_yatfe"]

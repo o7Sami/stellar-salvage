@@ -1,8 +1,12 @@
-[gd_scene load_steps=2 format=3 uid="uid://c7xxhi37kegdv"]
+[gd_scene load_steps=3 format=3 uid="uid://cromxe765rijp"]
 
-[ext_resource type="Script" uid="uid://cjw1j760j6wwg" path="res://scripts/hearts_container.gd" id="1_eygju"]
+[ext_resource type="Script" uid="uid://cylvbu7dtphfm" path="res://scripts/hearts_container.gd" id="1_82ot3"]
+[ext_resource type="PackedScene" uid="uid://dvu3l8sj8wuku" path="res://scenes/heart_gui.tscn" id="2_eygju"]
 
 [node name="HeartsContainer" type="HBoxContainer"]
-scale = Vector2(0.972957, 0.992868)
-theme_override_constants/separation = 27
-script = ExtResource("1_eygju")
+offset_right = 17.0
+offset_bottom = 16.0
+script = ExtResource("1_82ot3")
+
+[node name="HeartGui" parent="." instance=ExtResource("2_eygju")]
+layout_mode = 2
