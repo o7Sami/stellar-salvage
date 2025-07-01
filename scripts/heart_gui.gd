@@ -12,5 +12,5 @@ func _process(delta: float) -> void:
 	pass
 
 func update(whole: bool):
-	if whole: sprite_2d.frame = 1
-	else: sprite_2d.frame = 2
+	if whole: sprite_2d.frame = 0
+	else: sprite_2d.frame = 1
