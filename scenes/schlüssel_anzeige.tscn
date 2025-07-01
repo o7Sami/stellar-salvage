@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://scripts/schlüssel_anzeige.gd" id="1_ryoqp"]
 [ext_resource type="Texture2D" uid="uid://coisaiesi1pje" path="res://assets/sprites/IMG_0023.PNG" id="2_ryoqp"]
 
-[node name="Schlüssel Anzeige" type="CanvasLayer"]
+[node name="Schlüssel Anzeige2" type="CanvasLayer"]
 script = ExtResource("1_ryoqp")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
