@@ -9,7 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://ds43hc1nltge4" path="res://scenes/t├╝r_senkrecht.tscn" id="5_iywne"]
 [ext_resource type="PackedScene" uid="uid://dcrjr8pvavg7b" path="res://scenes/t├╝r_waagrecht.tscn" id="6_p57ef"]
 [ext_resource type="PackedScene" uid="uid://crqcvfuwov7tb" path="res://scenes/schl├╝ssel_anzeige.tscn" id="9_0tnpc"]
-[ext_resource type="PackedScene" uid="uid://dw8sbhlmxhxbf" path="res://scenes/schlüssel.tscn" id="10_trtic"]
+[ext_resource type="PackedScene" uid="uid://dw8sbhlmxhxbf" path="res://scenes/schl├╝ssel.tscn" id="10_trtic"]
 [ext_resource type="PackedScene" uid="uid://crg4gjwhvvuqq" path="res://scenes/raumschiffteil.tscn" id="11_kvuet"]
 [ext_resource type="PackedScene" uid="uid://bpqft4qm0goxq" path="res://scenes/raumschiffteil_anzeige.tscn" id="12_trtic"]
 [ext_resource type="PackedScene" uid="uid://c8bw258exya2i" path="res://scenes/levelteleporter.tscn" id="13_ir15t"]
