@@ -3,7 +3,7 @@ extends CharacterBody2D
 
 
 const SPEED = 100.0
-
+signal Healthchanged
 
 
 func get_input():
