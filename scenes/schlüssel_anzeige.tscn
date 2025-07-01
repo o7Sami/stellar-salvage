@@ -95,7 +95,7 @@ animations = [{
 "speed": 10.0
 }]
 
-[node name="Schlüssel Anzeige" type="CanvasLayer"]
+[node name="Schlüssel Anzeige2" type="CanvasLayer"]
 script = ExtResource("1_ryoqp")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]

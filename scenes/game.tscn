@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://bpkv2hifwjvwr" path="res://scenes/hindernis_1.tscn" id="3_lnu2h"]
 [ext_resource type="PackedScene" uid="uid://dk8ix1u3qgyvm" path="res://scenes/gun.tscn" id="3_vtaks"]
 [ext_resource type="PackedScene" uid="uid://02ue7my3paia" path="res://scenes/hindernis_2.tscn" id="4_lbhrr"]
+
 [ext_resource type="PackedScene" uid="uid://ds43hc1nltge4" path="res://scenes/t├╝r_senkrecht.tscn" id="5_iywne"]
 [ext_resource type="PackedScene" uid="uid://dcrjr8pvavg7b" path="res://scenes/t├╝r_waagrecht.tscn" id="6_p57ef"]
 [ext_resource type="PackedScene" uid="uid://dw8sbhlmxhxbf" path="res://scenes/schl├╝ssel.tscn" id="8_gee14"]
@@ -13,6 +14,7 @@
 [ext_resource type="PackedScene" uid="uid://crg4gjwhvvuqq" path="res://scenes/raumschiffteil.tscn" id="11_kvuet"]
 [ext_resource type="PackedScene" uid="uid://bpqft4qm0goxq" path="res://scenes/raumschiffteil_anzeige.tscn" id="12_trtic"]
 [ext_resource type="PackedScene" uid="uid://c8bw258exya2i" path="res://scenes/levelteleporter.tscn" id="13_ir15t"]
+
 [ext_resource type="AudioStream" uid="uid://cdsqbi8p3vmj1" path="res://assets/sounds/fridge-freezer-groaning-and-making-noises-341201.ogg" id="14_trtic"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_gee14"]

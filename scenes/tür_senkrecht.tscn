@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://ds43hc1nltge4"]
 
-[ext_resource type="Script" uid="uid://ct0m2wvb04tnq" path="res://scripts/t├╝r_senkrecht.gd" id="1_dtrmt"]
+[ext_resource type="Script" path="res://scripts/t├╝r_senkrecht.gd" id="1_dtrmt"]
 [ext_resource type="Texture2D" uid="uid://cf75mfqjj4nag" path="res://assets/sprites/Tür senkrecht zu.png" id="2_feyo5"]
 [ext_resource type="Texture2D" uid="uid://dls0nta803fuv" path="res://assets/sprites/Tür senkrecht auf.png" id="3_ycbh3"]
 

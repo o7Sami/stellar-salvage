@@ -1,3 +1,4 @@
+
 [gd_scene load_steps=16 format=3 uid="uid://crqcvfuwov7tb"]
 
 [ext_resource type="Texture2D" uid="uid://bmpqem4iqa4v6" path="res://assets/sprites/coin.png" id="1_2e3y2"]
@@ -94,6 +95,7 @@ animations = [{
 "name": &"default",
 "speed": 10.0
 }]
+
 
 [node name="Schlüssel Anzeige" type="CanvasLayer"]
 script = ExtResource("1_ryoqp")
