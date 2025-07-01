@@ -1,7 +1,7 @@
-[gd_scene load_steps=17 format=3 uid="uid://dw8sbhlmxhxbf"]
+[gd_scene load_steps=17 format=3 uid="uid://dcli7k13t2km6"]
 
 [ext_resource type="Texture2D" uid="uid://bmpqem4iqa4v6" path="res://assets/sprites/coin.png" id="1_cqbpp"]
-[ext_resource type="Script" uid="uid://b5ggdahn06p11" path="res://scripts/schlüssel.gd" id="1_klv47"]
+[ext_resource type="Script" uid="uid://b5ggdahn06p11" path="res://scripts/schluessel.gd" id="1_h436w"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_klv47"]
 atlas = ExtResource("1_cqbpp")
@@ -100,7 +100,7 @@ radius = 5.09902
 
 [node name="Schlüssel" type="Area2D"]
 collision_mask = 2
-script = ExtResource("1_klv47")
+script = ExtResource("1_h436w")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_w3rvh")

@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=3 uid="uid://crqcvfuwov7tb"]
+
+[ext_resource type="Script" uid="uid://wgvfb5gwnge5" path="res://scripts/schluessel_anzeige.gd" id="1_uxoid"]
+[ext_resource type="Texture2D" uid="uid://bnqfolobinbof" path="res://assets/sprites/IMG_0023.PNG" id="2_uxoid"]
+
+[node name="Schlüssel Anzeige2" type="CanvasLayer"]
+script = ExtResource("1_uxoid")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(1065, 29)
+scale = Vector2(0.208333, 0.208333)
+texture = ExtResource("2_uxoid")
+
+[node name="Schlüsselanzahl" type="Label" parent="."]
+unique_name_in_owner = true
+anchors_preset = -1
+anchor_left = 0.36
+anchor_top = 0.161
+anchor_right = 0.36
+anchor_bottom = 0.161
+offset_left = 665.28
+offset_top = -90.328
+offset_right = 712.28
+offset_bottom = -56.328
+text = "0"
+horizontal_alignment = 2
