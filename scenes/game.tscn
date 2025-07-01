@@ -187,10 +187,10 @@ metadata/_edit_group_ = true
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="HeartsContainer" parent="CanvasLayer" instance=ExtResource("15_ir15t")]
-offset_left = -97.0
-offset_top = -87.0
-offset_right = -80.0
-offset_bottom = -71.0
+offset_left = 34.0
+offset_top = -83.0
+offset_right = 51.0
+offset_bottom = -67.0
 
 [node name="Türen" type="Node" parent="."]
 
