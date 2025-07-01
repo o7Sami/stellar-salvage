@@ -1,6 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://crqcvfuwov7tb"]
+[gd_scene load_steps=3 format=3 uid="uid://ddt0mkwqu4d8h"]
 
-[ext_resource type="Script" uid="uid://wgvfb5gwnge5" path="res://scripts/schluessel_anzeige.gd" id="1_uxoid"]
+[ext_resource type="Script" path="res://scripts/schluessel_anzeige.gd" id="1_uxoid"]
 [ext_resource type="Texture2D" uid="uid://bnqfolobinbof" path="res://assets/sprites/IMG_0023.PNG" id="2_uxoid"]
 
 [node name="Schlüssel Anzeige2" type="CanvasLayer"]

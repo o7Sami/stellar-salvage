@@ -1,6 +1,6 @@
-[gd_scene load_steps=4 format=3 uid="uid://dw8sbhlmxhxbf"]
+[gd_scene load_steps=4 format=3 uid="uid://b84nkl7pd7547"]
 
-[ext_resource type="Script" uid="uid://b5ggdahn06p11" path="res://scripts/schluessel.gd" id="1_tom5m"]
+[ext_resource type="Script" path="res://scripts/schluessel.gd" id="1_tom5m"]
 [ext_resource type="Texture2D" uid="uid://bnqfolobinbof" path="res://assets/sprites/IMG_0023.PNG" id="2_tom5m"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_decen"]
