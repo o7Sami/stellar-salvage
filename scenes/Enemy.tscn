@@ -1,6 +1,6 @@
 [gd_scene load_steps=20 format=3 uid="uid://bcrmmbd577035"]
 
-[ext_resource type="Script" path="res://scripts/enemy.gd" id="1_55jtl"]
+[ext_resource type="Script" uid="uid://b44w8b5qdjkdy" path="res://scripts/enemy.gd" id="1_55jtl"]
 [ext_resource type="Texture2D" uid="uid://cifqoijdfi8mi" path="res://assets/sprites/Idle (32x32).png" id="2_mpr68"]
 [ext_resource type="PackedScene" uid="uid://c6xb53fgg3xcb" path="res://scenes/agro.tscn" id="3_ft8do"]
 [ext_resource type="PackedScene" uid="uid://b6xdcpif2u8e0" path="res://scenes/killzone.tscn" id="3_mpr68"]
