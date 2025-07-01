@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b0hk2wtw4i822"
-path="res://.godot/imported/IMG_0023.PNG-579e5bcfc6af95bd0dc93525d5f79bb7.ctex"
+uid="uid://xrvmaufdhwma"
+path="res://.godot/imported/Raumschiffteil.png-480d9ff1df858f23f7573286decdc052.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scripts/IMG_0023.PNG"
-dest_files=["res://.godot/imported/IMG_0023.PNG-579e5bcfc6af95bd0dc93525d5f79bb7.ctex"]
+source_file="res://assets/sprites/Raumschiffteil.png"
+dest_files=["res://.godot/imported/Raumschiffteil.png-480d9ff1df858f23f7573286decdc052.ctex"]
 
 [params]
 

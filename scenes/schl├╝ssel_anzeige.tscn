@@ -1,10 +1,110 @@
-[gd_scene load_steps=3 format=3 uid="uid://brffpt41fygvt"]
 
-[ext_resource type="Script" path="res://scripts/schl├╝ssel_anzeige.gd" id="1_ryoqp"]
-[ext_resource type="Texture2D" uid="uid://coisaiesi1pje" path="res://assets/sprites/IMG_0023.PNG" id="2_58p6u"]
+[gd_scene load_steps=16 format=3 uid="uid://crqcvfuwov7tb"]
+
+[ext_resource type="Texture2D" uid="uid://bmpqem4iqa4v6" path="res://assets/sprites/coin.png" id="1_2e3y2"]
+[ext_resource type="Script" uid="uid://wgvfb5gwnge5" path="res://scripts/schlüssel_anzeige.gd" id="1_ryoqp"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ryoqp"]
+atlas = ExtResource("1_2e3y2")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3hvnt"]
+atlas = ExtResource("1_2e3y2")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tj571"]
+atlas = ExtResource("1_2e3y2")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3of8g"]
+atlas = ExtResource("1_2e3y2")
+region = Rect2(48, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6eatk"]
+atlas = ExtResource("1_2e3y2")
+region = Rect2(64, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p17my"]
+atlas = ExtResource("1_2e3y2")
+region = Rect2(80, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a6au7"]
+atlas = ExtResource("1_2e3y2")
+region = Rect2(96, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_datt3"]
+atlas = ExtResource("1_2e3y2")
+region = Rect2(112, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lsa61"]
+atlas = ExtResource("1_2e3y2")
+region = Rect2(128, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6ipee"]
+atlas = ExtResource("1_2e3y2")
+region = Rect2(144, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oyum0"]
+atlas = ExtResource("1_2e3y2")
+region = Rect2(160, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5x5yw"]
+atlas = ExtResource("1_2e3y2")
+region = Rect2(176, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_h1as7"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ryoqp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3hvnt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tj571")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3of8g")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6eatk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p17my")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a6au7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_datt3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lsa61")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6ipee")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oyum0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5x5yw")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
 
 [node name="Schlüssel Anzeige" type="CanvasLayer"]
 script = ExtResource("1_ryoqp")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(1050, 21)
+scale = Vector2(3.28125, 3.28125)
+sprite_frames = SubResource("SpriteFrames_h1as7")
+autoplay = "default"
 
 [node name="Schlüsselanzahl" type="Label" parent="."]
 unique_name_in_owner = true
@@ -20,8 +120,3 @@ offset_bottom = -64.328
 scale = Vector2(1.14516, 1.14516)
 text = "0"
 horizontal_alignment = 2
-
-[node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(1060, 23)
-scale = Vector2(0.16875, 0.16875)
-texture = ExtResource("2_58p6u")
