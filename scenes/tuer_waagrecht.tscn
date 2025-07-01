@@ -1,8 +1,8 @@
 [gd_scene load_steps=7 format=3 uid="uid://dcrjr8pvavg7b"]
 
-[ext_resource type="Script" uid="uid://bstgnsydsbayy" path="res://scripts/t├╝r_waagrecht.gd" id="1_6rbl7"]
-[ext_resource type="Texture2D" uid="uid://f5jkm2pmpfow" path="res://assets/sprites/Tür waagrecht zu.png" id="2_syo4h"]
-[ext_resource type="Texture2D" uid="uid://s8tf5xdc5duj" path="res://assets/sprites/Tür waagrecht auf.png" id="3_syo4h"]
+[ext_resource type="Script" uid="uid://bstgnsydsbayy" path="res://scripts/tuer_waagrecht.gd" id="1_3p80f"]
+[ext_resource type="Texture2D" uid="uid://f5jkm2pmpfow" path="res://assets/sprites/Tür waagrecht zu.png" id="2_h7a6u"]
+[ext_resource type="Texture2D" uid="uid://s8tf5xdc5duj" path="res://assets/sprites/Tür waagrecht auf.png" id="3_f0hvw"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pil1o"]
 size = Vector2(33, 16)
@@ -11,7 +11,7 @@ size = Vector2(33, 16)
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_syo4h")
+"texture": ExtResource("2_h7a6u")
 }],
 "loop": true,
 "name": &"geschlossen",
@@ -19,10 +19,10 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("3_syo4h")
+"texture": ExtResource("3_f0hvw")
 }, {
 "duration": 1.0,
-"texture": ExtResource("3_syo4h")
+"texture": ExtResource("3_f0hvw")
 }],
 "loop": true,
 "name": &"offen",
@@ -33,7 +33,7 @@ animations = [{
 size = Vector2(33, 26)
 
 [node name="tür waagrecht" type="StaticBody2D"]
-script = ExtResource("1_6rbl7")
+script = ExtResource("1_3p80f")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(7.5, 1)
