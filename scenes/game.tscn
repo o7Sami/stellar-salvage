@@ -6,10 +6,10 @@
 [ext_resource type="PackedScene" uid="uid://bpkv2hifwjvwr" path="res://scenes/hindernis_1.tscn" id="3_lnu2h"]
 [ext_resource type="PackedScene" uid="uid://dk8ix1u3qgyvm" path="res://scenes/gun.tscn" id="3_vtaks"]
 [ext_resource type="PackedScene" uid="uid://02ue7my3paia" path="res://scenes/hindernis_2.tscn" id="4_lbhrr"]
-[ext_resource type="PackedScene" uid="uid://cnl7qn61s5v5t" path="res://scenes/tuer_senkrecht.tscn" id="5_iywne"]
-[ext_resource type="PackedScene" uid="uid://do4vsapt1qtar" path="res://scenes/tuer_waagrecht.tscn" id="6_p57ef"]
-[ext_resource type="PackedScene" uid="uid://ohnf7xmxxrwl" path="res://scenes/schluessel.tscn" id="8_gee14"]
-[ext_resource type="PackedScene" uid="uid://cbr0pyhdxpo64" path="res://scenes/schluessel_anzeige.tscn" id="9_0tnpc"]
+[ext_resource type="PackedScene" uid="uid://cdy6pfpf5l684" path="res://scenes/tuer_senkrecht.tscn" id="5_iywne"]
+[ext_resource type="PackedScene" uid="uid://bls3urxni5tkc" path="res://scenes/tuer_waagrecht.tscn" id="6_p57ef"]
+[ext_resource type="PackedScene" uid="uid://duadcy8hb2ebu" path="res://scenes/schluessel.tscn" id="8_gee14"]
+[ext_resource type="PackedScene" uid="uid://d23e8fywi0sjc" path="res://scenes/schluessel_anzeige.tscn" id="9_0tnpc"]
 [ext_resource type="PackedScene" path="res://scenes/raumschiffteil.tscn" id="11_kvuet"]
 [ext_resource type="PackedScene" path="res://scenes/raumschiffteil_anzeige.tscn" id="12_trtic"]
 [ext_resource type="PackedScene" path="res://scenes/levelteleporter.tscn" id="13_ir15t"]
@@ -328,8 +328,6 @@ autoplay = true
 mix_target = 1
 parameters/looping = true
 
-[node name="HeartsContainer" parent="." instance=ExtResource("15_ir15t")]
-offset_left = -93.0
-offset_top = -83.0
-offset_right = -93.0
-offset_bottom = -83.0
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="HeartsContainer" parent="CanvasLayer" instance=ExtResource("15_ir15t")]
