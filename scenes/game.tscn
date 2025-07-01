@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://bnexpt0jx7mws"]
+[gd_scene load_steps=12 format=3 uid="uid://bnexpt0jx7mws"]
 
 [ext_resource type="Script" uid="uid://ck2ivsxpihufp" path="res://scripts/game.gd" id="1_dinhu"]
 [ext_resource type="Script" uid="uid://nlurm3dm33bo" path="res://scripts/gamer_manager.gd" id="1_u5sy4"]
@@ -7,10 +7,6 @@
 [ext_resource type="PackedScene" uid="uid://bpkv2hifwjvwr" path="res://scenes/hindernis_1.tscn" id="3_lnu2h"]
 [ext_resource type="PackedScene" uid="uid://dk8ix1u3qgyvm" path="res://scenes/gun.tscn" id="3_vtaks"]
 [ext_resource type="PackedScene" uid="uid://02ue7my3paia" path="res://scenes/hindernis_2.tscn" id="4_lbhrr"]
-[ext_resource type="PackedScene" uid="uid://ds43hc1nltge4" path="res://scenes/tür_senkrecht.tscn" id="5_iywne"]
-[ext_resource type="PackedScene" uid="uid://dcrjr8pvavg7b" path="res://scenes/tür_waagrecht.tscn" id="6_p57ef"]
-[ext_resource type="PackedScene" uid="uid://dw8sbhlmxhxbf" path="res://scenes/schlüssel.tscn" id="8_gee14"]
-[ext_resource type="PackedScene" uid="uid://crqcvfuwov7tb" path="res://scenes/schlüssel_anzeige.tscn" id="9_0tnpc"]
 [ext_resource type="PackedScene" uid="uid://c7xxhi37kegdv" path="res://scenes/HeartsContainer.tscn" id="12_dinhu"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_gee14"]
@@ -184,47 +180,187 @@ metadata/_edit_group_ = true
 
 [node name="Türen" type="Node" parent="."]
 
-[node name="Tür senkrecht" parent="Türen" instance=ExtResource("5_iywne")]
+[node name="Tür senkrecht" parent="Türen"]
+_import_path = NodePath("")
+unique_name_in_owner = false
+process_mode = 0
+process_priority = 0
+process_physics_priority = 0
+process_thread_group = 0
+physics_interpolation_mode = 0
+auto_translate_mode = 0
+editor_description = ""
 position = Vector2(407, -23)
+script = null
 
-[node name="Tür senkrecht2" parent="Türen" instance=ExtResource("5_iywne")]
+[node name="Tür senkrecht2" parent="Türen"]
+_import_path = NodePath("")
+unique_name_in_owner = false
+process_mode = 0
+process_priority = 0
+process_physics_priority = 0
+process_thread_group = 0
+physics_interpolation_mode = 0
+auto_translate_mode = 0
+editor_description = ""
 position = Vector2(-185, -23)
+script = null
 
-[node name="tür waagrecht2" parent="Türen" instance=ExtResource("6_p57ef")]
+[node name="tür waagrecht2" parent="Türen"]
+_import_path = NodePath("")
+unique_name_in_owner = false
+process_mode = 0
+process_priority = 0
+process_physics_priority = 0
+process_thread_group = 0
+physics_interpolation_mode = 0
+auto_translate_mode = 0
+editor_description = ""
 position = Vector2(136, 135)
+script = null
 
-[node name="tür waagrecht3" parent="Türen" instance=ExtResource("6_p57ef")]
+[node name="tür waagrecht3" parent="Türen"]
+_import_path = NodePath("")
+unique_name_in_owner = false
+process_mode = 0
+process_priority = 0
+process_physics_priority = 0
+process_thread_group = 0
+physics_interpolation_mode = 0
+auto_translate_mode = 0
+editor_description = ""
 position = Vector2(88, -185)
+script = null
 
-[node name="Tür senkrecht5" parent="Türen" instance=ExtResource("5_iywne")]
+[node name="Tür senkrecht5" parent="Türen"]
+_import_path = NodePath("")
+unique_name_in_owner = false
+process_mode = 0
+process_priority = 0
+process_physics_priority = 0
+process_thread_group = 0
+physics_interpolation_mode = 0
+auto_translate_mode = 0
+editor_description = ""
 position = Vector2(407, -423)
+script = null
 
-[node name="Tür senkrecht7" parent="Türen" instance=ExtResource("5_iywne")]
+[node name="Tür senkrecht7" parent="Türen"]
+_import_path = NodePath("")
+unique_name_in_owner = false
+process_mode = 0
+process_priority = 0
+process_physics_priority = 0
+process_thread_group = 0
+physics_interpolation_mode = 0
+auto_translate_mode = 0
+editor_description = ""
 position = Vector2(-185, -311)
+script = null
 
-[node name="Tür senkrecht10" parent="Türen" instance=ExtResource("5_iywne")]
+[node name="Tür senkrecht10" parent="Türen"]
+_import_path = NodePath("")
+unique_name_in_owner = false
+process_mode = 0
+process_priority = 0
+process_physics_priority = 0
+process_thread_group = 0
+physics_interpolation_mode = 0
+auto_translate_mode = 0
+editor_description = ""
 position = Vector2(-777, -327)
+script = null
 
-[node name="tür waagrecht5" parent="Türen" instance=ExtResource("6_p57ef")]
+[node name="tür waagrecht5" parent="Türen"]
+_import_path = NodePath("")
+unique_name_in_owner = false
+process_mode = 0
+process_priority = 0
+process_physics_priority = 0
+process_thread_group = 0
+physics_interpolation_mode = 0
+auto_translate_mode = 0
+editor_description = ""
 position = Vector2(-488, -185)
+script = null
 
-[node name="Tür senkrecht11" parent="Türen" instance=ExtResource("5_iywne")]
+[node name="Tür senkrecht11" parent="Türen"]
+_import_path = NodePath("")
+unique_name_in_owner = false
+process_mode = 0
+process_priority = 0
+process_physics_priority = 0
+process_thread_group = 0
+physics_interpolation_mode = 0
+auto_translate_mode = 0
+editor_description = ""
 position = Vector2(-777, -7)
+script = null
 
-[node name="tür waagrecht7" parent="Türen" instance=ExtResource("6_p57ef")]
+[node name="tür waagrecht7" parent="Türen"]
+_import_path = NodePath("")
+unique_name_in_owner = false
+process_mode = 0
+process_priority = 0
+process_physics_priority = 0
+process_thread_group = 0
+physics_interpolation_mode = 0
+auto_translate_mode = 0
+editor_description = ""
 position = Vector2(-520, 135)
+script = null
 
-[node name="Tür senkrecht14" parent="Türen" instance=ExtResource("5_iywne")]
+[node name="Tür senkrecht14" parent="Türen"]
+_import_path = NodePath("")
+unique_name_in_owner = false
+process_mode = 0
+process_priority = 0
+process_physics_priority = 0
+process_thread_group = 0
+physics_interpolation_mode = 0
+auto_translate_mode = 0
+editor_description = ""
 position = Vector2(-185, 377)
+script = null
 
-[node name="Tür senkrecht16" parent="Türen" instance=ExtResource("5_iywne")]
+[node name="Tür senkrecht16" parent="Türen"]
+_import_path = NodePath("")
+unique_name_in_owner = false
+process_mode = 0
+process_priority = 0
+process_physics_priority = 0
+process_thread_group = 0
+physics_interpolation_mode = 0
+auto_translate_mode = 0
+editor_description = ""
 position = Vector2(407, 281)
+script = null
 
-[node name="tür waagrecht9" parent="Türen" instance=ExtResource("6_p57ef")]
+[node name="tür waagrecht9" parent="Türen"]
+_import_path = NodePath("")
+unique_name_in_owner = false
+process_mode = 0
+process_priority = 0
+process_physics_priority = 0
+process_thread_group = 0
+physics_interpolation_mode = 0
+auto_translate_mode = 0
+editor_description = ""
 position = Vector2(728, 135)
+script = null
 
-[node name="tür waagrecht11" parent="Türen" instance=ExtResource("6_p57ef")]
+[node name="tür waagrecht11" parent="Türen"]
+_import_path = NodePath("")
+unique_name_in_owner = false
+process_mode = 0
+process_priority = 0
+process_physics_priority = 0
+process_thread_group = 0
+physics_interpolation_mode = 0
+auto_translate_mode = 0
+editor_description = ""
 position = Vector2(760, -185)
+script = null
 
 [node name="Hindernisse" type="Node" parent="."]
 
@@ -299,13 +435,43 @@ position = Vector2(4, 384)
 
 [node name="Schlüssel" type="Node" parent="."]
 
-[node name="Schlüssel" parent="Schlüssel" instance=ExtResource("8_gee14")]
+[node name="Schlüssel" parent="Schlüssel"]
+_import_path = NodePath("")
+unique_name_in_owner = false
+process_mode = 0
+process_priority = 0
+process_physics_priority = 0
+process_thread_group = 0
+physics_interpolation_mode = 0
+auto_translate_mode = 0
+editor_description = ""
 position = Vector2(44, -103)
+script = null
 
-[node name="Schlüssel2" parent="Schlüssel" instance=ExtResource("8_gee14")]
+[node name="Schlüssel2" parent="Schlüssel"]
+_import_path = NodePath("")
+unique_name_in_owner = false
+process_mode = 0
+process_priority = 0
+process_physics_priority = 0
+process_thread_group = 0
+physics_interpolation_mode = 0
+auto_translate_mode = 0
+editor_description = ""
 position = Vector2(19, -82)
+script = null
 
-[node name="Schlüssel Anzeige" parent="Schlüssel" instance=ExtResource("9_0tnpc")]
+[node name="Schlüssel Anzeige" parent="Schlüssel"]
+_import_path = NodePath("")
+unique_name_in_owner = false
+process_mode = 0
+process_priority = 0
+process_physics_priority = 0
+process_thread_group = 0
+physics_interpolation_mode = 0
+auto_translate_mode = 0
+editor_description = ""
+script = null
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 

@@ -11,7 +11,7 @@ offset_bottom = 37.0
 script = ExtResource("1_x0egl")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(18.3161, 16.6187)
-scale = Vector2(0.0744196, 0.0812965)
+position = Vector2(20.0068, 16.6187)
+scale = Vector2(0.0816913, 0.0812965)
 texture = ExtResource("2_x0egl")
 hframes = 2
