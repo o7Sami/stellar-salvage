@@ -1,17 +1,13 @@
-[gd_scene load_steps=5 format=3 uid="uid://bpqft4qm0goxq"]
+[gd_scene load_steps=4 format=3 uid="uid://bpqft4qm0goxq"]
 
 [ext_resource type="Script" uid="uid://cven4ivqdix4n" path="res://scripts/raumschiffteil_anzeige.gd" id="1_b7qh1"]
-[ext_resource type="Texture2D" uid="uid://dknwusjed1gj0" path="res://assets/sprites/platforms.png" id="1_obw3b"]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_b7qh1"]
-atlas = ExtResource("1_obw3b")
-region = Rect2(0, 0, 16, 16)
+[ext_resource type="Texture2D" uid="uid://xrvmaufdhwma" path="res://assets/sprites/Raumschiffteil.png" id="2_b7qh1"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_vfhd2"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_b7qh1")
+"texture": ExtResource("2_b7qh1")
 }],
 "loop": true,
 "name": &"default",
@@ -22,8 +18,8 @@ animations = [{
 script = ExtResource("1_b7qh1")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(542, 40)
-scale = Vector2(3.65662, 3.65662)
+position = Vector2(528, 27)
+scale = Vector2(1.57831, 1.57831)
 sprite_frames = SubResource("SpriteFrames_vfhd2")
 
 [node name="Raumschiffteilanzahl" type="Label" parent="."]

@@ -1,17 +1,13 @@
-[gd_scene load_steps=6 format=3 uid="uid://crg4gjwhvvuqq"]
+[gd_scene load_steps=5 format=3 uid="uid://crg4gjwhvvuqq"]
 
 [ext_resource type="Script" uid="uid://cfdg63rbgskxd" path="res://scripts/raumschiffteil.gd" id="1_pfebv"]
-[ext_resource type="Texture2D" uid="uid://dknwusjed1gj0" path="res://assets/sprites/platforms.png" id="2_hugtd"]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_yatfe"]
-atlas = ExtResource("2_hugtd")
-region = Rect2(0, 0, 16, 16)
+[ext_resource type="Texture2D" uid="uid://xrvmaufdhwma" path="res://assets/sprites/Raumschiffteil.png" id="2_pfebv"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_nfhuo"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_yatfe")
+"texture": ExtResource("2_pfebv")
 }],
 "loop": true,
 "name": &"default",
@@ -26,6 +22,8 @@ collision_mask = 2
 script = ExtResource("1_pfebv")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(1, -4)
+scale = Vector2(0.414063, 0.414063)
 sprite_frames = SubResource("SpriteFrames_nfhuo")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
