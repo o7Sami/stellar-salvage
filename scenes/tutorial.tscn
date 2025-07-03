@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://dk8ix1u3qgyvm" path="res://scenes/gun.tscn" id="3_cq4me"]
 [ext_resource type="Texture2D" uid="uid://b7ma55urv4buf" path="res://assets/sprites/world_tileset.png" id="4_6yjpi"]
 [ext_resource type="PackedScene" uid="uid://crqcvfuwov7tb" path="res://scenes/schl├╝ssel_anzeige.tscn" id="5_cq4me"]
-[ext_resource type="PackedScene" uid="uid://dw8sbhlmxhxbf" path="res://scenes/schl├╝ssel.tscn" id="6_6yjpi"]
+[ext_resource type="PackedScene" uid="uid://dw8sbhlmxhxbf" path="res://scenes/schluessel.tscn" id="6_6yjpi"]
 [ext_resource type="PackedScene" uid="uid://ds43hc1nltge4" path="res://scenes/t├╝r_senkrecht.tscn" id="7_gbqnl"]
 [ext_resource type="PackedScene" uid="uid://bpkv2hifwjvwr" path="res://scenes/hindernis_1.tscn" id="8_0epgs"]
 [ext_resource type="PackedScene" uid="uid://02ue7my3paia" path="res://scenes/hindernis_2.tscn" id="9_g2equ"]
