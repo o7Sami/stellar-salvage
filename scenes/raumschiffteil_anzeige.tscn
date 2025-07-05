@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://bpqft4qm0goxq"]
 
-[ext_resource type="Script" uid="uid://cven4ivqdix4n" path="res://scripts/raumschiffteil_anzeige.gd" id="1_b7qh1"]
+[ext_resource type="Script" path="res://scripts/raumschiffteil_anzeige.gd" id="1_b7qh1"]
 [ext_resource type="Texture2D" uid="uid://xrvmaufdhwma" path="res://assets/sprites/Raumschiffteil.png" id="2_b7qh1"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_vfhd2"]

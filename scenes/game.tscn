@@ -14,7 +14,7 @@
 [ext_resource type="PackedScene" uid="uid://crqcvfuwov7tb" path="res://scenes/schl├╝ssel_anzeige.tscn" id="9_0tnpc"]
 [ext_resource type="PackedScene" uid="uid://crg4gjwhvvuqq" path="res://scenes/raumschiffteil.tscn" id="11_kvuet"]
 [ext_resource type="PackedScene" uid="uid://bpqft4qm0goxq" path="res://scenes/raumschiffteil_anzeige.tscn" id="12_trtic"]
-[ext_resource type="PackedScene" uid="uid://c8bw258exya2i" path="res://scenes/levelteleporter.tscn" id="13_ir15t"]
+[ext_resource type="PackedScene" path="res://scenes/levelteleporter.tscn" id="13_ir15t"]
 [ext_resource type="AudioStream" uid="uid://cdsqbi8p3vmj1" path="res://assets/sounds/fridge-freezer-groaning-and-making-noises-341201.ogg" id="14_trtic"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_gee14"]
