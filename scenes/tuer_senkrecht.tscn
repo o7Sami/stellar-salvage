@@ -1,8 +1,8 @@
 [gd_scene load_steps=7 format=3 uid="uid://ds43hc1nltge4"]
 
-[ext_resource type="Script" uid="uid://ct0m2wvb04tnq" path="res://scripts/t├╝r_senkrecht.gd" id="1_s7l8s"]
-[ext_resource type="Texture2D" uid="uid://cf75mfqjj4nag" path="res://assets/sprites/Tür senkrecht zu.png" id="2_c18oh"]
-[ext_resource type="Texture2D" uid="uid://dls0nta803fuv" path="res://assets/sprites/Tür senkrecht auf.png" id="3_c2ydv"]
+[ext_resource type="Script" uid="uid://ct0m2wvb04tnq" path="res://scripts/t├╝r_senkrecht.gd" id="1_dtrmt"]
+[ext_resource type="Texture2D" uid="uid://cf75mfqjj4nag" path="res://assets/sprites/Tür senkrecht zu.png" id="2_56kfr"]
+[ext_resource type="Texture2D" uid="uid://dls0nta803fuv" path="res://assets/sprites/Tür senkrecht auf.png" id="3_sxm8a"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_unrij"]
 size = Vector2(16, 35)
@@ -11,7 +11,7 @@ size = Vector2(16, 35)
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_c18oh")
+"texture": ExtResource("2_56kfr")
 }],
 "loop": true,
 "name": &"geschlossen",
@@ -19,7 +19,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("3_c2ydv")
+"texture": ExtResource("3_sxm8a")
 }],
 "loop": true,
 "name": &"offen",
@@ -32,15 +32,16 @@ size = Vector2(26, 35)
 [node name="Tür senkrecht" type="StaticBody2D"]
 collision_layer = 3
 collision_mask = 3
-script = ExtResource("1_s7l8s")
+script = ExtResource("1_dtrmt")
+metadata/_edit_horizontal_guides_ = [-84.0]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(1, -9.5)
 shape = SubResource("RectangleShape2D_unrij")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(11, -22.83)
-scale = Vector2(0.86, 1.1634)
+position = Vector2(13, -22.75)
+scale = Vector2(1, 1.135)
 sprite_frames = SubResource("SpriteFrames_ycbh3")
 animation = &"geschlossen"
 autoplay = "geschlossen"
