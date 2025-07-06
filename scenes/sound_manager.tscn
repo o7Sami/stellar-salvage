@@ -1,0 +1,25 @@
+[gd_scene load_steps=5 format=3 uid="uid://c8w53w48andoh"]
+
+[ext_resource type="Script" uid="uid://dq8dq6h64k76e" path="res://scripts/sound_manager.gd" id="1_gbdfy"]
+[ext_resource type="AudioStream" uid="uid://cdsqbi8p3vmj1" path="res://assets/sounds/fridge-freezer-groaning-and-making-noises-341201.ogg" id="2_shlr6"]
+[ext_resource type="AudioStream" uid="uid://jrstxlauku4s" path="res://assets/sounds/Tuer_oeffnen.ogg" id="3_5lwbd"]
+[ext_resource type="AudioStream" uid="uid://c8ov3lhjl3v7a" path="res://assets/sounds/Shooting sound.wav" id="4_5lwbd"]
+
+[node name="Sound-Manager" type="Node2D"]
+script = ExtResource("1_gbdfy")
+
+[node name="hintergrund" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_shlr6")
+volume_db = -14.0
+
+[node name="Schluessel" type="AudioStreamPlayer" parent="."]
+
+[node name="Tuer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_5lwbd")
+
+[node name="Boxenschieben" type="AudioStreamPlayer" parent="."]
+
+[node name="Shooting" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_5lwbd")
+
+[node name="Teleporter" type="AudioStreamPlayer" parent="."]
