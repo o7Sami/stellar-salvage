@@ -1,9 +1,9 @@
 [gd_scene load_steps=10 format=3 uid="uid://clurnb1k5axha"]
 
-[ext_resource type="Script" uid="uid://c8p8rbrxjwf2a" path="res://scripts/node_2d.gd" id="1_rjkkw"]
-[ext_resource type="Texture2D" uid="uid://bc4ppr6mwooqq" path="res://assets/sprites/crates_study_x2(1).png" id="2_rjkkw"]
-[ext_resource type="Script" uid="uid://c53bnbks0qn7k" path="res://scripts/links.gd" id="3_sjeu5"]
-[ext_resource type="Script" uid="uid://c51gt1py825s7" path="res://scripts/rechts.gd" id="4_xncrr"]
+[ext_resource type="Script" uid="uid://da3hf2ylea4n4" path="res://node_2d.gd" id="1_rjkkw"]
+[ext_resource type="Texture2D" uid="uid://dth0q8ris033r" path="res://assets/sprites/crates_study_x2.png" id="2_rjkkw"]
+[ext_resource type="Script" uid="uid://ckxgjhyxkmo62" path="res://links.gd" id="3_sjeu5"]
+[ext_resource type="Script" uid="uid://v71n77655vsv" path="res://rechts.gd" id="4_xncrr"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0hol4"]
 size = Vector2(23.75, 20.5)
