@@ -1,6 +1,6 @@
-[gd_scene load_steps=24 format=3 uid="uid://bnexpt0jx7mws"]
+[gd_scene load_steps=27 format=3 uid="uid://bnexpt0jx7mws"]
 
-[ext_resource type="Script" uid="uid://y2pd8st8yfb0" path="res://scripts/game.gd" id="1_264po"]
+[ext_resource type="Script" path="res://scripts/game.gd" id="1_264po"]
 [ext_resource type="Script" uid="uid://nlurm3dm33bo" path="res://scripts/gamer_manager.gd" id="1_u5sy4"]
 [ext_resource type="PackedScene" uid="uid://7v2xeusb4eh6" path="res://scenes/player.tscn" id="1_uwrxv"]
 [ext_resource type="Texture2D" uid="uid://b7ma55urv4buf" path="res://assets/sprites/world_tileset.png" id="2_yqjtg"]
@@ -18,6 +18,9 @@
 [ext_resource type="PackedScene" uid="uid://rpqoa0picvf8" path="res://scenes/schluessel.tscn" id="16_ca42v"]
 [ext_resource type="PackedScene" uid="uid://clurnb1k5axha" path="res://scenes/blöcke.tscn" id="17_rysoc"]
 [ext_resource type="PackedScene" uid="uid://cfin8pwiexf2x" path="res://scenes/hearts_container.tscn" id="18_ssvqc"]
+[ext_resource type="PackedScene" uid="uid://bcrmmbd577035" path="res://scenes/Enemy.tscn" id="19_5newe"]
+[ext_resource type="Resource" uid="uid://s868gkfonb3m" path="res://Resources/Crew_Member.tres" id="20_37s47"]
+[ext_resource type="Resource" uid="uid://bdf3217ty6dvr" path="res://Resources/Captain.tres" id="21_bt5mj"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_gee14"]
 vertices = PackedVector2Array(8, 8, -8, 8, -8, -8, 8, -8)
@@ -492,3 +495,13 @@ position = Vector2(36, -39)
 [node name="heartsContainer" parent="CanvasLayer" instance=ExtResource("18_ssvqc")]
 offset_left = -2.0
 offset_right = -2.0
+
+[node name="Enemy" parent="." node_paths=PackedStringArray("player") instance=ExtResource("19_5newe")]
+position = Vector2(-50, -33)
+enemy_stats = ExtResource("20_37s47")
+player = NodePath("../Player")
+
+[node name="Enemy2" parent="." node_paths=PackedStringArray("player") instance=ExtResource("19_5newe")]
+position = Vector2(45, -99)
+enemy_stats = ExtResource("21_bt5mj")
+player = NodePath("../Player")
