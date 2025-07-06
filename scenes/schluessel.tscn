@@ -1,21 +1,20 @@
-[gd_scene load_steps=4 format=3 uid="uid://dw8sbhlmxhxbf"]
+[gd_scene load_steps=4 format=3 uid="uid://rpqoa0picvf8"]
 
-[ext_resource type="Script" uid="uid://b5ggdahn06p11" path="res://scripts/schluessel.gd" id="1_tom5m"]
-[ext_resource type="Texture2D" uid="uid://bnqfolobinbof" path="res://assets/sprites/IMG_0023.PNG" id="2_tom5m"]
+[ext_resource type="Script" uid="uid://b5ggdahn06p11" path="res://scripts/schluessel.gd" id="1_h436w"]
+[ext_resource type="Texture2D" uid="uid://bnqfolobinbof" path="res://assets/sprites/IMG_0023.PNG" id="2_h436w"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_decen"]
-size = Vector2(14, 10)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ybc24"]
+size = Vector2(9.07031, 6.14063)
 
 [node name="Schlüssel" type="Area2D"]
 collision_mask = 2
-script = ExtResource("1_tom5m")
-
-[node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(0.0937476, 0.0624984)
-scale = Vector2(0.0411458, 0.0411458)
-texture = ExtResource("2_tom5m")
+script = ExtResource("1_h436w")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("RectangleShape2D_decen")
+shape = SubResource("RectangleShape2D_ybc24")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.0255208, 0.0255208)
+texture = ExtResource("2_h436w")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

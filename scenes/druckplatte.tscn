@@ -1,0 +1,40 @@
+[gd_scene load_steps=6 format=3 uid="uid://by1i25t2j351b"]
+
+[ext_resource type="Texture2D" uid="uid://8f2algflfann" path="res://assets/sprites/crate_38.png" id="1_no13i"]
+[ext_resource type="Script" uid="uid://ojjf1jhwgjo3" path="res://scripts/druckplatte.gd" id="1_vu00i"]
+[ext_resource type="Texture2D" uid="uid://cox8cgonner0h" path="res://assets/sprites/crate_33.png" id="2_0i5vk"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_8b3ny"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_0i5vk")
+}],
+"loop": true,
+"name": &"down ",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_no13i")
+}],
+"loop": true,
+"name": &"up",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0i5vk"]
+size = Vector2(14, 12)
+
+[node name="druckplatte2" type="Area2D"]
+script = ExtResource("1_vu00i")
+
+[node name="Sprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(16, 16)
+scale = Vector2(0.5, 0.519608)
+sprite_frames = SubResource("SpriteFrames_8b3ny")
+animation = &"up"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(15, 13)
+shape = SubResource("RectangleShape2D_0i5vk")
