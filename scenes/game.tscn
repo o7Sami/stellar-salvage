@@ -13,7 +13,7 @@
 [ext_resource type="PackedScene" uid="uid://b1ttqbkr6hvej" path="res://scenes/schluessel_anzeige.tscn" id="9_0tnpc"]
 [ext_resource type="PackedScene" uid="uid://crg4gjwhvvuqq" path="res://scenes/raumschiffteil.tscn" id="11_kvuet"]
 [ext_resource type="PackedScene" uid="uid://bpqft4qm0goxq" path="res://scenes/raumschiffteil_anzeige.tscn" id="12_trtic"]
-[ext_resource type="PackedScene" path="res://scenes/levelteleporter.tscn" id="13_ir15t"]
+[ext_resource type="PackedScene" uid="uid://c8bw258exya2i" path="res://scenes/levelteleporter.tscn" id="13_ir15t"]
 [ext_resource type="AudioStream" uid="uid://cdsqbi8p3vmj1" path="res://assets/sounds/fridge-freezer-groaning-and-making-noises-341201.ogg" id="14_trtic"]
 [ext_resource type="PackedScene" uid="uid://rpqoa0picvf8" path="res://scenes/schluessel.tscn" id="16_ca42v"]
 
@@ -356,39 +356,51 @@ metadata/_edit_group_ = true
 
 [node name="Tür senkrecht" parent="Türen" instance=ExtResource("5_iywne")]
 position = Vector2(407, -23)
+script = null
 
 [node name="Tür senkrecht2" parent="Türen" instance=ExtResource("5_iywne")]
 position = Vector2(-185, -23)
+script = null
 
 [node name="tür waagrecht2" parent="Türen" instance=ExtResource("6_p57ef")]
 position = Vector2(136, 135)
+script = null
 
 [node name="tür waagrecht3" parent="Türen" instance=ExtResource("6_p57ef")]
 position = Vector2(88, -185)
+script = null
 
 [node name="Tür senkrecht5" parent="Türen" instance=ExtResource("5_iywne")]
 position = Vector2(407, -423)
+script = null
 
 [node name="Tür senkrecht7" parent="Türen" instance=ExtResource("5_iywne")]
 position = Vector2(-185, -311)
+script = null
 
 [node name="tür waagrecht5" parent="Türen" instance=ExtResource("6_p57ef")]
 position = Vector2(-488, -185)
+script = null
 
 [node name="tür waagrecht7" parent="Türen" instance=ExtResource("6_p57ef")]
 position = Vector2(-520, 135)
+script = null
 
 [node name="Tür senkrecht14" parent="Türen" instance=ExtResource("5_iywne")]
 position = Vector2(-185, 377)
+script = null
 
 [node name="Tür senkrecht16" parent="Türen" instance=ExtResource("5_iywne")]
 position = Vector2(407, 281)
+script = null
 
 [node name="tür waagrecht9" parent="Türen" instance=ExtResource("6_p57ef")]
 position = Vector2(728, 135)
+script = null
 
 [node name="tür waagrecht11" parent="Türen" instance=ExtResource("6_p57ef")]
 position = Vector2(760, -185)
+script = null
 
 [node name="Hindernisse" type="Node" parent="."]
 
