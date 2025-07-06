@@ -13,5 +13,8 @@ func Tuer_abspielen():
 func Boxenschieben_abspielen():
 	$Boxenschieben.play()
 
+func Shooting_abspielen():
+	$Shooting.play()
+
 func Teleporter_abspielen():
 	$Teleporter.play()
