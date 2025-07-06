@@ -15,3 +15,6 @@ func add_Raumschiffteil():
 func naechsteScene():
 	Global.aktuelle_Scene += 1
 	print("nächste")
+
+func _ready() -> void:
+	SoundManager.Hintergrund_abspielen()

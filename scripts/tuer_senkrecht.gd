@@ -17,4 +17,6 @@ func _process(_delta: float) -> void:
 func _on_öffnungsbereich_body_entered(body: Node2D) -> void:
 	if game_manager.keys > 0 and offen == false:
 			offen = true
+			SoundManager.Tuer_abspielen()
 			game_manager.sub_keys()
+			
