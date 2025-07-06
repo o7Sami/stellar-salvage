@@ -7,15 +7,15 @@
 [ext_resource type="PackedScene" uid="uid://dk8ix1u3qgyvm" path="res://scenes/gun.tscn" id="3_vtaks"]
 [ext_resource type="PackedScene" uid="uid://02ue7my3paia" path="res://scenes/hindernis_2.tscn" id="4_lbhrr"]
 [ext_resource type="Texture2D" uid="uid://bu4xrnvmroe00" path="res://assets/sprites/Raumschiff-spritesheet.png" id="5_ca42v"]
-[ext_resource type="PackedScene" uid="uid://ds43hc1nltge4" path="res://scenes/t├╝r_senkrecht.tscn" id="5_iywne"]
-[ext_resource type="PackedScene" uid="uid://dcrjr8pvavg7b" path="res://scenes/t├╝r_waagrecht.tscn" id="6_p57ef"]
+[ext_resource type="PackedScene" uid="uid://ds43hc1nltge4" path="res://scenes/tuer_senkrecht.tscn" id="5_iywne"]
+[ext_resource type="PackedScene" uid="uid://dcrjr8pvavg7b" path="res://scenes/tuer_waagrecht.tscn" id="6_p57ef"]
 [ext_resource type="Texture2D" uid="uid://b8ggav7imxf86" path="res://assets/sprites/Raumschiff-spritesheet2.png" id="6_rysoc"]
-[ext_resource type="PackedScene" uid="uid://dw8sbhlmxhxbf" path="res://scenes/schluessel.tscn" id="8_gee14"]
-[ext_resource type="PackedScene" uid="uid://crqcvfuwov7tb" path="res://scenes/schl├╝ssel_anzeige.tscn" id="9_0tnpc"]
+[ext_resource type="PackedScene" uid="uid://b1ttqbkr6hvej" path="res://scenes/schluessel_anzeige.tscn" id="9_0tnpc"]
 [ext_resource type="PackedScene" uid="uid://crg4gjwhvvuqq" path="res://scenes/raumschiffteil.tscn" id="11_kvuet"]
 [ext_resource type="PackedScene" uid="uid://bpqft4qm0goxq" path="res://scenes/raumschiffteil_anzeige.tscn" id="12_trtic"]
-[ext_resource type="PackedScene" uid="uid://c8bw258exya2i" path="res://scenes/levelteleporter.tscn" id="13_ir15t"]
+[ext_resource type="PackedScene" path="res://scenes/levelteleporter.tscn" id="13_ir15t"]
 [ext_resource type="AudioStream" uid="uid://cdsqbi8p3vmj1" path="res://assets/sounds/fridge-freezer-groaning-and-making-noises-341201.ogg" id="14_trtic"]
+[ext_resource type="PackedScene" uid="uid://rpqoa0picvf8" path="res://scenes/schluessel.tscn" id="16_ca42v"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_gee14"]
 vertices = PackedVector2Array(8, 8, -8, 8, -8, -8, 8, -8)
@@ -463,13 +463,13 @@ position = Vector2(4, 384)
 
 [node name="Schlüssel" type="Node" parent="."]
 
-[node name="Schlüssel" parent="Schlüssel" instance=ExtResource("8_gee14")]
-position = Vector2(44, -103)
-
-[node name="Schlüssel2" parent="Schlüssel" instance=ExtResource("8_gee14")]
-position = Vector2(19, -82)
-
 [node name="Schlüssel Anzeige" parent="Schlüssel" instance=ExtResource("9_0tnpc")]
+
+[node name="Schlüssel2" parent="Schlüssel" instance=ExtResource("16_ca42v")]
+position = Vector2(31, -69)
+
+[node name="Schlüssel3" parent="Schlüssel" instance=ExtResource("16_ca42v")]
+position = Vector2(64, -85)
 
 [node name="Level" type="Node" parent="."]
 
