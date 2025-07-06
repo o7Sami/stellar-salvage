@@ -1,9 +1,9 @@
 extends CharacterBody2D
 @onready var sprite_2d: AnimatedSprite2D = $Sprite2D
-
-
+@export var MaxHealth:int = 5
+@onready var currentHealth:int = MaxHealth
 const SPEED = 100.0
-
+signal healthChanged
 
 
 func get_input():
