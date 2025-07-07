@@ -6,12 +6,8 @@ var startHealth: int = 5
 @export var MaxHealth: int = startHealth
 @export var currentHealth: int = MaxHealth
 signal healthChanged
-
-var Schuesse: int = 30
-
 signal maxChanged
-
-
+var Schuesse: int = 30
 var keys = 0
 
 func add_keys():

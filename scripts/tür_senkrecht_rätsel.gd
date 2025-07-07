@@ -15,6 +15,13 @@ func _process(_delta: float) -> void:
 		set_collision_layer_value(2,false)
 
 
+func _on_druckplatte_pressed():
+	offen = true
+
+func _on_druckplatte_unpressed():
+	offen = false
+	set_collision_layer_value(1,true)
+
 func _on_druckplatte_4_pressed() -> void:
 	offen = true
 
