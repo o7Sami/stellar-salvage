@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=3 uid="uid://bnexpt0jx7mws"]
+[gd_scene load_steps=29 format=3 uid="uid://bnexpt0jx7mws"]
 
 [ext_resource type="Script" uid="uid://7mk36duhonar" path="res://scripts/game.gd" id="1_264po"]
 [ext_resource type="Script" uid="uid://nlurm3dm33bo" path="res://scripts/gamer_manager.gd" id="1_u5sy4"]
@@ -22,6 +22,7 @@
 [ext_resource type="Resource" uid="uid://s868gkfonb3m" path="res://Resources/Crew_Member.tres" id="20_37s47"]
 [ext_resource type="Resource" uid="uid://bdf3217ty6dvr" path="res://Resources/Captain.tres" id="21_bt5mj"]
 [ext_resource type="PackedScene" uid="uid://jn1wmsj3832p" path="res://scenes/druckplatte.tscn" id="22_37s47"]
+[ext_resource type="PackedScene" uid="uid://3pusp8hybfp4" path="res://scenes/zeiger.tscn" id="23_bt5mj"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_gee14"]
 vertices = PackedVector2Array(8, 8, -8, 8, -8, -8, 8, -8)
@@ -509,3 +510,8 @@ player = NodePath("../Player")
 
 [node name="druckplatte2" parent="." instance=ExtResource("22_37s47")]
 position = Vector2(51, -67)
+
+[node name="zeiger" parent="." instance=ExtResource("23_bt5mj")]
+
+[connection signal="pressed" from="druckplatte2" to="zeiger" method="_on_druckplatte_2_pressed"]
+[connection signal="unpressed" from="druckplatte2" to="zeiger" method="_on_druckplatte_2_unpressed"]

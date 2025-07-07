@@ -6,6 +6,9 @@ const BOX = preload("res://scenes/blöcke.tscn")
 signal pressed
 signal unpressed
 
+func _ready() -> void:
+	connect("body_entered", _on_body_entered)
+	connect("area_exited", _on_body_exited)
 
 func _on_body_entered(body: CharacterBody2D) -> void:
 	print("eeee")
