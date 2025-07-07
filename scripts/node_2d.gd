@@ -54,3 +54,6 @@ func _on_unten_body_entered(body: Node2D) -> void:
 func _on_unten_body_exited(body: Node2D) -> void:
 	directiony= 0
 	push= false
+
+func schaden():
+	pass
