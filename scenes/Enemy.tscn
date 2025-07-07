@@ -157,7 +157,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"chefidle",
-"speed": 5.0
+"speed": 1.0
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_ft8do"]
@@ -178,7 +178,7 @@ shape = SubResource("RectangleShape2D_ft8do")
 position = Vector2(0.5, -11.5)
 scale = Vector2(0.71875, 0.71875)
 sprite_frames = SubResource("SpriteFrames_ejje1")
-animation = &"Default"
+animation = &"chefidle"
 autoplay = "Default"
 speed_scale = 2.0
 
