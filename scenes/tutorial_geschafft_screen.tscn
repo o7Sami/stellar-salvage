@@ -41,6 +41,14 @@ offset_bottom = 35.0
 grow_horizontal = 2
 grow_vertical = 2
 
+[node name="Frame0Delay-0_04s" type="Sprite2D" parent="MarginContainer"]
+modulate = Color(0.650128, 0.650128, 0.650128, 1)
+z_index = -10
+position = Vector2(176, -130)
+scale = Vector2(0.96875, 0.96875)
+texture = ExtResource("2_lt3ow")
+flip_h = true
+
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
 layout_mode = 2
 
@@ -83,14 +91,6 @@ grow_horizontal = 2
 theme_override_colors/font_color = Color(0.431373, 0.290196, 0.945098, 1)
 theme_override_font_sizes/font_size = 120
 text = "Tutorial geschafft"
-
-[node name="Frame0Delay-0_04s" type="Sprite2D" parent="."]
-modulate = Color(0.650128, 0.650128, 0.650128, 1)
-z_index = -10
-position = Vector2(602, 159)
-scale = Vector2(0.96875, 0.96875)
-texture = ExtResource("2_lt3ow")
-flip_h = true
 
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Spiel starten" to="." method="_on_spiel_starten_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Hauptmenü" to="." method="_on_hauptmenü_pressed"]

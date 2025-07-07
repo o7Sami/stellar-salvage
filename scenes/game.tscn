@@ -11,7 +11,7 @@
 [ext_resource type="PackedScene" uid="uid://dwowlyrbtg6a1" path="res://scenes/tuer_senkrecht.tscn" id="5_iywne"]
 [ext_resource type="PackedScene" uid="uid://cr2qqeghv8qh0" path="res://scenes/tuer_waagrecht.tscn" id="6_p57ef"]
 [ext_resource type="Texture2D" uid="uid://b8ggav7imxf86" path="res://assets/sprites/Raumschiff-spritesheet2.png" id="6_rysoc"]
-[ext_resource type="PackedScene" path="res://scenes/schluessel_anzeige.tscn" id="9_0tnpc"]
+[ext_resource type="PackedScene" uid="uid://db3grh1s2ns81" path="res://scenes/schluessel_anzeige.tscn" id="9_0tnpc"]
 [ext_resource type="PackedScene" uid="uid://crg4gjwhvvuqq" path="res://scenes/raumschiffteil.tscn" id="11_kvuet"]
 [ext_resource type="PackedScene" uid="uid://bpqft4qm0goxq" path="res://scenes/raumschiffteil_anzeige.tscn" id="12_trtic"]
 [ext_resource type="PackedScene" uid="uid://c8bw258exya2i" path="res://scenes/levelteleporter.tscn" id="13_ir15t"]
