@@ -8,7 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://rpqoa0picvf8" path="res://scenes/schluessel.tscn" id="5_6gib5"]
 [ext_resource type="PackedScene" uid="uid://dwowlyrbtg6a1" path="res://scenes/tuer_senkrecht.tscn" id="5_8kohg"]
 [ext_resource type="Texture2D" uid="uid://b8ggav7imxf86" path="res://assets/sprites/Raumschiff-spritesheet2.png" id="5_o7lrs"]
-[ext_resource type="PackedScene" uid="uid://db3grh1s2ns81" path="res://scenes/schluessel_anzeige.tscn" id="6_ab7e1"]
+[ext_resource type="PackedScene" uid="uid://b1ttqbkr6hvej" path="res://scenes/schluessel_anzeige.tscn" id="6_ab7e1"]
 [ext_resource type="PackedScene" uid="uid://cr2qqeghv8qh0" path="res://scenes/tuer_waagrecht.tscn" id="6_dqkyx"]
 [ext_resource type="Texture2D" uid="uid://bu4xrnvmroe00" path="res://assets/sprites/Raumschiff-spritesheet.png" id="6_i8bv0"]
 [ext_resource type="PackedScene" uid="uid://c8bw258exya2i" path="res://scenes/levelteleporter.tscn" id="9_6gib5"]
