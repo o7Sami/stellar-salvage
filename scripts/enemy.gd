@@ -6,6 +6,7 @@ var game = get_parent()
 var agrovated = 0
 @export var player: Node2D
 @onready var navigation_agent_2d: NavigationAgent2D = $NavigationAgent2D
+@onready var schluessel_spawn: Marker2D = $SchluesselSpawn
 
 func _ready():
 	set_modulate(enemy_stats.appearance())
@@ -22,11 +23,13 @@ func makePath() -> void:
 
 func sterben():
 	if enemy_stats.dropKey == true:
-		var playerpos = get_parent().get_node("this").global_position
+		var pos = schluessel_spawn.position
+		var pos_global = to_global(pos)
 		var schluessel = key.instantiate()
-		schluessel.position = playerpos  #Vector2(10,1)
+		schluessel.position =   Vector2(pos_global)
 		get_node("/root").add_child(schluessel)
 		queue_free()
+	queue_free()
 
 
 
