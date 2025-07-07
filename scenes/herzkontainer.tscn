@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://b5dtph6xxvwqu"]
+
+[ext_resource type="Script" uid="uid://b2kj8oigblt06" path="res://herzkontainer.gd" id="1_i1fb7"]
+[ext_resource type="Texture2D" uid="uid://crv46rxuh1vjk" path="res://assets/sprites/herzkontainer.png" id="1_sggb6"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_i1fb7"]
+radius = 7.0
+
+[node name="Herzkontainer" type="Area2D"]
+position = Vector2(73, 73)
+collision_mask = 2
+script = ExtResource("1_i1fb7")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_sggb6")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-72.4127, -72.8322)
+shape = SubResource("CircleShape2D_i1fb7")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

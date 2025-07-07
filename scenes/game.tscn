@@ -1,6 +1,6 @@
-[gd_scene load_steps=28 format=3 uid="uid://bnexpt0jx7mws"]
+[gd_scene load_steps=29 format=3 uid="uid://bnexpt0jx7mws"]
 
-[ext_resource type="Script" path="res://scripts/game.gd" id="1_264po"]
+[ext_resource type="Script" uid="uid://y2pd8st8yfb0" path="res://scripts/game.gd" id="1_264po"]
 [ext_resource type="Script" uid="uid://nlurm3dm33bo" path="res://scripts/gamer_manager.gd" id="1_u5sy4"]
 [ext_resource type="PackedScene" uid="uid://7v2xeusb4eh6" path="res://scenes/player.tscn" id="1_uwrxv"]
 [ext_resource type="Texture2D" uid="uid://b7ma55urv4buf" path="res://assets/sprites/world_tileset.png" id="2_yqjtg"]
@@ -8,19 +8,20 @@
 [ext_resource type="PackedScene" uid="uid://dk8ix1u3qgyvm" path="res://scenes/gun.tscn" id="3_vtaks"]
 [ext_resource type="PackedScene" uid="uid://02ue7my3paia" path="res://scenes/hindernis_2.tscn" id="4_lbhrr"]
 [ext_resource type="Texture2D" uid="uid://bu4xrnvmroe00" path="res://assets/sprites/Raumschiff-spritesheet.png" id="5_ca42v"]
-[ext_resource type="PackedScene" uid="uid://ds43hc1nltge4" path="res://scenes/tuer_senkrecht.tscn" id="5_iywne"]
-[ext_resource type="PackedScene" uid="uid://dcrjr8pvavg7b" path="res://scenes/tuer_waagrecht.tscn" id="6_p57ef"]
+[ext_resource type="PackedScene" uid="uid://dwowlyrbtg6a1" path="res://scenes/tuer_senkrecht.tscn" id="5_iywne"]
+[ext_resource type="PackedScene" uid="uid://cr2qqeghv8qh0" path="res://scenes/tuer_waagrecht.tscn" id="6_p57ef"]
 [ext_resource type="Texture2D" uid="uid://b8ggav7imxf86" path="res://assets/sprites/Raumschiff-spritesheet2.png" id="6_rysoc"]
-[ext_resource type="PackedScene" uid="uid://b1ttqbkr6hvej" path="res://scenes/schluessel_anzeige.tscn" id="9_0tnpc"]
+[ext_resource type="PackedScene" path="res://scenes/schluessel_anzeige.tscn" id="9_0tnpc"]
 [ext_resource type="PackedScene" uid="uid://crg4gjwhvvuqq" path="res://scenes/raumschiffteil.tscn" id="11_kvuet"]
 [ext_resource type="PackedScene" uid="uid://bpqft4qm0goxq" path="res://scenes/raumschiffteil_anzeige.tscn" id="12_trtic"]
 [ext_resource type="PackedScene" uid="uid://c8bw258exya2i" path="res://scenes/levelteleporter.tscn" id="13_ir15t"]
-[ext_resource type="PackedScene" uid="uid://rpqoa0picvf8" path="res://scenes/schluessel.tscn" id="16_ca42v"]
-[ext_resource type="PackedScene" uid="uid://clurnb1k5axha" path="res://scenes/blöcke.tscn" id="17_rysoc"]
-[ext_resource type="PackedScene" uid="uid://cfin8pwiexf2x" path="res://scenes/hearts_container.tscn" id="18_ssvqc"]
+[ext_resource type="PackedScene" path="res://scenes/schluessel.tscn" id="16_ca42v"]
+[ext_resource type="PackedScene" path="res://scenes/blöcke.tscn" id="17_rysoc"]
+[ext_resource type="PackedScene" path="res://scenes/hearts_container.tscn" id="18_ssvqc"]
 [ext_resource type="PackedScene" uid="uid://bcrmmbd577035" path="res://scenes/Enemy.tscn" id="19_5newe"]
 [ext_resource type="Resource" uid="uid://s868gkfonb3m" path="res://Resources/Crew_Member.tres" id="20_37s47"]
 [ext_resource type="Resource" uid="uid://bdf3217ty6dvr" path="res://Resources/Captain.tres" id="21_bt5mj"]
+[ext_resource type="PackedScene" uid="uid://b5dtph6xxvwqu" path="res://scenes/herzkontainer.tscn" id="22_37s47"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_gee14"]
 vertices = PackedVector2Array(8, 8, -8, 8, -8, -8, 8, -8)
@@ -518,3 +519,9 @@ player = NodePath("../Player")
 
 [node name="Raumschiffteil" parent="." instance=ExtResource("11_kvuet")]
 position = Vector2(332, 345)
+
+[node name="Herzkontainer" parent="." instance=ExtResource("22_37s47")]
+position = Vector2(109, 99)
+
+[node name="Herzkontainer2" parent="." instance=ExtResource("22_37s47")]
+position = Vector2(131, 97)
