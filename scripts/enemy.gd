@@ -41,7 +41,7 @@ func makePath() -> void:
 	navigation_agent_2d.target_position = player.global_position
 
 func sterben():
-	var rando = randi_range(1,2)
+	var rando = randi_range(1,3)
 	if rando == 2:
 		var pos = schluessel_spawn.position + Vector2(10,10)
 		var pos_global = to_global(pos)
