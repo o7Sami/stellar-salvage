@@ -4,9 +4,10 @@ extends Area2D
 #@onready var player2: CharacterBody2D = $"."
 
 func _on_body_entered(_player) -> void:
-	_player.currentHealth -= 1
-	_player.healthChanged.emit(_player.currentHealth)
-	if _player.currentHealth < 1:
+	Global.currentHealth -= 1
+	_player.healthChanged.emit(Global.currentHealth)
+	print(Global.currentHealth)
+	if Global.currentHealth < 1:
 		timer.start()
 
 func _on_timer_timeout() -> void:

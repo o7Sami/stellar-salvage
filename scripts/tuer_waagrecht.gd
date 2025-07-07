@@ -4,6 +4,7 @@ var offen = false
 
 @onready var animated_sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
 @onready var game_manager: Node = %GameManager
+@onready var timer: Timer = $Timer
 
 
 
@@ -19,6 +20,10 @@ func _process(_delta: float) -> void:
 
 func _on_öffnungsbereich_body_entered(body: Node2D) -> void:
 	if game_manager.keys > 0 and offen == false:
-			offen = true
+			timer.start()
 			SoundManager.Tuer_abspielen()
 			game_manager.sub_keys()
+
+
+func _on_timer_timeout() -> void:
+	offen = true
