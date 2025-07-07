@@ -40,8 +40,8 @@ animations = [{
 "speed": 8.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_nlker"]
-size = Vector2(10, 12)
+[sub_resource type="CircleShape2D" id="CircleShape2D_nlker"]
+radius = 4.5045
 
 [node name="Hindernis 1" type="Node2D"]
 script = ExtResource("1_nlker")
@@ -51,15 +51,15 @@ position = Vector2(2.12, -4.905)
 scale = Vector2(0.04, 0.04)
 sprite_frames = SubResource("SpriteFrames_gkv4h")
 autoplay = "default"
-frame_progress = 0.579099
+frame_progress = 0.837151
 
 [node name="Killzone" parent="." instance=ExtResource("2_h2xr6")]
 position = Vector2(2, -12)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone"]
-position = Vector2(-0.05, 7.2)
+position = Vector2(0, 7)
 scale = Vector2(1.11, 0.94)
-shape = SubResource("RectangleShape2D_nlker")
+shape = SubResource("CircleShape2D_nlker")
 
 [node name="RayCastRight" type="RayCast2D" parent="."]
 position = Vector2(2, -4)
