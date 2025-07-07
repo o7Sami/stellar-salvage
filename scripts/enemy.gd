@@ -6,16 +6,35 @@ var agrovated = 0
 @export var player: Node2D
 @onready var navigation_agent_2d: NavigationAgent2D = $NavigationAgent2D
 @onready var schluessel_spawn: Marker2D = $SchluesselSpawn
+@onready var sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
+
 
 func _ready():
-	set_modulate(enemy_stats.appearance())
+	match enemy_stats.type:
+		0:
+			sprite_2d.animation = "Default"
+		1:
+			sprite_2d.animation = "chefidle"
+
 
 func _physics_process(delta: float) -> void:
 	if agrovated == 1:
 		var direction = to_local(navigation_agent_2d.get_next_path_position()).normalized()
 		velocity = direction * enemy_stats.speed
 		move_and_slide()
-	
+		match enemy_stats.type:
+			0:
+				sprite_2d.animation = "aggro"
+			1:
+				sprite_2d.animation = "chefaggro"
+	if agrovated == 0:
+		match enemy_stats.type:
+			0:
+				sprite_2d.animation = "Default"
+			1:
+				sprite_2d.animation = "chefidle"
+
+
 
 func makePath() -> void:
 	navigation_agent_2d.target_position = player.global_position

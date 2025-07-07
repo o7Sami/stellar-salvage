@@ -8,6 +8,7 @@ func _on_body_entered(_body: Node2D) -> void:
 	timer.start()
 
 
+
 func _on_body_exited(body: Node2D) -> void:
 	enemy.agrovated = 0
 
