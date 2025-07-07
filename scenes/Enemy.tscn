@@ -164,6 +164,7 @@ animations = [{
 radius = 69.0652
 
 [node name="Enemy" type="CharacterBody2D"]
+z_index = 1
 collision_layer = 8
 motion_mode = 1
 wall_min_slide_angle = 0.0
@@ -177,7 +178,7 @@ shape = SubResource("RectangleShape2D_ft8do")
 position = Vector2(0.5, -11.5)
 scale = Vector2(0.71875, 0.71875)
 sprite_frames = SubResource("SpriteFrames_ejje1")
-animation = &"chefidle"
+animation = &"Default"
 autoplay = "Default"
 speed_scale = 2.0
 

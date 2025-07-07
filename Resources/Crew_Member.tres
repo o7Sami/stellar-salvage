@@ -1,7 +1,6 @@
-[gd_resource type="Resource" script_class="enemy_type" load_steps=3 format=3 uid="uid://s868gkfonb3m"]
+[gd_resource type="Resource" script_class="enemy_type" load_steps=2 format=3 uid="uid://s868gkfonb3m"]
 
 [ext_resource type="Script" uid="uid://c7fja0nbxshhw" path="res://scripts/Enemy_Resource.gd" id="1_8q2kp"]
-[ext_resource type="Texture2D" uid="uid://dydn0ux6cbj6k" path="res://assets/sprites/Gegner idle.png" id="2_6r1lq"]
 
 [resource]
 script = ExtResource("1_8q2kp")
@@ -9,6 +8,5 @@ name = "Hoarder"
 type = 0
 speed = 20.0
 health = 0
-texture = ExtResource("2_6r1lq")
 dropKey = false
 metadata/_custom_type_script = "uid://c7fja0nbxshhw"
