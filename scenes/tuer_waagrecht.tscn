@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://dcrjr8pvavg7b"]
+[gd_scene load_steps=7 format=3 uid="uid://cr2qqeghv8qh0"]
 
 [ext_resource type="Script" uid="uid://bstgnsydsbayy" path="res://scripts/tuer_waagrecht.gd" id="1_6rbl7"]
 [ext_resource type="Texture2D" uid="uid://f5jkm2pmpfow" path="res://assets/sprites/Tür waagrecht zu.png" id="2_bx0e2"]
@@ -50,4 +50,8 @@ collision_mask = 2
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Öffnungsbereich"]
 shape = SubResource("RectangleShape2D_6rbl7")
 
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.5
+
 [connection signal="body_entered" from="Öffnungsbereich" to="." method="_on_öffnungsbereich_body_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
