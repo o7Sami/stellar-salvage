@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=3 uid="uid://bnexpt0jx7mws"]
+[gd_scene load_steps=31 format=3 uid="uid://bnexpt0jx7mws"]
 
 [ext_resource type="Script" uid="uid://y2pd8st8yfb0" path="res://scripts/game.gd" id="1_264po"]
 [ext_resource type="Script" uid="uid://nlurm3dm33bo" path="res://scripts/gamer_manager.gd" id="1_u5sy4"]
@@ -8,8 +8,8 @@
 [ext_resource type="PackedScene" uid="uid://dk8ix1u3qgyvm" path="res://scenes/gun.tscn" id="3_vtaks"]
 [ext_resource type="PackedScene" uid="uid://02ue7my3paia" path="res://scenes/hindernis_2.tscn" id="4_lbhrr"]
 [ext_resource type="Texture2D" uid="uid://bu4xrnvmroe00" path="res://assets/sprites/Raumschiff-spritesheet.png" id="5_ca42v"]
-[ext_resource type="PackedScene" uid="uid://dwowlyrbtg6a1" path="res://scenes/tuer_senkrecht.tscn" id="5_iywne"]
-[ext_resource type="PackedScene" uid="uid://cr2qqeghv8qh0" path="res://scenes/tuer_waagrecht.tscn" id="6_p57ef"]
+[ext_resource type="PackedScene" uid="uid://ds43hc1nltge4" path="res://scenes/tuer_senkrecht.tscn" id="5_iywne"]
+[ext_resource type="PackedScene" uid="uid://dcrjr8pvavg7b" path="res://scenes/tuer_waagrecht.tscn" id="6_p57ef"]
 [ext_resource type="Texture2D" uid="uid://b8ggav7imxf86" path="res://assets/sprites/Raumschiff-spritesheet2.png" id="6_rysoc"]
 [ext_resource type="PackedScene" uid="uid://db3grh1s2ns81" path="res://scenes/schluessel_anzeige.tscn" id="9_0tnpc"]
 [ext_resource type="PackedScene" uid="uid://crg4gjwhvvuqq" path="res://scenes/raumschiffteil.tscn" id="11_kvuet"]
@@ -21,8 +21,9 @@
 [ext_resource type="PackedScene" uid="uid://bcrmmbd577035" path="res://scenes/Enemy.tscn" id="19_5newe"]
 [ext_resource type="Resource" uid="uid://s868gkfonb3m" path="res://Resources/Crew_Member.tres" id="20_37s47"]
 [ext_resource type="Resource" uid="uid://bdf3217ty6dvr" path="res://Resources/Captain.tres" id="21_bt5mj"]
-[ext_resource type="PackedScene" uid="uid://by1i25t2j351b" path="res://scenes/druckplatte.tscn" id="22_37s47"]
-[ext_resource type="PackedScene" path="res://scenes/zeiger.tscn" id="23_bt5mj"]
+[ext_resource type="PackedScene" uid="uid://jn1wmsj3832p" path="res://scenes/druckplatte.tscn" id="22_37s47"]
+[ext_resource type="PackedScene" uid="uid://3pusp8hybfp4" path="res://scenes/zeiger.tscn" id="23_bt5mj"]
+[ext_resource type="PackedScene" uid="uid://clav3g6vblv0y" path="res://scenes/tür_waagrecht_rätsel.tscn" id="24_e1j6l"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_gee14"]
 vertices = PackedVector2Array(8, 8, -8, 8, -8, -8, 8, -8)
@@ -500,7 +501,7 @@ position = Vector2(-528, -277)
 position = Vector2(260, 373)
 
 [node name="block" parent="." instance=ExtResource("17_rysoc")]
-position = Vector2(36, -39)
+position = Vector2(-56, 104)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
@@ -514,14 +515,28 @@ enemy_stats = ExtResource("20_37s47")
 player = NodePath("../Player")
 
 [node name="Enemy2" parent="." node_paths=PackedStringArray("player") instance=ExtResource("19_5newe")]
-position = Vector2(45, -99)
+position = Vector2(51, -134)
 enemy_stats = ExtResource("21_bt5mj")
 player = NodePath("../Player")
 
-[node name="druckplatte2" parent="." instance=ExtResource("22_37s47")]
-position = Vector2(51, -67)
+[node name="rätsel" type="Node" parent="."]
 
-[node name="zeiger" parent="." instance=ExtResource("23_bt5mj")]
+[node name="druckplatte2" parent="rätsel" instance=ExtResource("22_37s47")]
+position = Vector2(-54, 72)
 
-[connection signal="pressed" from="druckplatte2" to="zeiger" method="_on_druckplatte_2_pressed"]
-[connection signal="unpressed" from="druckplatte2" to="zeiger" method="_on_druckplatte_2_unpressed"]
+[node name="druckplatte3" parent="rätsel" instance=ExtResource("22_37s47")]
+position = Vector2(-99, 83)
+
+[node name="zeiger" parent="rätsel" instance=ExtResource("23_bt5mj")]
+position = Vector2(23, 4)
+
+[node name="tür waagrecht rätsel" parent="rätsel" instance=ExtResource("24_e1j6l")]
+position = Vector2(-102, 23)
+
+[node name="tür waagrecht rätsel2" parent="rätsel" instance=ExtResource("24_e1j6l")]
+position = Vector2(-48, 27)
+
+[connection signal="pressed" from="rätsel/druckplatte2" to="rätsel/tür waagrecht rätsel" method="_on_druckplatte_2_pressed"]
+[connection signal="unpressed" from="rätsel/druckplatte2" to="rätsel/tür waagrecht rätsel" method="_on_druckplatte_2_unpressed"]
+[connection signal="pressed" from="rätsel/druckplatte3" to="rätsel/tür waagrecht rätsel2" method="_on_druckplatte_2_pressed"]
+[connection signal="unpressed" from="rätsel/druckplatte3" to="rätsel/tür waagrecht rätsel2" method="_on_druckplatte_2_unpressed"]
