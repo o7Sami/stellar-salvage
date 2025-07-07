@@ -5,6 +5,7 @@ var aktuelle_Scene = 0
 @export var MaxHealth: int = 5
 @export var currentHealth: int = MaxHealth
 signal healthChanged
+var Schuesse: int = 30
 
 var keys = 0
 
@@ -13,3 +14,11 @@ func add_keys():
 	
 func sub_keys():
 	keys -= 1
+func sub_Schuesse():
+	Schuesse -= 1
+
+func Schuesse_reset():
+	Schuesse = 30
+
+func munition_aufsammeln():
+	Schuesse = Schuesse + randi_range(5,15)
