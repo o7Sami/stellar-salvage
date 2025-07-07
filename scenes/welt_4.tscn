@@ -575,4 +575,3 @@ position = Vector2(-523, -76)
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="heartsContainer" parent="CanvasLayer" instance=ExtResource("16_804ny")]
-script = null
