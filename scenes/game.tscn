@@ -16,7 +16,7 @@
 [ext_resource type="PackedScene" uid="uid://bpqft4qm0goxq" path="res://scenes/raumschiffteil_anzeige.tscn" id="12_trtic"]
 [ext_resource type="PackedScene" uid="uid://c8bw258exya2i" path="res://scenes/levelteleporter.tscn" id="13_ir15t"]
 [ext_resource type="PackedScene" uid="uid://clurnb1k5axha" path="res://scenes/blöcke.tscn" id="17_rysoc"]
-[ext_resource type="PackedScene" path="res://scenes/munition_anzeige.tscn" id="18_e1j6l"]
+[ext_resource type="PackedScene" uid="uid://xdj4a3stkqgp" path="res://scenes/munition_anzeige.tscn" id="18_e1j6l"]
 [ext_resource type="PackedScene" uid="uid://cfin8pwiexf2x" path="res://scenes/hearts_container.tscn" id="18_ssvqc"]
 [ext_resource type="PackedScene" uid="uid://bcrmmbd577035" path="res://scenes/Enemy.tscn" id="19_5newe"]
 [ext_resource type="Resource" uid="uid://s868gkfonb3m" path="res://Resources/Crew_Member.tres" id="20_37s47"]
@@ -348,7 +348,7 @@ unique_name_in_owner = true
 script = ExtResource("1_u5sy4")
 
 [node name="Player" parent="." instance=ExtResource("1_uwrxv")]
-position = Vector2(-617, -382)
+position = Vector2(43, -16)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 position = Vector2(-1, -6)
