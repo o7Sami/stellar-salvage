@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=3 uid="uid://bnexpt0jx7mws"]
+[gd_scene load_steps=32 format=3 uid="uid://bnexpt0jx7mws"]
 
 [ext_resource type="Script" uid="uid://y2pd8st8yfb0" path="res://scripts/game.gd" id="1_264po"]
 [ext_resource type="Script" uid="uid://nlurm3dm33bo" path="res://scripts/gamer_manager.gd" id="1_u5sy4"]
@@ -15,14 +15,16 @@
 [ext_resource type="PackedScene" uid="uid://crg4gjwhvvuqq" path="res://scenes/raumschiffteil.tscn" id="11_kvuet"]
 [ext_resource type="PackedScene" uid="uid://bpqft4qm0goxq" path="res://scenes/raumschiffteil_anzeige.tscn" id="12_trtic"]
 [ext_resource type="PackedScene" uid="uid://c8bw258exya2i" path="res://scenes/levelteleporter.tscn" id="13_ir15t"]
-[ext_resource type="PackedScene" uid="uid://rpqoa0picvf8" path="res://scenes/schluessel.tscn" id="16_ca42v"]
-[ext_resource type="PackedScene" uid="uid://clurnb1k5axha" path="res://scenes/blöcke.tscn" id="17_rysoc"]
-[ext_resource type="PackedScene" uid="uid://cfin8pwiexf2x" path="res://scenes/hearts_container.tscn" id="18_ssvqc"]
+[ext_resource type="PackedScene" path="res://scenes/schluessel.tscn" id="16_ca42v"]
+[ext_resource type="PackedScene" path="res://scenes/blöcke.tscn" id="17_rysoc"]
+[ext_resource type="PackedScene" path="res://scenes/hearts_container.tscn" id="18_ssvqc"]
 [ext_resource type="PackedScene" uid="uid://bcrmmbd577035" path="res://scenes/Enemy.tscn" id="19_5newe"]
 [ext_resource type="Resource" uid="uid://s868gkfonb3m" path="res://Resources/Crew_Member.tres" id="20_37s47"]
 [ext_resource type="Resource" uid="uid://bdf3217ty6dvr" path="res://Resources/Captain.tres" id="21_bt5mj"]
-[ext_resource type="PackedScene" uid="uid://by1i25t2j351b" path="res://scenes/druckplatte.tscn" id="22_37s47"]
-[ext_resource type="PackedScene" path="res://scenes/zeiger.tscn" id="23_bt5mj"]
+[ext_resource type="PackedScene" path="res://scenes/druckplatte.tscn" id="22_37s47"]
+[ext_resource type="PackedScene" uid="uid://3pusp8hybfp4" path="res://scenes/zeiger.tscn" id="23_bt5mj"]
+[ext_resource type="PackedScene" uid="uid://hcers7gx8ls0" path="res://scenes/leben_+.tscn" id="24_pl11u"]
+[ext_resource type="PackedScene" uid="uid://b5dtph6xxvwqu" path="res://scenes/herzkontainer.tscn" id="25_bhx41"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_gee14"]
 vertices = PackedVector2Array(8, 8, -8, 8, -8, -8, 8, -8)
@@ -522,6 +524,12 @@ player = NodePath("../Player")
 position = Vector2(51, -67)
 
 [node name="zeiger" parent="." instance=ExtResource("23_bt5mj")]
+
+[node name="Leben +" parent="." instance=ExtResource("24_pl11u")]
+position = Vector2(45, 28)
+
+[node name="Herzkontainer" parent="." instance=ExtResource("25_bhx41")]
+position = Vector2(138, 101)
 
 [connection signal="pressed" from="druckplatte2" to="zeiger" method="_on_druckplatte_2_pressed"]
 [connection signal="unpressed" from="druckplatte2" to="zeiger" method="_on_druckplatte_2_unpressed"]

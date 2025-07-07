@@ -2,9 +2,11 @@ extends Node
 
 var Raumschiffteile_gesamt = 0
 var aktuelle_Scene = 0
-@export var MaxHealth: int = 5
+var startHealth: int = 5
+@export var MaxHealth: int = startHealth
 @export var currentHealth: int = MaxHealth
 signal healthChanged
+signal maxChanged
 
 var keys = 0
 
