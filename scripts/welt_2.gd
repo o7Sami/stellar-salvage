@@ -4,6 +4,6 @@ extends Node2D
 
 
 func _ready() -> void:
-	hearts_container.setMaxHearts(player.MaxHealth)
-	hearts_container.updateHearts(player.currentHealth)
+	hearts_container.setMaxHearts(Global.MaxHealth)
+	hearts_container.updateHearts(Global.currentHealth)
 	player.healthChanged.connect(hearts_container.updateHearts)
