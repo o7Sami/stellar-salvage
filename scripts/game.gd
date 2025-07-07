@@ -6,7 +6,7 @@ extends Node2D
 
 func _ready() -> void:
 	hearts_container.setMaxHearts(Global.MaxHealth)
-	player.healthChanged.connect(hearts_container.updateHearts)
+	Global.healthChanged.connect(hearts_container.updateHearts)
 
  
 func _process(delta: float) -> void:

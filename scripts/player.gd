@@ -1,7 +1,7 @@
 extends CharacterBody2D
 @onready var sprite_2d: AnimatedSprite2D = $Sprite2D
 const SPEED = 100.0
-signal healthChanged
+
 
 
 func get_input():
