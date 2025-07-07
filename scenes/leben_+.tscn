@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://hcers7gx8ls0"]
+
+[ext_resource type="Script" uid="uid://djak0a08iuett" path="res://scripts/leben_+.gd" id="1_gp5im"]
+[ext_resource type="Texture2D" uid="uid://clu666tyaydhl" path="res://assets/sprites/herzkontainer max+.png" id="2_ynrkb"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_gp5im"]
+radius = 7.0
+
+[node name="Leben +" type="Area2D"]
+collision_mask = 2
+script = ExtResource("1_gp5im")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(72, 73)
+texture = ExtResource("2_ynrkb")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.496571, 0)
+shape = SubResource("CircleShape2D_gp5im")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=32 format=3 uid="uid://bnexpt0jx7mws"]
+[gd_scene load_steps=34 format=3 uid="uid://bnexpt0jx7mws"]
 
 [ext_resource type="Script" uid="uid://y2pd8st8yfb0" path="res://scripts/game.gd" id="1_264po"]
 [ext_resource type="Script" uid="uid://nlurm3dm33bo" path="res://scripts/gamer_manager.gd" id="1_u5sy4"]
@@ -21,10 +21,15 @@
 [ext_resource type="PackedScene" uid="uid://bcrmmbd577035" path="res://scenes/Enemy.tscn" id="19_5newe"]
 [ext_resource type="Resource" uid="uid://s868gkfonb3m" path="res://Resources/Crew_Member.tres" id="20_37s47"]
 [ext_resource type="Resource" uid="uid://bdf3217ty6dvr" path="res://Resources/Captain.tres" id="21_bt5mj"]
+
 [ext_resource type="PackedScene" uid="uid://jn1wmsj3832p" path="res://scenes/druckplatte.tscn" id="22_37s47"]
 [ext_resource type="PackedScene" uid="uid://3pusp8hybfp4" path="res://scenes/zeiger.tscn" id="23_bt5mj"]
 [ext_resource type="PackedScene" uid="uid://clav3g6vblv0y" path="res://scenes/tür_waagrecht_rätsel.tscn" id="24_e1j6l"]
 [ext_resource type="PackedScene" uid="uid://j018hgxjvt5r" path="res://scenes/tür_senkrecht_rätsel.tscn" id="25_pl11u"]
+
+[ext_resource type="PackedScene" uid="uid://hcers7gx8ls0" path="res://scenes/leben_+.tscn" id="24_pl11u"]
+[ext_resource type="PackedScene" path="res://scenes/herzkontainer.tscn" id="25_bhx41"]
+
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_gee14"]
 vertices = PackedVector2Array(8, 8, -8, 8, -8, -8, 8, -8)
@@ -543,9 +548,11 @@ position = Vector2(-458, 260)
 [node name="block" parent="rätsel" instance=ExtResource("17_rysoc")]
 position = Vector2(-503, 285)
 
+
 [connection signal="pressed" from="rätsel/druckplatte2" to="rätsel/tür waagrecht rätsel" method="_on_druckplatte_2_pressed"]
 [connection signal="unpressed" from="rätsel/druckplatte2" to="rätsel/tür waagrecht rätsel" method="_on_druckplatte_2_unpressed"]
 [connection signal="pressed" from="rätsel/druckplatte3" to="rätsel/tür waagrecht rätsel2" method="_on_druckplatte_2_pressed"]
 [connection signal="unpressed" from="rätsel/druckplatte3" to="rätsel/tür waagrecht rätsel2" method="_on_druckplatte_2_unpressed"]
 [connection signal="pressed" from="rätsel/druckplatte4" to="rätsel/Tür senkrecht rätsel" method="_on_druckplatte_4_pressed"]
 [connection signal="unpressed" from="rätsel/druckplatte4" to="rätsel/Tür senkrecht rätsel" method="_on_druckplatte_4_unpressed"]
+

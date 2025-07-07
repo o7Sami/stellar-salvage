@@ -7,7 +7,7 @@ extends Node2D
 func _ready() -> void:
 	hearts_container.setMaxHearts(Global.MaxHealth)
 	Global.healthChanged.connect(hearts_container.updateHearts)
-
+	Global.maxChanged.connect(hearts_container.setMaxHearts)
  
 func _process(delta: float) -> void:
 	hearts_container.updateHearts(Global.currentHealth)
