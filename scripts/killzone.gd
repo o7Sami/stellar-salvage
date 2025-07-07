@@ -10,7 +10,6 @@ func _on_body_entered(_player) -> void:
 	Global.currentHealth -= 1
 	Global.healthChanged.emit(Global.currentHealth)
 	timer_2.start()
-	print(drinnen)
 	if Global.currentHealth == 0:
 		timer.start()
 
