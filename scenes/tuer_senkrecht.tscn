@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://dwowlyrbtg6a1"]
+[gd_scene load_steps=7 format=3 uid="uid://ds43hc1nltge4"]
 
 [ext_resource type="Script" uid="uid://ct0m2wvb04tnq" path="res://scripts/tuer_senkrecht.gd" id="1_dtrmt"]
 [ext_resource type="Texture2D" uid="uid://cf75mfqjj4nag" path="res://assets/sprites/Tür senkrecht zu.png" id="2_56kfr"]

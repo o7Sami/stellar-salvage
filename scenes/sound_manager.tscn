@@ -12,7 +12,11 @@ script = ExtResource("1_gbdfy")
 
 [node name="hintergrund" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("2_shlr6")
-volume_db = -25.15
+
+
+volume_db = -26.18
+
+
 
 [node name="Schluessel" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("3_v1pt3")
