@@ -1,6 +1,6 @@
 [gd_scene load_steps=31 format=3 uid="uid://txbqvuvud6fm"]
 
-[ext_resource type="Script" uid="uid://dl05mksiyqx5" path="res://scenes/tutorial.gd" id="1_7a100"]
+[ext_resource type="Script" uid="uid://dl05mksiyqx5" path="res://scripts/tutorial.gd" id="1_7a100"]
 [ext_resource type="Script" uid="uid://nlurm3dm33bo" path="res://scripts/gamer_manager.gd" id="1_c13y7"]
 [ext_resource type="PackedScene" uid="uid://7v2xeusb4eh6" path="res://scenes/player.tscn" id="2_4kmhl"]
 [ext_resource type="PackedScene" uid="uid://dk8ix1u3qgyvm" path="res://scenes/gun.tscn" id="3_cq4me"]
