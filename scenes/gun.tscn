@@ -7,9 +7,9 @@
 script = ExtResource("1_dk5gl")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(4, -5)
-scale = Vector2(0.5625, 0.5)
+position = Vector2(7, -5)
+scale = Vector2(0.479779, 0.426471)
 texture = ExtResource("2_kw0bs")
 
 [node name="Marker2D" type="Marker2D" parent="."]
-position = Vector2(11, -6)
+position = Vector2(14, -7)
