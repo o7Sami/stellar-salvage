@@ -16,4 +16,3 @@ func updateHearts(currentHealth: int):
 	
 	for i in range(currentHealth, hearts.size()):
 		hearts[i].update(false)
-	print(Global.currentHealth)
