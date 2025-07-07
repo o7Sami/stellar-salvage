@@ -204,5 +204,8 @@ collision_layer = 2
 position = Vector2(12.5, -11.75)
 shape = SubResource("RectangleShape2D_ft8do")
 
+[node name="SchluesselSpawn" type="Marker2D" parent="."]
+position = Vector2(1, -10)
+
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
 [connection signal="body_exited" from="Agro" to="." method="_on_agro_body_exited"]
