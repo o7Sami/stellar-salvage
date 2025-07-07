@@ -12,4 +12,6 @@ func _process(delta: float) -> void:
 
 
 func _on_body_entered(_player) -> void:
-	queue_free()
+	if Global.MaxHealth > Global.currentHealth:
+		Global.currentHealth +=1
+		queue_free()
