@@ -1,13 +1,9 @@
 extends StaticBody2D
-
-
 var offen = false
 
-@onready var animated_sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
 @onready var game_manager: Node = %GameManager
+@onready var animated_sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
 @onready var timer: Timer = $Timer
-
-
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta: float) -> void:
@@ -19,13 +15,10 @@ func _process(_delta: float) -> void:
 		set_collision_layer_value(2,false)
 
 
-
-
-
-func _on_druckplatte_2_pressed() -> void:
+func _on_druckplatte_4_pressed() -> void:
 	offen = true
-	
 
-func _on_druckplatte_2_unpressed() -> void:
+
+func _on_druckplatte_4_unpressed() -> void:
 	offen = false
 	set_collision_layer_value(1,true)
