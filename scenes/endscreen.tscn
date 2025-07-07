@@ -41,6 +41,14 @@ offset_bottom = 35.0
 grow_horizontal = 2
 grow_vertical = 2
 
+[node name="Frame0Delay-0_04s" type="Sprite2D" parent="MarginContainer"]
+modulate = Color(0.650128, 0.650128, 0.650128, 1)
+z_index = -10
+position = Vector2(119, -47)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("2_cuen1")
+flip_h = true
+
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
 layout_mode = 2
 
@@ -86,14 +94,6 @@ grow_vertical = 2
 theme_override_colors/font_color = Color(0.972549, 0, 0, 1)
 theme_override_font_sizes/font_size = 120
 text = "GAME OVER"
-
-[node name="Frame0Delay-0_04s" type="Sprite2D" parent="."]
-modulate = Color(0.650128, 0.650128, 0.650128, 1)
-z_index = -10
-position = Vector2(545, 242)
-scale = Vector2(1.5, 1.5)
-texture = ExtResource("2_cuen1")
-flip_h = true
 
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Nochmal" to="." method="_on_nochmal_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Startscreen" to="." method="_on_startscreen_pressed"]
