@@ -1,6 +1,5 @@
 extends Node2D
 
-@onready var key = preload("res://scenes/schluessel.tscn")
 @onready var hearts_container: HBoxContainer = $CanvasLayer/heartsContainer
 @onready var player: CharacterBody2D = $Player
 
@@ -12,4 +11,3 @@ func _ready() -> void:
  
 func _process(delta: float) -> void:
 	hearts_container.updateHearts(Global.currentHealth)
-	
