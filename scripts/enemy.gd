@@ -1,7 +1,8 @@
 extends CharacterBody2D
 
+var game = get_parent()
 @export var enemy_stats:Resource
-
+@onready var key = preload("res://scenes/schluessel.tscn")
 var agrovated = 0
 @export var player: Node2D
 @onready var navigation_agent_2d: NavigationAgent2D = $NavigationAgent2D
@@ -20,7 +21,16 @@ func makePath() -> void:
 	navigation_agent_2d.target_position = player.global_position
 
 func sterben():
-	queue_free()
+	if enemy_stats.dropKey == true:
+		var playerpos = get_parent().get_node("this").global_position
+		var schluessel = key.instantiate()
+		schluessel.position = playerpos  #Vector2(10,1)
+		get_node("/root").add_child(schluessel)
+		queue_free()
+
+
+
+
 
 func schaden():
 	enemy_stats.health -= 1
