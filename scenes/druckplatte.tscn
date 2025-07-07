@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://by1i25t2j351b"]
+[gd_scene load_steps=6 format=3 uid="uid://jn1wmsj3832p"]
 
 [ext_resource type="Script" uid="uid://ojjf1jhwgjo3" path="res://scripts/druckplatte.gd" id="1_vu00i"]
 [ext_resource type="Texture2D" uid="uid://0ma8cnw8sh7n" path="res://assets/sprites/metal_blocks druck 2.png" id="2_gky1s"]
@@ -35,7 +35,7 @@ script = ExtResource("1_vu00i")
 position = Vector2(6, 5)
 scale = Vector2(0.748, 0.5755)
 sprite_frames = SubResource("SpriteFrames_gky1s")
-animation = &"down"
+animation = &"up"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(6, 4)

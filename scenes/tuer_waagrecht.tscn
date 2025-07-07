@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://cr2qqeghv8qh0"]
+[gd_scene load_steps=7 format=3 uid="uid://dcrjr8pvavg7b"]
 
 [ext_resource type="Script" uid="uid://bstgnsydsbayy" path="res://scripts/tuer_waagrecht.gd" id="1_6rbl7"]
 [ext_resource type="Texture2D" uid="uid://f5jkm2pmpfow" path="res://assets/sprites/Tür waagrecht zu.png" id="2_bx0e2"]
