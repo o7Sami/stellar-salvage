@@ -18,3 +18,12 @@ func _physics_process(delta: float) -> void:
 
 func makePath() -> void:
 	navigation_agent_2d.target_position = player.global_position
+
+func sterben():
+	queue_free()
+
+func schaden():
+	enemy_stats.health -= 1
+	if enemy_stats.health == 0:
+		sterben()
+	
