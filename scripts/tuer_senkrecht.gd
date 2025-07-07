@@ -16,10 +16,10 @@ func _process(_delta: float) -> void:
 		set_collision_layer_value(2,false)
 
 func _on_öffnungsbereich_body_entered(body: Node2D) -> void:
-	if game_manager.keys > 0 and offen == false:
+	if Global.keys > 0 and offen == false:
 			timer.start()
 			SoundManager.Tuer_abspielen()
-			game_manager.sub_keys()
+			Global.sub_keys()
 			
 
 
