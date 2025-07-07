@@ -47,13 +47,13 @@ func sterben():
 		var pos_global = to_global(pos)
 		var muni = MUNI.instantiate()
 		muni.position =   Vector2(pos_global)
-		get_node("/root/Game").add_child(muni)
+		get_node("/root").add_child(muni)
 	if enemy_stats.dropKey == true:
 		var pos = schluessel_spawn.position
 		var pos_global = to_global(pos)
 		var schluessel = SCHLUESSEL.instantiate()
 		schluessel.position =   Vector2(pos_global)
-		get_node("/root/Game").add_child(schluessel)
+		get_node("/root").add_child(schluessel)
 		queue_free()
 	queue_free()
 
