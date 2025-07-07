@@ -22,7 +22,10 @@
 [ext_resource type="Resource" uid="uid://s868gkfonb3m" path="res://Resources/Crew_Member.tres" id="20_37s47"]
 [ext_resource type="Resource" uid="uid://bdf3217ty6dvr" path="res://Resources/Captain.tres" id="21_bt5mj"]
 [ext_resource type="PackedScene" uid="uid://by1i25t2j351b" path="res://scenes/druckplatte.tscn" id="22_37s47"]
-[ext_resource type="PackedScene" path="res://scenes/zeiger.tscn" id="23_bt5mj"]
+
+
+[ext_resource type="PackedScene" uid="uid://3pusp8hybfp4" path="res://scenes/zeiger.tscn" id="23_bt5mj"]
+
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_gee14"]
 vertices = PackedVector2Array(8, 8, -8, 8, -8, -8, 8, -8)

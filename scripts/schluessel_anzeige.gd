@@ -10,4 +10,4 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	schlüsselanzahl.text = str(game_manager.keys)
+	schlüsselanzahl.text = str(Global.keys)

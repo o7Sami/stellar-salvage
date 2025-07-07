@@ -7,6 +7,7 @@ var agrovated = 0
 @onready var navigation_agent_2d: NavigationAgent2D = $NavigationAgent2D
 @onready var schluessel_spawn: Marker2D = $SchluesselSpawn
 @onready var sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
+const SCHLUESSEL = preload("res://scenes/schluessel.tscn")
 
 
 func _ready():
@@ -44,9 +45,9 @@ func sterben():
 	if enemy_stats.dropKey == true:
 		var pos = schluessel_spawn.position
 		var pos_global = to_global(pos)
-		var schluessel = key.instantiate()
+		var schluessel = SCHLUESSEL.instantiate()
 		schluessel.position =   Vector2(pos_global)
-		get_node("/root").add_child(schluessel)
+		get_node("/root/Game").add_child(schluessel)
 		queue_free()
 	queue_free()
 
