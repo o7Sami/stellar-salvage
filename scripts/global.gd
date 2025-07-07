@@ -22,4 +22,4 @@ func Schuesse_reset():
 	Schuesse = 30
 
 func munition_aufsammeln():
-	Schuesse = Schuesse + randi_range(5,15)
+	Schuesse = Schuesse + randi_range(10,20)

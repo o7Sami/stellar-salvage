@@ -1,4 +1,4 @@
-[gd_scene load_steps=31 format=3 uid="uid://bnexpt0jx7mws"]
+[gd_scene load_steps=32 format=3 uid="uid://bnexpt0jx7mws"]
 
 [ext_resource type="Script" uid="uid://y2pd8st8yfb0" path="res://scripts/game.gd" id="1_264po"]
 [ext_resource type="Script" uid="uid://nlurm3dm33bo" path="res://scripts/gamer_manager.gd" id="1_u5sy4"]
@@ -24,6 +24,7 @@
 [ext_resource type="PackedScene" uid="uid://jn1wmsj3832p" path="res://scenes/druckplatte.tscn" id="22_37s47"]
 [ext_resource type="PackedScene" uid="uid://clav3g6vblv0y" path="res://scenes/tür_waagrecht_rätsel.tscn" id="24_e1j6l"]
 [ext_resource type="PackedScene" uid="uid://hcers7gx8ls0" path="res://scenes/leben_+.tscn" id="24_pl11u"]
+[ext_resource type="PackedScene" uid="uid://va25f7w5laex" path="res://scenes/munition.tscn" id="25_pl11u"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_gee14"]
 vertices = PackedVector2Array(8, 8, -8, 8, -8, -8, 8, -8)
@@ -566,5 +567,19 @@ position = Vector2(141, -297)
 enemy_stats = ExtResource("21_bt5mj")
 player = NodePath("../../Player")
 
-[node name="Leben +" parent="." instance=ExtResource("24_pl11u")]
+[node name="Items" type="Node" parent="."]
+
+[node name="Leben +" parent="Items" instance=ExtResource("24_pl11u")]
 position = Vector2(-161, -385)
+
+[node name="Munition" parent="Items" instance=ExtResource("25_pl11u")]
+position = Vector2(-22, -87)
+
+[node name="Munition2" parent="Items" instance=ExtResource("25_pl11u")]
+position = Vector2(9, 122)
+
+[node name="Munition3" parent="Items" instance=ExtResource("25_pl11u")]
+position = Vector2(-57, -375)
+
+[node name="Munition4" parent="Items" instance=ExtResource("25_pl11u")]
+position = Vector2(-410, -265)

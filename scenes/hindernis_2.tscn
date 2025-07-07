@@ -1,6 +1,6 @@
 [gd_scene load_steps=10 format=3 uid="uid://02ue7my3paia"]
 
-[ext_resource type="Script" uid="uid://dfi3rdnim5qup" path="res://scripts/hindernis_2.gd" id="1_3ky7i"]
+[ext_resource type="Script" path="res://scripts/hindernis_2.gd" id="1_3ky7i"]
 [ext_resource type="Texture2D" uid="uid://n8wnqd4k5ni" path="res://assets/sprites/IMG-20250627-WA0001-removebg-preview.png" id="2_3ky7i"]
 [ext_resource type="PackedScene" uid="uid://b6xdcpif2u8e0" path="res://scenes/killzone.tscn" id="3_esuxd"]
 
@@ -40,8 +40,8 @@ animations = [{
 "speed": 8.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_crlhs"]
-size = Vector2(9, 11)
+[sub_resource type="CircleShape2D" id="CircleShape2D_3ky7i"]
+radius = 4.31034
 
 [node name="hindernis 2" type="Node2D"]
 script = ExtResource("1_3ky7i")
@@ -55,9 +55,9 @@ autoplay = "default"
 [node name="Killzone" parent="." instance=ExtResource("3_esuxd")]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone"]
-position = Vector2(3.04, -5.075)
+position = Vector2(3, -5)
 scale = Vector2(1.16, 1.01)
-shape = SubResource("RectangleShape2D_crlhs")
+shape = SubResource("CircleShape2D_3ky7i")
 
 [node name="RayCastUp" type="RayCast2D" parent="."]
 position = Vector2(3, -5)
