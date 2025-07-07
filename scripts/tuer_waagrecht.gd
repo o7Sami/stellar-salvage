@@ -27,3 +27,11 @@ func _on_öffnungsbereich_body_entered(body: Node2D) -> void:
 
 func _on_timer_timeout() -> void:
 	offen = true
+
+
+func _on_druckplatte_5_pressed() -> void:
+	pass # Replace with function body.
+
+
+func _on_druckplatte_5_unpressed() -> void:
+	pass # Replace with function body.
