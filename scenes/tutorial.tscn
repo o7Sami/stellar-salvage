@@ -16,20 +16,6 @@
 [ext_resource type="PackedScene" uid="uid://crg4gjwhvvuqq" path="res://scenes/raumschiffteil.tscn" id="12_wr8iv"]
 [ext_resource type="Script" uid="uid://bfq624jv7mlo4" path="res://scripts/geschafft_zone.gd" id="13_e13mp"]
 
-
-[ext_resource type="PackedScene" uid="uid://xdj4a3stkqgp" path="res://scenes/munition_anzeige.tscn" id="14_qbchm"]
-[ext_resource type="PackedScene" path="res://scenes/hearts_container.tscn" id="16_15kfc"]
-[ext_resource type="PackedScene" uid="uid://j018hgxjvt5r" path="res://scenes/tür_senkrecht_rätsel.tscn" id="17_7a100"]
-[ext_resource type="PackedScene" uid="uid://jn1wmsj3832p" path="res://scenes/druckplatte.tscn" id="18_feaue"]
-[ext_resource type="PackedScene" uid="uid://clurnb1k5axha" path="res://scenes/blöcke.tscn" id="19_210s6"]
-[ext_resource type="PackedScene" uid="uid://bcrmmbd577035" path="res://scenes/Enemy.tscn" id="20_5qvs7"]
-[ext_resource type="Resource" uid="uid://s868gkfonb3m" path="res://Resources/Crew_Member.tres" id="21_qbchm"]
-[ext_resource type="Resource" uid="uid://bdf3217ty6dvr" path="res://Resources/Captain.tres" id="22_gxgfo"]
-[ext_resource type="PackedScene" uid="uid://b5dtph6xxvwqu" path="res://scenes/herzkontainer.tscn" id="23_5qvs7"]
-[ext_resource type="PackedScene" uid="uid://va25f7w5laex" path="res://scenes/munition.tscn" id="24_feaue"]
-[ext_resource type="PackedScene" uid="uid://hcers7gx8ls0" path="res://scenes/leben_+.tscn" id="24_qbchm"]
-
-
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_gee14"]
 vertices = PackedVector2Array(8, 8, -8, 8, -8, -8, 8, -8)
 polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3)])
