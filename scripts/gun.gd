@@ -6,7 +6,8 @@ const BULLET = preload("res://scenes/bullet.tscn")
  
 @onready var muzzle: Marker2D = $Marker2D
  
- 
+
+
 func _process(delta: float) -> void:
 	look_at(get_global_mouse_position())
  
