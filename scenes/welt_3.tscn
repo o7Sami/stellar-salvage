@@ -5,10 +5,10 @@
 [ext_resource type="PackedScene" uid="uid://7v2xeusb4eh6" path="res://scenes/player.tscn" id="2_7xv1t"]
 [ext_resource type="PackedScene" uid="uid://dk8ix1u3qgyvm" path="res://scenes/gun.tscn" id="3_i7njs"]
 [ext_resource type="Texture2D" uid="uid://b7ma55urv4buf" path="res://assets/sprites/world_tileset.png" id="4_2vhst"]
-[ext_resource type="PackedScene" uid="uid://dwowlyrbtg6a1" path="res://scenes/tuer_senkrecht.tscn" id="5_e1v6d"]
+[ext_resource type="PackedScene" uid="uid://ds43hc1nltge4" path="res://scenes/tuer_senkrecht.tscn" id="5_e1v6d"]
 [ext_resource type="PackedScene" uid="uid://rpqoa0picvf8" path="res://scenes/schluessel.tscn" id="5_fgb2u"]
 [ext_resource type="Texture2D" uid="uid://b8ggav7imxf86" path="res://assets/sprites/Raumschiff-spritesheet2.png" id="5_kyeds"]
-[ext_resource type="PackedScene" uid="uid://cr2qqeghv8qh0" path="res://scenes/tuer_waagrecht.tscn" id="6_84bh2"]
+[ext_resource type="PackedScene" uid="uid://dcrjr8pvavg7b" path="res://scenes/tuer_waagrecht.tscn" id="6_84bh2"]
 [ext_resource type="PackedScene" uid="uid://db3grh1s2ns81" path="res://scenes/schluessel_anzeige.tscn" id="6_e1v6d"]
 [ext_resource type="Texture2D" uid="uid://bu4xrnvmroe00" path="res://assets/sprites/Raumschiff-spritesheet.png" id="6_w7q2g"]
 [ext_resource type="PackedScene" uid="uid://bpqft4qm0goxq" path="res://scenes/raumschiffteil_anzeige.tscn" id="7_2vhst"]
@@ -488,3 +488,4 @@ position = Vector2(815, 265)
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="heartsContainer" parent="CanvasLayer" instance=ExtResource("16_w7q2g")]
+script = null

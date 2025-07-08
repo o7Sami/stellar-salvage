@@ -1,0 +1,46 @@
+[gd_scene load_steps=5 format=3 uid="uid://csaisjqkgrt1w"]
+
+[ext_resource type="Script" uid="uid://i4cttq86kc7g" path="res://scripts/tür_waagrecht_einmal_auf.gd" id="1_mw2bw"]
+[ext_resource type="Texture2D" uid="uid://s8tf5xdc5duj" path="res://assets/sprites/Tür waagrecht auf.png" id="3_jj7fh"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pil1o"]
+size = Vector2(33, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_oxjsj"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": null
+}],
+"loop": true,
+"name": &"geschlossen",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_jj7fh")
+}],
+"loop": true,
+"name": &"offen",
+"speed": 5.0
+}]
+
+[node name="tür waagrecht einmal auf" type="StaticBody2D"]
+visible = false
+script = ExtResource("1_mw2bw")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(7.5, 1)
+shape = SubResource("RectangleShape2D_pil1o")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(15.725, -3)
+scale = Vector2(1.22, 1)
+sprite_frames = SubResource("SpriteFrames_oxjsj")
+animation = &"geschlossen"
+autoplay = "geschlossen"
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.5
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

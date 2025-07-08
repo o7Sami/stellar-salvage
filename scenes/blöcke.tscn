@@ -9,13 +9,13 @@
 size = Vector2(23.4452, 23.4731)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_q6r6c"]
-size = Vector2(33.3334, 9.35672)
+size = Vector2(33.3334, 11.6959)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kdubu"]
-size = Vector2(70.8326, 21.6802)
+size = Vector2(50, 8.5366)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ypad4"]
-size = Vector2(24, 71.75)
+size = Vector2(24, 4.5)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_sjeu5"]
 size = Vector2(24, 5)
@@ -46,7 +46,7 @@ collision_mask = 4
 script = ExtResource("3_sjeu5")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="links"]
-position = Vector2(-7.75, 1)
+position = Vector2(-7.63, 1)
 scale = Vector2(0.015, 0.855)
 shape = SubResource("RectangleShape2D_q6r6c")
 
@@ -59,7 +59,7 @@ script = ExtResource("4_xncrr")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="rechts"]
 position = Vector2(-141.5, -132.5)
 rotation = -3.14159
-scale = Vector2(0.009, -0.369)
+scale = Vector2(0.02, -0.82)
 shape = SubResource("RectangleShape2D_kdubu")
 
 [node name="oben" type="Area2D" parent="."]
@@ -67,7 +67,7 @@ collision_layer = 4
 collision_mask = 4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="oben"]
-position = Vector2(0.205, -6.82063)
+position = Vector2(0.205, -6.63)
 scale = Vector2(0.28, 0.005)
 shape = SubResource("RectangleShape2D_ypad4")
 
