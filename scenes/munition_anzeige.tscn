@@ -20,9 +20,9 @@ size_flags_horizontal = 8
 size_flags_vertical = 8
 
 [node name="Sprite2D" type="Sprite2D" parent="MarginContainer"]
-position = Vector2(-22.755, 24.965)
+position = Vector2(-23.55, 8.83)
 rotation = -1.5708
-scale = Vector2(5.115, 5.115)
+scale = Vector2(1.725, 1.725)
 texture = ExtResource("2_0mrh3")
 
 [node name="Munition" type="Label" parent="MarginContainer"]

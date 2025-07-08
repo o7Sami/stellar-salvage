@@ -5,18 +5,14 @@
 [ext_resource type="AudioStream" uid="uid://jrstxlauku4s" path="res://assets/sounds/Tuer_oeffnen.ogg" id="3_5lwbd"]
 [ext_resource type="AudioStream" uid="uid://j2dbpmbbowgu" path="res://assets/sounds/Aufnahme-_7_.ogg" id="3_v1pt3"]
 [ext_resource type="AudioStream" uid="uid://c8ov3lhjl3v7a" path="res://assets/sounds/Shooting sound.wav" id="4_5lwbd"]
-[ext_resource type="AudioStream" uid="uid://drouh0eud85wf" path="res://assets/sounds/Aufnahme-_6_.ogg" id="5_ro3ww"]
+[ext_resource type="AudioStream" uid="uid://d13hdmw0eoggt" path="res://assets/sounds/Teleporter.ogg" id="6_v1pt3"]
 
 [node name="Sound-Manager" type="Node2D"]
 script = ExtResource("1_gbdfy")
 
 [node name="hintergrund" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("2_shlr6")
-
-
 volume_db = -26.18
-
-
 
 [node name="Schluessel" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("3_v1pt3")
@@ -30,4 +26,4 @@ stream = ExtResource("3_5lwbd")
 stream = ExtResource("4_5lwbd")
 
 [node name="Teleporter" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("5_ro3ww")
+stream = ExtResource("6_v1pt3")
