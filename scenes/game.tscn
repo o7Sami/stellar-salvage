@@ -352,7 +352,7 @@ unique_name_in_owner = true
 script = ExtResource("1_u5sy4")
 
 [node name="Player" parent="." instance=ExtResource("3_sww3w")]
-position = Vector2(-751, 160)
+position = Vector2(-492, 313)
 
 [node name="Player#Camera2D" type="Camera2D" parent="Player"]
 position = Vector2(-1, -6)
@@ -549,7 +549,7 @@ position = Vector2(-734, 274)
 position = Vector2(-703, 274)
 
 [node name="tür waagrecht einmal auf2" parent="rätsel" instance=ExtResource("23_suyxu")]
-position = Vector2(-280, 247)
+position = Vector2(-464, 250)
 
 [node name="Enemy" type="Node" parent="."]
 
