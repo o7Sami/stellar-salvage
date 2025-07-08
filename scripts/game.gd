@@ -1,6 +1,6 @@
 extends Node2D
 
-@onready var hearts_container: HBoxContainer = $CanvasLayer/heartsContainer
+@onready var hearts_container: HBoxContainer = $Level/CanvasLayer/heartsContainer
 @onready var player: CharacterBody2D = $Player
 
 

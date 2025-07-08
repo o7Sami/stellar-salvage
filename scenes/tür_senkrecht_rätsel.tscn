@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://j018hgxjvt5r"]
 
 [ext_resource type="Script" uid="uid://dxpqo76t74ndn" path="res://scripts/tür_senkrecht_rätsel.gd" id="1_ws7ug"]
-[ext_resource type="Texture2D" uid="uid://cf75mfqjj4nag" path="res://assets/sprites/Tür senkrecht zu.png" id="2_v0dh7"]
+[ext_resource type="Texture2D" uid="uid://daltqmwqj55fy" path="res://assets/sprites/Rätseltür senkrecht.png" id="2_kkigi"]
 [ext_resource type="Texture2D" uid="uid://dls0nta803fuv" path="res://assets/sprites/Tür senkrecht auf.png" id="3_7nkrd"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_unrij"]
@@ -11,7 +11,7 @@ size = Vector2(16, 35)
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_v0dh7")
+"texture": ExtResource("2_kkigi")
 }],
 "loop": true,
 "name": &"geschlossen",
