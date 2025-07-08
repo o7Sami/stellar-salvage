@@ -52,4 +52,7 @@ frame_progress = 0.409473
 position = Vector2(27, 25.75)
 shape = SubResource("RectangleShape2D_bw1wr")
 
+[node name="Timer" type="Timer" parent="."]
+
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
