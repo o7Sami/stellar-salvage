@@ -14,4 +14,5 @@ func _process(delta: float) -> void:
 func _on_body_entered(_player) -> void:
 	if Global.MaxHealth > Global.currentHealth:
 		Global.currentHealth +=1
+		SoundManager.Heilen_abspielen()
 		queue_free()
