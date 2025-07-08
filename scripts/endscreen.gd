@@ -19,5 +19,3 @@ func _on_nochmal_pressed() -> void:
 
 func _on_startscreen_pressed() -> void:
 	get_tree().change_scene_to_file("res://scenes/main_menu.tscn")
-	Global.MaxHealth = Global.startHealth
-	Global.currentHealth = Global.startHealth
