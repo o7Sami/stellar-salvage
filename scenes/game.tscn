@@ -1,5 +1,5 @@
 
-[gd_scene load_steps=36 format=3 uid="uid://bnexpt0jx7mws"]
+[gd_scene load_steps=34 format=3 uid="uid://bnexpt0jx7mws"]
 
 [ext_resource type="Script" uid="uid://y2pd8st8yfb0" path="res://scripts/game.gd" id="1_264po"]
 [ext_resource type="Script" uid="uid://nlurm3dm33bo" path="res://scripts/gamer_manager.gd" id="1_u5sy4"]
