@@ -50,12 +50,14 @@ func sterben():
 		get_node("/root/Game").add_child(schluessel)
 		queue_free()
 	queue_free()
+	SoundManager.Tod_abspielen()
 
 
 
 
 func schaden():
 	enemy_stats.health -= 1
+	SoundManager.Hit_abspielen()
 	if enemy_stats.health == 0:
 		sterben()
 	

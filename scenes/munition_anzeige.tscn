@@ -1,8 +1,20 @@
-[gd_scene load_steps=2 format=3 uid="uid://b22x7sii6gxwo"]
+[gd_scene load_steps=3 format=3 uid="uid://b22x7sii6gxwo"]
 
 [ext_resource type="Texture2D" uid="uid://cp00mkaruydk0" path="res://assets/sprites/Bullet.png" id="2_0mrh3"]
 
+[sub_resource type="GDScript" id="GDScript_8up7v"]
+script/source = "extends CanvasLayer
+
+@onready var munition: Label = %Munition
+
+const Gun = preload(\"res://scripts/gun.gd\")
+
+func _process(delta: float) -> void:
+	munition.text = str(Global.Schuesse)
+"
+
 [node name="Munition_anzeige" type="CanvasLayer"]
+script = SubResource("GDScript_8up7v")
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 anchors_preset = 3
@@ -29,6 +41,5 @@ texture_filter = 2
 layout_mode = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 36
-text = "30"
 horizontal_alignment = 2
 vertical_alignment = 2

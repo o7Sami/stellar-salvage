@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://b64hbxiqviotk"]
 
 [ext_resource type="Texture2D" uid="uid://dbuujvxu0l1oc" path="res://assets/sprites/6514911.png" id="1_kqjjj"]
-[ext_resource type="Script" uid="uid://b2tcw115pahom" path="res://scenes/fake.gd" id="1_lq5cc"]
+[ext_resource type="Script" uid="uid://b2tcw115pahom" path="res://scripts/fake.gd" id="1_lq5cc"]
 
 [node name="CanvasLayer" type="CanvasLayer"]
 script = ExtResource("1_lq5cc")
