@@ -24,7 +24,7 @@
 [ext_resource type="PackedScene" uid="uid://jn1wmsj3832p" path="res://scenes/druckplatte.tscn" id="22_37s47"]
 [ext_resource type="PackedScene" uid="uid://clav3g6vblv0y" path="res://scenes/tür_waagrecht_rätsel.tscn" id="24_e1j6l"]
 [ext_resource type="PackedScene" uid="uid://hcers7gx8ls0" path="res://scenes/leben_+.tscn" id="24_pl11u"]
-[ext_resource type="PackedScene" uid="uid://va25f7w5laex" path="res://scenes/munition.tscn" id="25_pl11u"]
+[ext_resource type="PackedScene" path="res://scenes/munition.tscn" id="25_pl11u"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_gee14"]
 vertices = PackedVector2Array(8, 8, -8, 8, -8, -8, 8, -8)
@@ -349,7 +349,7 @@ unique_name_in_owner = true
 script = ExtResource("1_u5sy4")
 
 [node name="Player" parent="." instance=ExtResource("1_uwrxv")]
-position = Vector2(43, -16)
+position = Vector2(-139, -70)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 position = Vector2(-1, -6)
