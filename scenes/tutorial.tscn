@@ -24,7 +24,7 @@
 [ext_resource type="PackedScene" uid="uid://b5dtph6xxvwqu" path="res://scenes/herzkontainer.tscn" id="21_gxgfo"]
 [ext_resource type="PackedScene" uid="uid://bcrmmbd577035" path="res://scenes/Enemy.tscn" id="23_210s6"]
 [ext_resource type="Resource" uid="uid://s868gkfonb3m" path="res://Resources/Crew_Member.tres" id="24_5qvs7"]
-[ext_resource type="PackedScene" uid="uid://va25f7w5laex" path="res://scenes/munition.tscn" id="25_5qvs7"]
+[ext_resource type="PackedScene" uid="uid://c54knp8vfdffx" path="res://scenes/munition.tscn" id="25_5qvs7"]
 [ext_resource type="Resource" uid="uid://bdf3217ty6dvr" path="res://Resources/Captain.tres" id="25_qbchm"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_gee14"]
@@ -627,6 +627,8 @@ script = ExtResource("13_e13mp")
 position = Vector2(17.5, -14.5)
 shape = SubResource("RectangleShape2D_vrdqu")
 
+[node name="Timer" type="Timer" parent="Level/Geschafft_Zone"]
+
 [node name="Schlüssel Anzeige2" parent="Level" instance=ExtResource("8_wr8iv")]
 
 [node name="CanvasLayer" type="CanvasLayer" parent="Level"]
@@ -665,3 +667,4 @@ position = Vector2(683, 9)
 
 [connection signal="body_entered" from="Level/Geschafft_Zone" to="GameManager" method="_on_geschafft_zone_body_entered"]
 [connection signal="body_entered" from="Level/Geschafft_Zone" to="Level/Geschafft_Zone" method="_on_body_entered"]
+[connection signal="timeout" from="Level/Geschafft_Zone/Timer" to="Level/Geschafft_Zone" method="_on_timer_timeout"]
