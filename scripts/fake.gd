@@ -1,14 +1,12 @@
 extends CanvasLayer
 var sichtbarkeit = false
+@onready var sprite_2d: Sprite2D = $MarginContainer/Sprite2D
 
-func _ready() -> void:
-	if sichtbarkeit== true:
-		self.visible = true
-	else:
-		self.visible = false
 
-func sichtbar():
-	sichtbarkeit = true
+
+
+
+func sichtbar():	 sprite_2d.visible = true
 
 func unsichtbar():
-	sichtbarkeit = false
+	sprite_2d.visible = false

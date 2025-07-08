@@ -1,14 +1,15 @@
 extends Area2D
 @onready var animated_sprite : AnimatedSprite2D =$AnimatedSprite2D
-const POPUP = preload("res://scenes/fake.tscn")
+@onready var canvas_layer: CanvasLayer = $CanvasLayer
+
 
 
 func _on_body_entered(body: CharacterBody2D) -> void:
 	animated_sprite.animation = "down"
-	POPUP.sichtbar()
+	canvas_layer.sichtbar()
 	
 
 
 func _on_body_exited(body: CharacterBody2D) -> void:
 	animated_sprite.animation = "up"
-	POPUP.unsichtbar()
+	canvas_layer.unsichtbar()
