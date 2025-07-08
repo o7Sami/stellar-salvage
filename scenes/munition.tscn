@@ -1,6 +1,6 @@
-[gd_scene load_steps=4 format=3 uid="uid://va25f7w5laex"]
+[gd_scene load_steps=4 format=3 uid="uid://c54knp8vfdffx"]
 
-[ext_resource type="Script" uid="uid://cvgftv3ky4cvk" path="res://scripts/munition.gd" id="1_0jbwy"]
+[ext_resource type="Script" path="res://scripts/munition.gd" id="1_0jbwy"]
 [ext_resource type="Texture2D" uid="uid://20htitgj1vnp" path="res://assets/sprites/crates_study_x2(1).png" id="2_qmals"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dx0i5"]
