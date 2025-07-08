@@ -24,7 +24,7 @@
 [ext_resource type="PackedScene" uid="uid://b5dtph6xxvwqu" path="res://scenes/herzkontainer.tscn" id="21_gxgfo"]
 [ext_resource type="PackedScene" uid="uid://bcrmmbd577035" path="res://scenes/Enemy.tscn" id="23_210s6"]
 [ext_resource type="Resource" uid="uid://s868gkfonb3m" path="res://Resources/Crew_Member.tres" id="24_5qvs7"]
-[ext_resource type="PackedScene" uid="uid://va25f7w5laex" path="res://scenes/munition.tscn" id="25_5qvs7"]
+[ext_resource type="PackedScene" uid="uid://c54knp8vfdffx" path="res://scenes/munition.tscn" id="25_5qvs7"]
 [ext_resource type="Resource" uid="uid://bdf3217ty6dvr" path="res://Resources/Captain.tres" id="25_qbchm"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_gee14"]
