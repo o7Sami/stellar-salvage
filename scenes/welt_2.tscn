@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=3 uid="uid://bpptqs177pmq"]
+[gd_scene load_steps=30 format=3 uid="uid://bpptqs177pmq"]
 
 [ext_resource type="Script" uid="uid://dyo30hm5x127b" path="res://scripts/welt_2.gd" id="1_0fyfn"]
 [ext_resource type="Script" uid="uid://nlurm3dm33bo" path="res://scripts/gamer_manager.gd" id="1_3ck8o"]
@@ -18,7 +18,17 @@
 [ext_resource type="PackedScene" uid="uid://bpkv2hifwjvwr" path="res://scenes/hindernis_1.tscn" id="9_spu43"]
 [ext_resource type="PackedScene" uid="uid://crg4gjwhvvuqq" path="res://scenes/raumschiffteil.tscn" id="10_ab7e1"]
 [ext_resource type="PackedScene" uid="uid://02ue7my3paia" path="res://scenes/hindernis_2.tscn" id="10_gxjke"]
+
+
 [ext_resource type="PackedScene" path="res://scenes/hearts_container.tscn" id="16_gxjke"]
+[ext_resource type="PackedScene" uid="uid://bcrmmbd577035" path="res://scenes/Enemy.tscn" id="18_lttrg"]
+[ext_resource type="Resource" uid="uid://s868gkfonb3m" path="res://Resources/Crew_Member.tres" id="19_735ko"]
+[ext_resource type="Resource" uid="uid://bdf3217ty6dvr" path="res://Resources/Captain.tres" id="20_b0mag"]
+[ext_resource type="PackedScene" uid="uid://b5dtph6xxvwqu" path="res://scenes/herzkontainer.tscn" id="21_lgxty"]
+[ext_resource type="PackedScene" uid="uid://hcers7gx8ls0" path="res://scenes/leben_+.tscn" id="22_5x4ht"]
+[ext_resource type="PackedScene" uid="uid://va25f7w5laex" path="res://scenes/munition.tscn" id="23_i0cwf"]
+
+
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_gee14"]
 vertices = PackedVector2Array(8, 8, -8, 8, -8, -8, 8, -8)
@@ -477,3 +487,237 @@ position = Vector2(303, 428)
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="heartsContainer" parent="CanvasLayer" instance=ExtResource("16_gxjke")]
+
+[node name="Gegner" type="Node" parent="."]
+
+[node name="Enemy" parent="Gegner" node_paths=PackedStringArray("player") instance=ExtResource("18_lttrg")]
+position = Vector2(-93, 61)
+enemy_stats = ExtResource("19_735ko")
+player = NodePath("../../Player")
+
+[node name="Enemy3" parent="Gegner" node_paths=PackedStringArray("player") instance=ExtResource("18_lttrg")]
+position = Vector2(-105, -94)
+enemy_stats = ExtResource("19_735ko")
+player = NodePath("../../Player")
+
+[node name="Enemy4" parent="Gegner" node_paths=PackedStringArray("player") instance=ExtResource("18_lttrg")]
+position = Vector2(123, -99)
+enemy_stats = ExtResource("19_735ko")
+player = NodePath("../../Player")
+
+[node name="Enemy5" parent="Gegner" node_paths=PackedStringArray("player") instance=ExtResource("18_lttrg")]
+position = Vector2(316, -51)
+enemy_stats = ExtResource("19_735ko")
+player = NodePath("../../Player")
+
+[node name="Enemy6" parent="Gegner" node_paths=PackedStringArray("player") instance=ExtResource("18_lttrg")]
+position = Vector2(508, 69)
+enemy_stats = ExtResource("19_735ko")
+player = NodePath("../../Player")
+
+[node name="Enemy7" parent="Gegner" node_paths=PackedStringArray("player") instance=ExtResource("18_lttrg")]
+position = Vector2(703, -58)
+enemy_stats = ExtResource("19_735ko")
+player = NodePath("../../Player")
+
+[node name="Enemy8" parent="Gegner" node_paths=PackedStringArray("player") instance=ExtResource("18_lttrg")]
+position = Vector2(507, -79)
+enemy_stats = ExtResource("19_735ko")
+player = NodePath("../../Player")
+
+[node name="Enemy10" parent="Gegner" node_paths=PackedStringArray("player") instance=ExtResource("18_lttrg")]
+position = Vector2(866, 22)
+enemy_stats = ExtResource("19_735ko")
+player = NodePath("../../Player")
+
+[node name="Enemy11" parent="Gegner" node_paths=PackedStringArray("player") instance=ExtResource("18_lttrg")]
+position = Vector2(917, -268)
+enemy_stats = ExtResource("19_735ko")
+player = NodePath("../../Player")
+
+[node name="Enemy12" parent="Gegner" node_paths=PackedStringArray("player") instance=ExtResource("18_lttrg")]
+position = Vector2(687, -333)
+enemy_stats = ExtResource("19_735ko")
+player = NodePath("../../Player")
+
+[node name="Enemy13" parent="Gegner" node_paths=PackedStringArray("player") instance=ExtResource("18_lttrg")]
+position = Vector2(501, -416)
+enemy_stats = ExtResource("19_735ko")
+player = NodePath("../../Player")
+
+[node name="Enemy14" parent="Gegner" node_paths=PackedStringArray("player") instance=ExtResource("18_lttrg")]
+position = Vector2(315, -275)
+enemy_stats = ExtResource("19_735ko")
+player = NodePath("../../Player")
+
+[node name="Enemy15" parent="Gegner" node_paths=PackedStringArray("player") instance=ExtResource("18_lttrg")]
+position = Vector2(136, -349)
+enemy_stats = ExtResource("19_735ko")
+player = NodePath("../../Player")
+
+[node name="Enemy16" parent="Gegner" node_paths=PackedStringArray("player") instance=ExtResource("18_lttrg")]
+position = Vector2(502, -270)
+enemy_stats = ExtResource("19_735ko")
+player = NodePath("../../Player")
+
+[node name="Enemy17" parent="Gegner" node_paths=PackedStringArray("player") instance=ExtResource("18_lttrg")]
+position = Vector2(-96, -421)
+enemy_stats = ExtResource("19_735ko")
+player = NodePath("../../Player")
+
+[node name="Enemy20" parent="Gegner" node_paths=PackedStringArray("player") instance=ExtResource("18_lttrg")]
+position = Vector2(-283, -392)
+enemy_stats = ExtResource("19_735ko")
+player = NodePath("../../Player")
+
+[node name="Enemy21" parent="Gegner" node_paths=PackedStringArray("player") instance=ExtResource("18_lttrg")]
+position = Vector2(-554, -404)
+enemy_stats = ExtResource("19_735ko")
+player = NodePath("../../Player")
+
+[node name="Enemy22" parent="Gegner" node_paths=PackedStringArray("player") instance=ExtResource("18_lttrg")]
+position = Vector2(-414, -262)
+enemy_stats = ExtResource("19_735ko")
+player = NodePath("../../Player")
+
+[node name="Enemy23" parent="Gegner" node_paths=PackedStringArray("player") instance=ExtResource("18_lttrg")]
+position = Vector2(-661, -257)
+enemy_stats = ExtResource("19_735ko")
+player = NodePath("../../Player")
+
+[node name="Enemy24" parent="Gegner" node_paths=PackedStringArray("player") instance=ExtResource("18_lttrg")]
+position = Vector2(-678, -73)
+enemy_stats = ExtResource("19_735ko")
+player = NodePath("../../Player")
+
+[node name="Enemy25" parent="Gegner" node_paths=PackedStringArray("player") instance=ExtResource("18_lttrg")]
+position = Vector2(-542, -108)
+enemy_stats = ExtResource("19_735ko")
+player = NodePath("../../Player")
+
+[node name="Enemy26" parent="Gegner" node_paths=PackedStringArray("player") instance=ExtResource("18_lttrg")]
+position = Vector2(-522, 59)
+enemy_stats = ExtResource("19_735ko")
+player = NodePath("../../Player")
+
+[node name="Enemy27" parent="Gegner" node_paths=PackedStringArray("player") instance=ExtResource("18_lttrg")]
+position = Vector2(-283, 46)
+enemy_stats = ExtResource("19_735ko")
+player = NodePath("../../Player")
+
+[node name="Enemy28" parent="Gegner" node_paths=PackedStringArray("player") instance=ExtResource("18_lttrg")]
+position = Vector2(-433, 212)
+enemy_stats = ExtResource("19_735ko")
+player = NodePath("../../Player")
+
+[node name="Enemy29" parent="Gegner" node_paths=PackedStringArray("player") instance=ExtResource("18_lttrg")]
+position = Vector2(-287, 365)
+enemy_stats = ExtResource("19_735ko")
+player = NodePath("../../Player")
+
+[node name="Enemy30" parent="Gegner" node_paths=PackedStringArray("player") instance=ExtResource("18_lttrg")]
+position = Vector2(-249, 294)
+enemy_stats = ExtResource("19_735ko")
+player = NodePath("../../Player")
+
+[node name="Enemy31" parent="Gegner" node_paths=PackedStringArray("player") instance=ExtResource("18_lttrg")]
+position = Vector2(-370, 416)
+enemy_stats = ExtResource("19_735ko")
+player = NodePath("../../Player")
+
+[node name="Enemy32" parent="Gegner" node_paths=PackedStringArray("player") instance=ExtResource("18_lttrg")]
+position = Vector2(-9, 435)
+enemy_stats = ExtResource("19_735ko")
+player = NodePath("../../Player")
+
+[node name="Enemy33" parent="Gegner" node_paths=PackedStringArray("player") instance=ExtResource("18_lttrg")]
+position = Vector2(-51, 208)
+enemy_stats = ExtResource("19_735ko")
+player = NodePath("../../Player")
+
+[node name="Enemy34" parent="Gegner" node_paths=PackedStringArray("player") instance=ExtResource("18_lttrg")]
+position = Vector2(195, 248)
+enemy_stats = ExtResource("19_735ko")
+player = NodePath("../../Player")
+
+[node name="Enemy35" parent="Gegner" node_paths=PackedStringArray("player") instance=ExtResource("18_lttrg")]
+position = Vector2(300, 381)
+enemy_stats = ExtResource("19_735ko")
+player = NodePath("../../Player")
+
+[node name="Enemy37" parent="Gegner" node_paths=PackedStringArray("player") instance=ExtResource("18_lttrg")]
+position = Vector2(-653, -455)
+enemy_stats = ExtResource("19_735ko")
+player = NodePath("../../Player")
+
+[node name="Enemy2" parent="Gegner" node_paths=PackedStringArray("player") instance=ExtResource("18_lttrg")]
+position = Vector2(215, 85)
+enemy_stats = ExtResource("20_b0mag")
+player = NodePath("../../Player")
+
+[node name="Enemy9" parent="Gegner" node_paths=PackedStringArray("player") instance=ExtResource("18_lttrg")]
+position = Vector2(707, 66)
+enemy_stats = ExtResource("20_b0mag")
+player = NodePath("../../Player")
+
+[node name="Enemy18" parent="Gegner" node_paths=PackedStringArray("player") instance=ExtResource("18_lttrg")]
+position = Vector2(824, -426)
+enemy_stats = ExtResource("20_b0mag")
+player = NodePath("../../Player")
+
+[node name="Enemy19" parent="Gegner" node_paths=PackedStringArray("player") instance=ExtResource("18_lttrg")]
+position = Vector2(-4, -277)
+enemy_stats = ExtResource("20_b0mag")
+player = NodePath("../../Player")
+
+[node name="Enemy36" parent="Gegner" node_paths=PackedStringArray("player") instance=ExtResource("18_lttrg")]
+position = Vector2(-711, -362)
+enemy_stats = ExtResource("20_b0mag")
+player = NodePath("../../Player")
+
+[node name="Enemy38" parent="Gegner" node_paths=PackedStringArray("player") instance=ExtResource("18_lttrg")]
+position = Vector2(-358, -49)
+enemy_stats = ExtResource("20_b0mag")
+player = NodePath("../../Player")
+
+[node name="Enemy39" parent="Gegner" node_paths=PackedStringArray("player") instance=ExtResource("18_lttrg")]
+position = Vector2(-591, 321)
+enemy_stats = ExtResource("20_b0mag")
+player = NodePath("../../Player")
+
+[node name="Enemy40" parent="Gegner" node_paths=PackedStringArray("player") instance=ExtResource("18_lttrg")]
+position = Vector2(154, 377)
+enemy_stats = ExtResource("20_b0mag")
+player = NodePath("../../Player")
+
+[node name="Items" type="Node" parent="."]
+
+[node name="Herzkontainer" parent="Items" instance=ExtResource("21_lgxty")]
+position = Vector2(1055, -414)
+
+[node name="Herzkontainer2" parent="Items" instance=ExtResource("21_lgxty")]
+position = Vector2(226, 129)
+
+[node name="Leben +" parent="Items" instance=ExtResource("22_5x4ht")]
+position = Vector2(-664, 376)
+
+[node name="Leben +2" parent="Items" instance=ExtResource("22_5x4ht")]
+position = Vector2(141, -488)
+
+[node name="Munition" parent="Items" instance=ExtResource("23_i0cwf")]
+position = Vector2(254, 26)
+
+[node name="Munition2" parent="Items" instance=ExtResource("23_i0cwf")]
+position = Vector2(-486, 248)
+
+[node name="Munition3" parent="Items" instance=ExtResource("23_i0cwf")]
+position = Vector2(295, 152)
+
+[node name="Munition4" parent="Items" instance=ExtResource("23_i0cwf")]
+position = Vector2(935, 120)
+
+[node name="Munition5" parent="Items" instance=ExtResource("23_i0cwf")]
+position = Vector2(860, -200)
+
+[node name="Munition6" parent="Items" instance=ExtResource("23_i0cwf")]
+position = Vector2(321, -242)
