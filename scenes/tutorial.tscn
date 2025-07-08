@@ -6,7 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://dk8ix1u3qgyvm" path="res://scenes/gun.tscn" id="3_cq4me"]
 [ext_resource type="Texture2D" uid="uid://b7ma55urv4buf" path="res://assets/sprites/world_tileset.png" id="4_6yjpi"]
 [ext_resource type="Texture2D" uid="uid://bu4xrnvmroe00" path="res://assets/sprites/Raumschiff-spritesheet.png" id="5_wr8iv"]
-[ext_resource type="PackedScene" uid="uid://rpqoa0picvf8" path="res://scenes/schluessel.tscn" id="6_6yjpi"]
+[ext_resource type="PackedScene" path="res://scenes/schluessel.tscn" id="6_6yjpi"]
 [ext_resource type="Texture2D" uid="uid://b8ggav7imxf86" path="res://assets/sprites/Raumschiff-spritesheet2.png" id="6_e13mp"]
 [ext_resource type="PackedScene" uid="uid://ds43hc1nltge4" path="res://scenes/tuer_senkrecht.tscn" id="7_gbqnl"]
 [ext_resource type="PackedScene" uid="uid://bpkv2hifwjvwr" path="res://scenes/hindernis_1.tscn" id="8_0epgs"]
@@ -17,7 +17,7 @@
 [ext_resource type="PackedScene" uid="uid://crg4gjwhvvuqq" path="res://scenes/raumschiffteil.tscn" id="12_wr8iv"]
 [ext_resource type="Script" uid="uid://bfq624jv7mlo4" path="res://scripts/geschafft_zone.gd" id="13_e13mp"]
 [ext_resource type="PackedScene" uid="uid://xdj4a3stkqgp" path="res://scenes/munition_anzeige.tscn" id="14_qbchm"]
-[ext_resource type="PackedScene" uid="uid://cfin8pwiexf2x" path="res://scenes/hearts_container.tscn" id="16_15kfc"]
+[ext_resource type="PackedScene" path="res://scenes/hearts_container.tscn" id="16_15kfc"]
 [ext_resource type="PackedScene" uid="uid://j018hgxjvt5r" path="res://scenes/tür_senkrecht_rätsel.tscn" id="17_7a100"]
 [ext_resource type="PackedScene" uid="uid://jn1wmsj3832p" path="res://scenes/druckplatte.tscn" id="18_feaue"]
 [ext_resource type="PackedScene" uid="uid://clurnb1k5axha" path="res://scenes/blöcke.tscn" id="19_210s6"]
@@ -358,7 +358,7 @@ position = Vector2(12, 7)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 position = Vector2(-1, -6)
-zoom = Vector2(4, 4)
+zoom = Vector2(6, 6)
 limit_left = -9000
 limit_top = -9000
 limit_right = 9000
