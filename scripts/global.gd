@@ -24,8 +24,15 @@ func Schuesse_reset():
 
 func munition_aufsammeln():
 	Schuesse = Schuesse + randi_range(10,20)
+<<<<<<< Updated upstream
 
 func sichtbar():
 	$CanvasLayer.visible = true
 func unsichtbar():
 	$CanvasLayer.visible = false
+=======
+func sichtbar():
+	get_node("MarginContainer/Sprite2D").show()
+func unsichtbar():
+	$CanvasLayer.hide()
+>>>>>>> Stashed changes

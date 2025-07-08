@@ -1,4 +1,8 @@
+<<<<<<< Updated upstream
 [gd_scene load_steps=34 format=3 uid="uid://bnexpt0jx7mws"]
+=======
+[gd_scene load_steps=35 format=3 uid="uid://bnexpt0jx7mws"]
+>>>>>>> Stashed changes
 
 [ext_resource type="Script" uid="uid://y2pd8st8yfb0" path="res://scripts/game.gd" id="1_264po"]
 [ext_resource type="Script" uid="uid://nlurm3dm33bo" path="res://scripts/gamer_manager.gd" id="1_u5sy4"]
@@ -25,7 +29,11 @@
 [ext_resource type="PackedScene" uid="uid://hcers7gx8ls0" path="res://scenes/leben_+.tscn" id="24_pl11u"]
 [ext_resource type="PackedScene" path="res://scenes/munition.tscn" id="25_pl11u"]
 [ext_resource type="PackedScene" uid="uid://b5dtph6xxvwqu" path="res://scenes/herzkontainer.tscn" id="26_bhx41"]
+<<<<<<< Updated upstream
 [ext_resource type="PackedScene" path="res://scenes/druckplatte_fake.tscn" id="27_qnb83"]
+=======
+[ext_resource type="PackedScene" uid="uid://cbsqqx18ovdh4" path="res://scenes/druckplatte_fake.tscn" id="27_qnb83"]
+>>>>>>> Stashed changes
 [ext_resource type="PackedScene" uid="uid://b64hbxiqviotk" path="res://scenes/fake.tscn" id="28_sww3w"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_gee14"]
@@ -350,7 +358,14 @@ script = ExtResource("1_264po")
 unique_name_in_owner = true
 script = ExtResource("1_u5sy4")
 
+<<<<<<< Updated upstream
 [node name="Player#Camera2D" type="Camera2D" parent="."]
+=======
+[node name="Player" parent="." instance=ExtResource("3_sww3w")]
+position = Vector2(-481, 288)
+
+[node name="Player#Camera2D" type="Camera2D" parent="Player"]
+>>>>>>> Stashed changes
 position = Vector2(-1, -6)
 zoom = Vector2(6, 6)
 limit_left = -9000

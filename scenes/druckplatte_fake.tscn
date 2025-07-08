@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://d1ocvsrarb2rp"]
+[gd_scene load_steps=6 format=3 uid="uid://cbsqqx18ovdh4"]
 
 [ext_resource type="Script" uid="uid://x4dt8jmbeuhx" path="res://scripts/druckplatte_fake.gd" id="1_bu2rr"]
 [ext_resource type="Texture2D" uid="uid://0ma8cnw8sh7n" path="res://assets/sprites/metal_blocks druck 2.png" id="2_nllk0"]
