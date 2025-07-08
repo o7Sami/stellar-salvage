@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 @export var enemy_stats:Resource
-
+@onready var health: int = enemy_stats.health
 var agrovated = 0
 @export var player: Node2D
 @onready var navigation_agent_2d: NavigationAgent2D = $NavigationAgent2D
@@ -56,8 +56,8 @@ func sterben():
 
 
 func schaden():
-	enemy_stats.health -= 1
+	health -= 1
 	SoundManager.Hit_abspielen()
-	if enemy_stats.health == 0:
+	if health == 0:
 		sterben()
 	

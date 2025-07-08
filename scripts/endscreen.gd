@@ -13,9 +13,13 @@ func _process(delta: float) -> void:
 
 func _on_nochmal_pressed() -> void:
 	get_tree().change_scene_to_file("res://scenes/game.tscn")
-	Global.MaxHealth = Global.startHealth
-	Global.currentHealth = Global.startHealth
+	Global.aktuelle_Scene = 0
+	Global.Raumschiffteile_gesamt = 0
+	Global.currentHealth = Global.MaxHealth
 
 
 func _on_startscreen_pressed() -> void:
 	get_tree().change_scene_to_file("res://scenes/main_menu.tscn")
+	Global.aktuelle_Scene = 0
+	Global.Raumschiffteile_gesamt = 0
+	Global.currentHealth = Global.MaxHealth
