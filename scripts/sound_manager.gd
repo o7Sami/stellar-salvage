@@ -18,9 +18,3 @@ func Shooting_abspielen():
 
 func Teleporter_abspielen():
 	$Teleporter.play()
-
-func Hit_abspielen():
-	$Hit_sound.play()
-
-func Tot_abspielen():
-	$Tot_sound.play()
