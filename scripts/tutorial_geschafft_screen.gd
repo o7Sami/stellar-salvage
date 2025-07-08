@@ -12,6 +12,10 @@ func _process(delta: float) -> void:
 
 
 func _on_spiel_starten_pressed() -> void:
+
+	Global.currentHealth = Global.startHealth
+	Global.MaxHealth = Global.startHealth
+
 	get_tree().change_scene_to_file("res://scenes/game.tscn")
 
 

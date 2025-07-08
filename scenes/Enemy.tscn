@@ -161,7 +161,7 @@ animations = [{
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_ft8do"]
-radius = 69.0652
+radius = 95.0474
 
 [node name="Enemy" type="CharacterBody2D"]
 z_index = 1
