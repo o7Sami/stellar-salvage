@@ -1,4 +1,6 @@
 extends StaticBody2D
+
+
 var offen = false
 
 @onready var game_manager: Node = %GameManager

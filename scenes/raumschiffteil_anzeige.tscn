@@ -28,8 +28,8 @@ grow_horizontal = 2
 scale = Vector2(1.28911, 1.25033)
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="MarginContainer"]
-position = Vector2(-42.821, 23.268)
-scale = Vector2(1.343, 1.296)
+position = Vector2(-41.546, 17.8477)
+scale = Vector2(1.16799, 1.12699)
 sprite_frames = SubResource("SpriteFrames_vfhd2")
 
 [node name="Raumschiffteilanzahl" type="Label" parent="MarginContainer"]
@@ -37,5 +37,3 @@ unique_name_in_owner = true
 texture_filter = 2
 layout_mode = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 36
-text = "1"

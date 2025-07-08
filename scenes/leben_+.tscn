@@ -1,6 +1,6 @@
-[gd_scene load_steps=4 format=3 uid="uid://hcers7gx8ls0"]
+[gd_scene load_steps=4 format=3 uid="uid://cbsn52upkinr"]
 
-[ext_resource type="Script" uid="uid://djak0a08iuett" path="res://scripts/leben_+.gd" id="1_gp5im"]
+[ext_resource type="Script" path="res://scripts/leben_+.gd" id="1_gp5im"]
 [ext_resource type="Texture2D" uid="uid://clu666tyaydhl" path="res://assets/sprites/herzkontainer max+.png" id="2_ynrkb"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_gp5im"]

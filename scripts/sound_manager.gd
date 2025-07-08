@@ -20,7 +20,7 @@ func Teleporter_abspielen():
 	$Teleporter.play()
 
 func Hit_abspielen():
-	$Hit_Sound.play()
+	$Hit_sound.play()
 
-func Tod_abspielen():
+func Tot_abspielen():
 	$Tot_sound.play()
