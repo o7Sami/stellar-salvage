@@ -42,6 +42,7 @@ func makePath() -> void:
 
 func sterben():
 	var rando = randi_range(1,3)
+	SoundManager.Tod_abspielen()
 	if rando == 2:
 		var pos = schluessel_spawn.position + Vector2(10,10)
 		var pos_global = to_global(pos)
@@ -61,6 +62,7 @@ func sterben():
 
 
 func schaden():
+	SoundManager.Hit_abspielen()
 	health -= 1
 	if health == 0:
 		sterben()
