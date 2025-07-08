@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://b5dtph6xxvwqu"]
 
-[ext_resource type="Script" path="res://herzkontainer.gd" id="1_i1fb7"]
+[ext_resource type="Script" uid="uid://b2kj8oigblt06" path="res://scripts/herzkontainer.gd" id="1_i1fb7"]
 [ext_resource type="Texture2D" uid="uid://crv46rxuh1vjk" path="res://assets/sprites/herzkontainer.png" id="1_sggb6"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_i1fb7"]
