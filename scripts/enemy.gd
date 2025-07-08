@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 @export var enemy_stats:Resource
-
+@onready var health:int = enemy_stats.health
 var agrovated = 0
 @export var player: Node2D
 @onready var navigation_agent_2d: NavigationAgent2D = $NavigationAgent2D
@@ -46,7 +46,7 @@ func sterben():
 		var pos = schluessel_spawn.position + Vector2(10,10)
 		var pos_global = to_global(pos)
 		var muni = MUNI.instantiate()
-		muni.position =   Vector2(pos_global)
+		muni.position =  Vector2(pos_global)
 		get_node("/root").add_child(muni)
 	if enemy_stats.dropKey == true:
 		var pos = schluessel_spawn.position
@@ -61,7 +61,7 @@ func sterben():
 
 
 func schaden():
-	enemy_stats.health -= 1
-	if enemy_stats.health == 0:
+	health -= 1
+	if health == 0:
 		sterben()
 	
