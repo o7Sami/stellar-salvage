@@ -13,6 +13,9 @@ script = ExtResource("1_gbdfy")
 [node name="hintergrund" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("2_shlr6")
 volume_db = -80.0
+=======
+volume_db = -39.297
+>>>>>>> Stashed changes
 
 [node name="Schluessel" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("3_v1pt3")

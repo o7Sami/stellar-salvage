@@ -6,8 +6,8 @@ const PLAYER = preload("res://scenes/player.tscn")
 
 func _physics_process(delta: float) -> void:
 	if push:
-		velocity.y =directiony*delta*500
-		velocity.x =direction*delta*700
+		velocity.y =directiony*delta*1000
+		velocity.x =direction*delta*1000
 		move_and_slide()
 	else:
 		velocity.x = 0
