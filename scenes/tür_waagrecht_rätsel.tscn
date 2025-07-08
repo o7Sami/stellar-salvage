@@ -37,7 +37,7 @@ shape = SubResource("RectangleShape2D_pil1o")
 position = Vector2(15, -3)
 scale = Vector2(1.22, 1)
 sprite_frames = SubResource("SpriteFrames_oxjsj")
-animation = &"offen"
+animation = &"geschlossen"
 autoplay = "geschlossen"
 
 [node name="Timer" type="Timer" parent="."]

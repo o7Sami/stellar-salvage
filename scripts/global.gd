@@ -5,6 +5,7 @@ var aktuelle_Scene = 0
 @export var MaxHealth: int = 5
 @export var currentHealth: int = MaxHealth
 signal healthChanged
+signal maxChanged
 
 var keys = 0
 

@@ -1,0 +1,19 @@
+[gd_scene load_steps=2 format=3 uid="uid://d2u2oueipj4t2"]
+
+[ext_resource type="Texture2D" uid="uid://dbuujvxu0l1oc" path="res://assets/sprites/6514911.png" id="1_0fd7b"]
+
+[node name="Window" type="Window"]
+transparent_bg = true
+title = "popup"
+initial_position = 1
+size = Vector2i(830, 535)
+borderless = true
+transparent = true
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(462, 296)
+
+[node name="Sprite2D" type="Sprite2D" parent="Camera2D"]
+position = Vector2(-3, 5)
+scale = Vector2(0.301025, 0.301025)
+texture = ExtResource("1_0fd7b")
