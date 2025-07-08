@@ -7,6 +7,7 @@ var startHealth: int = 5
 @export var currentHealth: int = MaxHealth
 signal healthChanged
 signal maxChanged
+
 var Schuesse: int = 30
 var keys = 0
 
@@ -23,3 +24,8 @@ func Schuesse_reset():
 
 func munition_aufsammeln():
 	Schuesse = Schuesse + randi_range(10,20)
+
+func sichtbar():
+	$CanvasLayer.visible = true
+func unsichtbar():
+	$CanvasLayer.visible = false
