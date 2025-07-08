@@ -1,10 +1,9 @@
-[gd_scene load_steps=35 format=3 uid="uid://h0h3hr6yds11"]
+[gd_scene load_steps=34 format=3 uid="uid://h0h3hr6yds11"]
 
 [ext_resource type="Script" uid="uid://y2pd8st8yfb0" path="res://scripts/game.gd" id="1_264po"]
 [ext_resource type="Script" uid="uid://nlurm3dm33bo" path="res://scripts/gamer_manager.gd" id="1_u5sy4"]
 [ext_resource type="Texture2D" uid="uid://b7ma55urv4buf" path="res://assets/sprites/world_tileset.png" id="2_yqjtg"]
 [ext_resource type="PackedScene" uid="uid://bpkv2hifwjvwr" path="res://scenes/hindernis_1.tscn" id="3_lnu2h"]
-[ext_resource type="PackedScene" uid="uid://7v2xeusb4eh6" path="res://scenes/player.tscn" id="3_sww3w"]
 [ext_resource type="PackedScene" uid="uid://dk8ix1u3qgyvm" path="res://scenes/gun.tscn" id="3_vtaks"]
 [ext_resource type="PackedScene" uid="uid://02ue7my3paia" path="res://scenes/hindernis_2.tscn" id="4_lbhrr"]
 [ext_resource type="Texture2D" uid="uid://bu4xrnvmroe00" path="res://assets/sprites/Raumschiff-spritesheet.png" id="5_ca42v"]
@@ -351,9 +350,7 @@ script = ExtResource("1_264po")
 unique_name_in_owner = true
 script = ExtResource("1_u5sy4")
 
-[node name="Player" parent="." instance=ExtResource("3_sww3w")]
-
-[node name="Player#Camera2D" type="Camera2D" parent="Player"]
+[node name="Player#Camera2D" type="Camera2D" parent="."]
 position = Vector2(-1, -6)
 zoom = Vector2(6, 6)
 limit_left = -9000
@@ -363,7 +360,7 @@ limit_bottom = 9000
 limit_smoothed = true
 position_smoothing_enabled = true
 
-[node name="Player#Gun" parent="Player" instance=ExtResource("3_vtaks")]
+[node name="Player#Gun" parent="." instance=ExtResource("3_vtaks")]
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_lbhrr")
@@ -553,185 +550,149 @@ position = Vector2(-703, 274)
 
 [node name="Enemy" type="Node" parent="."]
 
-[node name="Enemy" parent="Enemy" node_paths=PackedStringArray("player") instance=ExtResource("19_5newe")]
+[node name="Enemy" parent="Enemy" instance=ExtResource("19_5newe")]
 position = Vector2(-367, -374)
 enemy_stats = ExtResource("21_bt5mj")
-player = NodePath("../../Player")
 
-[node name="Enemy2" parent="Enemy" node_paths=PackedStringArray("player") instance=ExtResource("19_5newe")]
+[node name="Enemy2" parent="Enemy" instance=ExtResource("19_5newe")]
 position = Vector2(-81, -133)
 enemy_stats = ExtResource("20_37s47")
-player = NodePath("../../Player")
 
-[node name="Enemy3" parent="Enemy" node_paths=PackedStringArray("player") instance=ExtResource("19_5newe")]
+[node name="Enemy3" parent="Enemy" instance=ExtResource("19_5newe")]
 position = Vector2(209, -152)
 enemy_stats = ExtResource("21_bt5mj")
-player = NodePath("../../Player")
 
-[node name="Enemy4" parent="Enemy" node_paths=PackedStringArray("player") instance=ExtResource("19_5newe")]
+[node name="Enemy4" parent="Enemy" instance=ExtResource("19_5newe")]
 position = Vector2(-33, 87)
 enemy_stats = ExtResource("21_bt5mj")
-player = NodePath("../../Player")
 
-[node name="Enemy5" parent="Enemy" node_paths=PackedStringArray("player") instance=ExtResource("19_5newe")]
+[node name="Enemy5" parent="Enemy" instance=ExtResource("19_5newe")]
 position = Vector2(202, 46)
 enemy_stats = ExtResource("20_37s47")
-player = NodePath("../../Player")
 
-[node name="Enemy6" parent="Enemy" node_paths=PackedStringArray("player") instance=ExtResource("19_5newe")]
+[node name="Enemy6" parent="Enemy" instance=ExtResource("19_5newe")]
 position = Vector2(38, -455)
 enemy_stats = ExtResource("20_37s47")
-player = NodePath("../../Player")
 
-[node name="Enemy7" parent="Enemy" node_paths=PackedStringArray("player") instance=ExtResource("19_5newe")]
+[node name="Enemy7" parent="Enemy" instance=ExtResource("19_5newe")]
 position = Vector2(-110, -304)
 enemy_stats = ExtResource("20_37s47")
-player = NodePath("../../Player")
 
-[node name="Enemy8" parent="Enemy" node_paths=PackedStringArray("player") instance=ExtResource("19_5newe")]
+[node name="Enemy8" parent="Enemy" instance=ExtResource("19_5newe")]
 position = Vector2(141, -297)
 enemy_stats = ExtResource("21_bt5mj")
-player = NodePath("../../Player")
 
-[node name="Enemy9" parent="Enemy" node_paths=PackedStringArray("player") instance=ExtResource("19_5newe")]
+[node name="Enemy9" parent="Enemy" instance=ExtResource("19_5newe")]
 position = Vector2(-95, 225)
 enemy_stats = ExtResource("21_bt5mj")
-player = NodePath("../../Player")
 
-[node name="Enemy10" parent="Enemy" node_paths=PackedStringArray("player") instance=ExtResource("19_5newe")]
+[node name="Enemy10" parent="Enemy" instance=ExtResource("19_5newe")]
 position = Vector2(187, 387)
 enemy_stats = ExtResource("20_37s47")
-player = NodePath("../../Player")
 
-[node name="Enemy11" parent="Enemy" node_paths=PackedStringArray("player") instance=ExtResource("19_5newe")]
+[node name="Enemy11" parent="Enemy" instance=ExtResource("19_5newe")]
 position = Vector2(55, 388)
 enemy_stats = ExtResource("20_37s47")
-player = NodePath("../../Player")
 
-[node name="Enemy12" parent="Enemy" node_paths=PackedStringArray("player") instance=ExtResource("19_5newe")]
+[node name="Enemy12" parent="Enemy" instance=ExtResource("19_5newe")]
 position = Vector2(327, 257)
 enemy_stats = ExtResource("20_37s47")
-player = NodePath("../../Player")
 
-[node name="Enemy13" parent="Enemy" node_paths=PackedStringArray("player") instance=ExtResource("19_5newe")]
+[node name="Enemy13" parent="Enemy" instance=ExtResource("19_5newe")]
 position = Vector2(911, 392)
 enemy_stats = ExtResource("21_bt5mj")
-player = NodePath("../../Player")
 
-[node name="Enemy14" parent="Enemy" node_paths=PackedStringArray("player") instance=ExtResource("19_5newe")]
+[node name="Enemy14" parent="Enemy" instance=ExtResource("19_5newe")]
 position = Vector2(911, 251)
 enemy_stats = ExtResource("20_37s47")
-player = NodePath("../../Player")
 
-[node name="Enemy15" parent="Enemy" node_paths=PackedStringArray("player") instance=ExtResource("19_5newe")]
+[node name="Enemy15" parent="Enemy" instance=ExtResource("19_5newe")]
 position = Vector2(700, 285)
 enemy_stats = ExtResource("20_37s47")
-player = NodePath("../../Player")
 
-[node name="Enemy16" parent="Enemy" node_paths=PackedStringArray("player") instance=ExtResource("19_5newe")]
+[node name="Enemy16" parent="Enemy" instance=ExtResource("19_5newe")]
 position = Vector2(381, 34)
 enemy_stats = ExtResource("20_37s47")
-player = NodePath("../../Player")
 
-[node name="Enemy17" parent="Enemy" node_paths=PackedStringArray("player") instance=ExtResource("19_5newe")]
+[node name="Enemy17" parent="Enemy" instance=ExtResource("19_5newe")]
 position = Vector2(361, -102)
 enemy_stats = ExtResource("20_37s47")
-player = NodePath("../../Player")
 
-[node name="Enemy18" parent="Enemy" node_paths=PackedStringArray("player") instance=ExtResource("19_5newe")]
+[node name="Enemy18" parent="Enemy" instance=ExtResource("19_5newe")]
 position = Vector2(-485, -113)
 enemy_stats = ExtResource("20_37s47")
-player = NodePath("../../Player")
 
-[node name="Enemy19" parent="Enemy" node_paths=PackedStringArray("player") instance=ExtResource("19_5newe")]
+[node name="Enemy19" parent="Enemy" instance=ExtResource("19_5newe")]
 position = Vector2(-264, -109)
 enemy_stats = ExtResource("21_bt5mj")
-player = NodePath("../../Player")
 
-[node name="Enemy20" parent="Enemy" node_paths=PackedStringArray("player") instance=ExtResource("19_5newe")]
+[node name="Enemy20" parent="Enemy" instance=ExtResource("19_5newe")]
 position = Vector2(-408, 36)
 enemy_stats = ExtResource("20_37s47")
-player = NodePath("../../Player")
 
-[node name="Enemy21" parent="Enemy" node_paths=PackedStringArray("player") instance=ExtResource("19_5newe")]
+[node name="Enemy21" parent="Enemy" instance=ExtResource("19_5newe")]
 position = Vector2(-688, 86)
 enemy_stats = ExtResource("20_37s47")
-player = NodePath("../../Player")
 
-[node name="Enemy22" parent="Enemy" node_paths=PackedStringArray("player") instance=ExtResource("19_5newe")]
+[node name="Enemy22" parent="Enemy" instance=ExtResource("19_5newe")]
 position = Vector2(-539, 84)
 enemy_stats = ExtResource("20_37s47")
-player = NodePath("../../Player")
 
-[node name="Enemy23" parent="Enemy" node_paths=PackedStringArray("player") instance=ExtResource("19_5newe")]
+[node name="Enemy23" parent="Enemy" instance=ExtResource("19_5newe")]
 position = Vector2(-703, -94)
 enemy_stats = ExtResource("20_37s47")
-player = NodePath("../../Player")
 
-[node name="Enemy24" parent="Enemy" node_paths=PackedStringArray("player") instance=ExtResource("19_5newe")]
+[node name="Enemy24" parent="Enemy" instance=ExtResource("19_5newe")]
 position = Vector2(514, 421)
 enemy_stats = ExtResource("20_37s47")
-player = NodePath("../../Player")
 
-[node name="Enemy25" parent="Enemy" node_paths=PackedStringArray("player") instance=ExtResource("19_5newe")]
+[node name="Enemy25" parent="Enemy" instance=ExtResource("19_5newe")]
 position = Vector2(532, 237)
 enemy_stats = ExtResource("20_37s47")
-player = NodePath("../../Player")
 
-[node name="Enemy26" parent="Enemy" node_paths=PackedStringArray("player") instance=ExtResource("19_5newe")]
+[node name="Enemy26" parent="Enemy" instance=ExtResource("19_5newe")]
 position = Vector2(559, -21)
 enemy_stats = ExtResource("20_37s47")
-player = NodePath("../../Player")
 
-[node name="Enemy27" parent="Enemy" node_paths=PackedStringArray("player") instance=ExtResource("19_5newe")]
+[node name="Enemy27" parent="Enemy" instance=ExtResource("19_5newe")]
 position = Vector2(865, 46)
 enemy_stats = ExtResource("21_bt5mj")
-player = NodePath("../../Player")
 
-[node name="Enemy28" parent="Enemy" node_paths=PackedStringArray("player") instance=ExtResource("19_5newe")]
+[node name="Enemy28" parent="Enemy" instance=ExtResource("19_5newe")]
 position = Vector2(901, -89)
 enemy_stats = ExtResource("20_37s47")
-player = NodePath("../../Player")
 
-[node name="Enemy29" parent="Enemy" node_paths=PackedStringArray("player") instance=ExtResource("19_5newe")]
+[node name="Enemy29" parent="Enemy" instance=ExtResource("19_5newe")]
 position = Vector2(787, -231)
 enemy_stats = ExtResource("20_37s47")
-player = NodePath("../../Player")
 
-[node name="Enemy30" parent="Enemy" node_paths=PackedStringArray("player") instance=ExtResource("19_5newe")]
+[node name="Enemy30" parent="Enemy" instance=ExtResource("19_5newe")]
 position = Vector2(511, -252)
 enemy_stats = ExtResource("21_bt5mj")
-player = NodePath("../../Player")
 
-[node name="Enemy31" parent="Enemy" node_paths=PackedStringArray("player") instance=ExtResource("19_5newe")]
+[node name="Enemy31" parent="Enemy" instance=ExtResource("19_5newe")]
 position = Vector2(654, -323)
 enemy_stats = ExtResource("20_37s47")
-player = NodePath("../../Player")
 
-[node name="Enemy32" parent="Enemy" node_paths=PackedStringArray("player") instance=ExtResource("19_5newe")]
+[node name="Enemy32" parent="Enemy" instance=ExtResource("19_5newe")]
 position = Vector2(918, -429)
 enemy_stats = ExtResource("20_37s47")
-player = NodePath("../../Player")
 
-[node name="Enemy33" parent="Enemy" node_paths=PackedStringArray("player") instance=ExtResource("19_5newe")]
+[node name="Enemy33" parent="Enemy" instance=ExtResource("19_5newe")]
 position = Vector2(-264, -411)
 enemy_stats = ExtResource("20_37s47")
-player = NodePath("../../Player")
 
-[node name="Enemy34" parent="Enemy" node_paths=PackedStringArray("player") instance=ExtResource("19_5newe")]
+[node name="Enemy34" parent="Enemy" instance=ExtResource("19_5newe")]
 position = Vector2(-491, -298)
 enemy_stats = ExtResource("20_37s47")
-player = NodePath("../../Player")
 
-[node name="Enemy35" parent="Enemy" node_paths=PackedStringArray("player") instance=ExtResource("19_5newe")]
+[node name="Enemy35" parent="Enemy" instance=ExtResource("19_5newe")]
 position = Vector2(-693, -269)
 enemy_stats = ExtResource("20_37s47")
-player = NodePath("../../Player")
 
-[node name="Enemy36" parent="Enemy" node_paths=PackedStringArray("player") instance=ExtResource("19_5newe")]
+[node name="Enemy36" parent="Enemy" instance=ExtResource("19_5newe")]
 position = Vector2(-693, -428)
 enemy_stats = ExtResource("20_37s47")
-player = NodePath("../../Player")
 
 [node name="Items" type="Node" parent="."]
 
