@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://b64hbxiqviotk"]
+
+[ext_resource type="Texture2D" uid="uid://dbuujvxu0l1oc" path="res://assets/sprites/6514911.png" id="1_kqjjj"]
+[ext_resource type="Script" uid="uid://b2tcw115pahom" path="res://scenes/fake.gd" id="1_lq5cc"]
+
+[node name="CanvasLayer" type="CanvasLayer"]
+script = ExtResource("1_lq5cc")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+offset_left = 507.0
+offset_top = 464.0
+offset_right = 547.0
+offset_bottom = 504.0
+
+[node name="Sprite2D" type="Sprite2D" parent="MarginContainer"]
+position = Vector2(42, 42)
+scale = Vector2(0.236328, 0.236328)
+texture = ExtResource("1_kqjjj")

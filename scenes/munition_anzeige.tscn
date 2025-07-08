@@ -1,10 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://xdj4a3stkqgp"]
+[gd_scene load_steps=2 format=3 uid="uid://b22x7sii6gxwo"]
 
-[ext_resource type="Script" uid="uid://uic26rkpjuq2" path="res://scripts/munition_anzeige.gd" id="1_8up7v"]
 [ext_resource type="Texture2D" uid="uid://cp00mkaruydk0" path="res://assets/sprites/Bullet.png" id="2_0mrh3"]
 
 [node name="Munition_anzeige" type="CanvasLayer"]
-script = ExtResource("1_8up7v")
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 anchors_preset = 3
