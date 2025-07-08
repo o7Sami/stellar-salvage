@@ -627,6 +627,8 @@ script = ExtResource("13_e13mp")
 position = Vector2(17.5, -14.5)
 shape = SubResource("RectangleShape2D_vrdqu")
 
+[node name="Timer" type="Timer" parent="Level/Geschafft_Zone"]
+
 [node name="Schlüssel Anzeige2" parent="Level" instance=ExtResource("8_wr8iv")]
 
 [node name="CanvasLayer" type="CanvasLayer" parent="Level"]
@@ -665,3 +667,4 @@ position = Vector2(683, 9)
 
 [connection signal="body_entered" from="Level/Geschafft_Zone" to="GameManager" method="_on_geschafft_zone_body_entered"]
 [connection signal="body_entered" from="Level/Geschafft_Zone" to="Level/Geschafft_Zone" method="_on_body_entered"]
+[connection signal="timeout" from="Level/Geschafft_Zone/Timer" to="Level/Geschafft_Zone" method="_on_timer_timeout"]

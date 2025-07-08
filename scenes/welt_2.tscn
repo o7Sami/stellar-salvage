@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=3 uid="uid://bpptqs177pmq"]
+[gd_scene load_steps=25 format=3 uid="uid://bpptqs177pmq"]
 
 [ext_resource type="Script" uid="uid://dyo30hm5x127b" path="res://scripts/welt_2.gd" id="1_0fyfn"]
 [ext_resource type="Script" uid="uid://nlurm3dm33bo" path="res://scripts/gamer_manager.gd" id="1_3ck8o"]
@@ -18,7 +18,9 @@
 [ext_resource type="PackedScene" uid="uid://bpkv2hifwjvwr" path="res://scenes/hindernis_1.tscn" id="9_spu43"]
 [ext_resource type="PackedScene" uid="uid://crg4gjwhvvuqq" path="res://scenes/raumschiffteil.tscn" id="10_ab7e1"]
 [ext_resource type="PackedScene" uid="uid://02ue7my3paia" path="res://scenes/hindernis_2.tscn" id="10_gxjke"]
+
 [ext_resource type="PackedScene" uid="uid://cfin8pwiexf2x" path="res://scenes/hearts_container.tscn" id="16_gxjke"]
+
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_gee14"]
 vertices = PackedVector2Array(8, 8, -8, 8, -8, -8, 8, -8)
@@ -477,3 +479,8 @@ position = Vector2(303, 428)
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="heartsContainer" parent="CanvasLayer" instance=ExtResource("16_gxjke")]
+
+[node name="Gegner" type="Node" parent="."]
+
+[node name="Enemy" parent="Gegner" instance=ExtResource("18_mjmix")]
+position = Vector2(221, -19)
