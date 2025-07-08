@@ -24,3 +24,9 @@ func Hit_abspielen():
 
 func Tod_abspielen():
 	$Tot_sound.play()
+
+func Spieler_schaden_abspielen():
+	$Spieler_Schaden_sound.play()
+
+func verlieren_abspielen():
+	$verlieren_sound.play()

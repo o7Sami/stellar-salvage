@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://c8w53w48andoh"]
+[gd_scene load_steps=11 format=3 uid="uid://c8w53w48andoh"]
 
 [ext_resource type="Script" uid="uid://dq8dq6h64k76e" path="res://scripts/sound_manager.gd" id="1_gbdfy"]
 [ext_resource type="AudioStream" uid="uid://cdsqbi8p3vmj1" path="res://assets/sounds/fridge-freezer-groaning-and-making-noises-341201.ogg" id="2_shlr6"]
@@ -8,6 +8,8 @@
 [ext_resource type="AudioStream" uid="uid://d13hdmw0eoggt" path="res://assets/sounds/Teleporter.ogg" id="6_v1pt3"]
 [ext_resource type="AudioStream" uid="uid://dt5koeni6k1eh" path="res://assets/sounds/hit_sound.ogg" id="7_mpi5b"]
 [ext_resource type="AudioStream" uid="uid://wsb1r42xiqkr" path="res://assets/sounds/Tot_sound.ogg" id="8_aa63w"]
+[ext_resource type="AudioStream" uid="uid://b0d620okp5hbm" path="res://assets/sounds/mixkit-man-in-pain-2197.ogg" id="9_gb18h"]
+[ext_resource type="AudioStream" uid="uid://bmxmvxmxgjjad" path="res://assets/sounds/mixkit-retro-arcade-game-over-470.wav" id="10_wwv6j"]
 
 [node name="Sound-Manager" type="Node2D"]
 script = ExtResource("1_gbdfy")
@@ -37,3 +39,9 @@ volume_db = 20.0
 [node name="Tot_sound" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("8_aa63w")
 volume_db = 10.765
+
+[node name="Spieler_Schaden_sound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("9_gb18h")
+
+[node name="verlieren_sound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("10_wwv6j")

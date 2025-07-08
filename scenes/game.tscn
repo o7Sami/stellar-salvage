@@ -24,8 +24,8 @@
 [ext_resource type="PackedScene" uid="uid://jn1wmsj3832p" path="res://scenes/druckplatte.tscn" id="22_37s47"]
 [ext_resource type="PackedScene" uid="uid://dvhu2yqsm8850" path="res://scenes/tuer_waagrecht_einmal_auf.tscn" id="23_suyxu"]
 [ext_resource type="PackedScene" uid="uid://clav3g6vblv0y" path="res://scenes/tür_waagrecht_rätsel.tscn" id="24_e1j6l"]
-[ext_resource type="PackedScene" uid="uid://hcers7gx8ls0" path="res://scenes/leben_+.tscn" id="24_pl11u"]
-[ext_resource type="PackedScene" path="res://scenes/munition.tscn" id="25_pl11u"]
+[ext_resource type="PackedScene" uid="uid://cbsn52upkinr" path="res://scenes/leben_+.tscn" id="24_pl11u"]
+[ext_resource type="PackedScene" uid="uid://va25f7w5laex" path="res://scenes/munition.tscn" id="25_pl11u"]
 [ext_resource type="PackedScene" uid="uid://b5dtph6xxvwqu" path="res://scenes/herzkontainer.tscn" id="26_bhx41"]
 [ext_resource type="PackedScene" uid="uid://d1ocvsrarb2rp" path="res://scenes/druckplatte_fake.tscn" id="27_qnb83"]
 
@@ -659,7 +659,7 @@ enemy_stats = ExtResource("20_37s47")
 player = NodePath("../../Player")
 
 [node name="Enemy22" parent="Enemy" node_paths=PackedStringArray("player") instance=ExtResource("19_5newe")]
-position = Vector2(-539, 84)
+position = Vector2(-760, 234)
 enemy_stats = ExtResource("20_37s47")
 player = NodePath("../../Player")
 
