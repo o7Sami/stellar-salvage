@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://d1ocvsrarb2rp"]
+[gd_scene load_steps=7 format=3 uid="uid://d1ocvsrarb2rp"]
 
 [ext_resource type="Script" uid="uid://x4dt8jmbeuhx" path="res://scripts/druckplatte_fake.gd" id="1_bu2rr"]
 [ext_resource type="Texture2D" uid="uid://0ma8cnw8sh7n" path="res://assets/sprites/metal_blocks druck 2.png" id="2_nllk0"]
 [ext_resource type="Texture2D" uid="uid://8djyr2mwhs07" path="res://assets/sprites/metal_blocks druck.png" id="3_jm3mo"]
+[ext_resource type="PackedScene" uid="uid://b64hbxiqviotk" path="res://scenes/fake.tscn" id="4_nllk0"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_gky1s"]
 animations = [{
@@ -40,6 +41,8 @@ animation = &"up"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(6, 4)
 shape = SubResource("RectangleShape2D_0i5vk")
+
+[node name="CanvasLayer" parent="." instance=ExtResource("4_nllk0")]
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="body_exited" from="." to="." method="_on_body_exited"]

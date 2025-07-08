@@ -22,12 +22,12 @@
 [ext_resource type="Resource" uid="uid://s868gkfonb3m" path="res://Resources/Crew_Member.tres" id="20_37s47"]
 [ext_resource type="Resource" uid="uid://bdf3217ty6dvr" path="res://Resources/Captain.tres" id="21_bt5mj"]
 [ext_resource type="PackedScene" uid="uid://jn1wmsj3832p" path="res://scenes/druckplatte.tscn" id="22_37s47"]
+[ext_resource type="PackedScene" uid="uid://dvhu2yqsm8850" path="res://scenes/tuer_waagrecht_einmal_auf.tscn" id="23_suyxu"]
 [ext_resource type="PackedScene" uid="uid://clav3g6vblv0y" path="res://scenes/tür_waagrecht_rätsel.tscn" id="24_e1j6l"]
-[ext_resource type="PackedScene" uid="uid://cbsn52upkinr" path="res://scenes/leben_+.tscn" id="24_pl11u"]
-[ext_resource type="PackedScene" uid="uid://va25f7w5laex" path="res://scenes/munition.tscn" id="25_pl11u"]
+[ext_resource type="PackedScene" uid="uid://hcers7gx8ls0" path="res://scenes/leben_+.tscn" id="24_pl11u"]
+[ext_resource type="PackedScene" path="res://scenes/munition.tscn" id="25_pl11u"]
 [ext_resource type="PackedScene" uid="uid://b5dtph6xxvwqu" path="res://scenes/herzkontainer.tscn" id="26_bhx41"]
 [ext_resource type="PackedScene" uid="uid://d1ocvsrarb2rp" path="res://scenes/druckplatte_fake.tscn" id="27_qnb83"]
-[ext_resource type="PackedScene" uid="uid://b64hbxiqviotk" path="res://scenes/fake.tscn" id="28_sww3w"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_gee14"]
 vertices = PackedVector2Array(8, 8, -8, 8, -8, -8, 8, -8)
@@ -352,6 +352,7 @@ unique_name_in_owner = true
 script = ExtResource("1_u5sy4")
 
 [node name="Player" parent="." instance=ExtResource("3_sww3w")]
+position = Vector2(-751, 160)
 
 [node name="Player#Camera2D" type="Camera2D" parent="Player"]
 position = Vector2(-1, -6)
@@ -528,13 +529,9 @@ position = Vector2(-361, 291)
 position = Vector2(-654, -316)
 tuer = NodePath("../tür waagrecht rätsel3")
 
-[node name="tür waagrecht einmal auf" parent="rätsel" instance=ExtResource("26_bhx41")]
-position = Vector2(-280, 247)
-script = null
-
 [node name="druckplatte2" parent="rätsel" node_paths=PackedStringArray("tuer") instance=ExtResource("22_37s47")]
-position = Vector2(-703, 148)
-tuer = NodePath("../tür waagrecht einmal auf")
+position = Vector2(-702, 147)
+tuer = NodePath("../tür waagrecht einmal auf2")
 
 [node name="druckplatte fake2" parent="rätsel" instance=ExtResource("27_qnb83")]
 position = Vector2(-701, 179)
@@ -550,6 +547,9 @@ position = Vector2(-734, 274)
 
 [node name="druckplatte fake6" parent="rätsel" instance=ExtResource("27_qnb83")]
 position = Vector2(-703, 274)
+
+[node name="tür waagrecht einmal auf2" parent="rätsel" instance=ExtResource("23_suyxu")]
+position = Vector2(-280, 247)
 
 [node name="Enemy" type="Node" parent="."]
 
@@ -769,7 +769,7 @@ position = Vector2(-761, -199)
 position = Vector2(-569, -39)
 
 [node name="Herzkontainer" parent="Items" instance=ExtResource("26_bhx41")]
-position = Vector2(-399, 248)
+position = Vector2(-466, 275)
 script = null
 
 [node name="Herzkontainer2" parent="Items" instance=ExtResource("26_bhx41")]
@@ -779,5 +779,3 @@ script = null
 [node name="Herzkontainer3" parent="Items" instance=ExtResource("26_bhx41")]
 position = Vector2(936, 70)
 script = null
-
-[node name="CanvasLayer" parent="." instance=ExtResource("28_sww3w")]
