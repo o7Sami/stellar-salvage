@@ -17,7 +17,7 @@
 [ext_resource type="PackedScene" uid="uid://c8bw258exya2i" path="res://scenes/levelteleporter.tscn" id="13_ir15t"]
 [ext_resource type="PackedScene" uid="uid://clurnb1k5axha" path="res://scenes/blöcke.tscn" id="17_rysoc"]
 [ext_resource type="PackedScene" uid="uid://xdj4a3stkqgp" path="res://scenes/munition_anzeige.tscn" id="18_e1j6l"]
-[ext_resource type="PackedScene" uid="uid://cfin8pwiexf2x" path="res://scenes/hearts_container.tscn" id="18_ssvqc"]
+[ext_resource type="PackedScene" path="res://scenes/hearts_container.tscn" id="18_ssvqc"]
 [ext_resource type="PackedScene" uid="uid://bcrmmbd577035" path="res://scenes/Enemy.tscn" id="19_5newe"]
 [ext_resource type="Resource" uid="uid://s868gkfonb3m" path="res://Resources/Crew_Member.tres" id="20_37s47"]
 [ext_resource type="Resource" uid="uid://bdf3217ty6dvr" path="res://Resources/Captain.tres" id="21_bt5mj"]
@@ -481,11 +481,9 @@ position = Vector2(-492, -322)
 [node name="hindernis 6" parent="Hindernisse" instance=ExtResource("4_lbhrr")]
 position = Vector2(4, 384)
 
-[node name="Schlüssel" type="Node" parent="."]
-
-[node name="Schlüssel Anzeige" parent="Schlüssel" instance=ExtResource("9_0tnpc")]
-
 [node name="Level" type="Node" parent="."]
+
+[node name="Munition_anzeige" parent="Level" instance=ExtResource("18_e1j6l")]
 
 [node name="Raumschiffteil" parent="Level" instance=ExtResource("11_kvuet")]
 position = Vector2(-720, 171)
@@ -495,11 +493,11 @@ position = Vector2(-720, 171)
 [node name="Levelteleporter" parent="Level" instance=ExtResource("13_ir15t")]
 position = Vector2(259, 373)
 
-[node name="Munition_anzeige" parent="." instance=ExtResource("18_e1j6l")]
+[node name="Schlüssel Anzeige" parent="Level" instance=ExtResource("9_0tnpc")]
 
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
+[node name="CanvasLayer" type="CanvasLayer" parent="Level"]
 
-[node name="heartsContainer" parent="CanvasLayer" instance=ExtResource("18_ssvqc")]
+[node name="heartsContainer" parent="Level/CanvasLayer" instance=ExtResource("18_ssvqc")]
 offset_left = -2.0
 offset_right = -2.0
 
