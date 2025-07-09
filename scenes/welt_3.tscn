@@ -20,7 +20,7 @@
 [ext_resource type="PackedScene" uid="uid://b22x7sii6gxwo" path="res://scenes/munition_anzeige.tscn" id="17_cdp84"]
 [ext_resource type="Resource" uid="uid://s868gkfonb3m" path="res://Resources/Crew_Member.tres" id="18_cdp84"]
 [ext_resource type="Resource" uid="uid://bdf3217ty6dvr" path="res://Resources/Captain.tres" id="19_y0p0s"]
-[ext_resource type="PackedScene" path="res://scenes/herzkontainer.tscn" id="20_b6ygs"]
+[ext_resource type="PackedScene" uid="uid://b5dtph6xxvwqu" path="res://scenes/herzkontainer.tscn" id="20_b6ygs"]
 [ext_resource type="PackedScene" uid="uid://hcers7gx8ls0" path="res://scenes/leben_+.tscn" id="21_dosvx"]
 [ext_resource type="PackedScene" uid="uid://c54knp8vfdffx" path="res://scenes/munition.tscn" id="22_jfk6s"]
 
