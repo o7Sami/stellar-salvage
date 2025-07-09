@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=3 uid="uid://dvhu2yqsm8850"]
 
 [ext_resource type="Script" uid="uid://bedamramxlb27" path="res://scripts/tuer_waagrecht_einmal_auf.gd" id="1_wsasl"]
-[ext_resource type="Texture2D" uid="uid://f5jkm2pmpfow" path="res://assets/sprites/Tür waagrecht zu.png" id="2_btrk4"]
+[ext_resource type="Texture2D" uid="uid://ce8sqgku8fvw6" path="res://assets/sprites/Rätseltür waagrecht.png" id="2_wsasl"]
 [ext_resource type="Texture2D" uid="uid://s8tf5xdc5duj" path="res://assets/sprites/Tür waagrecht auf.png" id="3_p2lt0"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pil1o"]
@@ -11,7 +11,7 @@ size = Vector2(33, 16)
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_btrk4")
+"texture": ExtResource("2_wsasl")
 }],
 "loop": true,
 "name": &"geschlossen",
