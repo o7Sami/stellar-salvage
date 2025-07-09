@@ -7,15 +7,14 @@
 radius = 7.0
 
 [node name="Herzkontainer" type="Area2D"]
-position = Vector2(73, 73)
 collision_mask = 2
 script = ExtResource("1_i1fb7")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(72.5, 72)
 texture = ExtResource("1_sggb6")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-72.4127, -72.8322)
 shape = SubResource("CircleShape2D_i1fb7")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

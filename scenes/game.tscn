@@ -774,17 +774,14 @@ position = Vector2(-761, -199)
 [node name="Munition9" parent="Items" instance=ExtResource("25_pl11u")]
 position = Vector2(-569, -39)
 
-[node name="Herzkontainer" parent="Items" instance=ExtResource("26_bhx41")]
-position = Vector2(-466, 275)
-script = null
-
 [node name="Herzkontainer2" parent="Items" instance=ExtResource("26_bhx41")]
-position = Vector2(408, 496)
-script = null
+position = Vector2(412, 497)
 
 [node name="Herzkontainer3" parent="Items" instance=ExtResource("26_bhx41")]
-position = Vector2(936, 70)
-script = null
+position = Vector2(936, 74)
+
+[node name="Herzkontainer" parent="Items" instance=ExtResource("26_bhx41")]
+position = Vector2(-455, 274)
 
 [node name="druckplatte2" parent="." node_paths=PackedStringArray("tuer") instance=ExtResource("22_37s47")]
 position = Vector2(-686, 375)

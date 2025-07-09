@@ -688,7 +688,7 @@ position = Vector2(391, -169)
 position = Vector2(630, 54)
 
 [node name="Herzkontainer" parent="Items" instance=ExtResource("20_b6ygs")]
-position = Vector2(81, 512)
+position = Vector2(8, 440)
 
 [node name="Herzkontainer2" parent="Items" instance=ExtResource("20_b6ygs")]
 position = Vector2(421, -414)
