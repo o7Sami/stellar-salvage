@@ -1,4 +1,4 @@
-[gd_scene load_steps=37 format=3 uid="uid://h0h3hr6yds11"]
+[gd_scene load_steps=38 format=3 uid="uid://h0h3hr6yds11"]
 
 [ext_resource type="Script" uid="uid://y2pd8st8yfb0" path="res://scripts/game.gd" id="1_264po"]
 [ext_resource type="Script" uid="uid://nlurm3dm33bo" path="res://scripts/gamer_manager.gd" id="1_u5sy4"]
@@ -30,9 +30,7 @@
 [ext_resource type="PackedScene" uid="uid://d1ocvsrarb2rp" path="res://scenes/druckplatte_fake.tscn" id="27_qnb83"]
 [ext_resource type="PackedScene" uid="uid://j018hgxjvt5r" path="res://scenes/tür_senkrecht_rätsel.tscn" id="29_suyxu"]
 
-[ext_resource type="PackedScene" path="res://scenes/druckplatte_tp.tscn" id="31_qouja"]
-
-
+[ext_resource type="PackedScene" path="res://scenes/schluessel.tscn" id="30_sgl2t"]
 
 [ext_resource type="PackedScene" path="res://scenes/druckplatte_tp.tscn" id="31_qouja"]
 
@@ -408,6 +406,9 @@ position = Vector2(-488, -185)
 [node name="tür waagrecht7" parent="Türen" instance=ExtResource("6_p57ef")]
 position = Vector2(-520, 135)
 
+[node name="Tür senkrecht14" parent="Türen" instance=ExtResource("5_iywne")]
+position = Vector2(-185, 377)
+
 [node name="Tür senkrecht16" parent="Türen" instance=ExtResource("5_iywne")]
 position = Vector2(407, 281)
 
@@ -493,7 +494,7 @@ position = Vector2(4, 384)
 [node name="Munition_anzeige" parent="Level" instance=ExtResource("18_e1j6l")]
 
 [node name="Raumschiffteil" parent="Level" instance=ExtResource("11_kvuet")]
-position = Vector2(-268, 392)
+position = Vector2(373, 417)
 
 [node name="Raumschiffteil_Anzeige" parent="Level" instance=ExtResource("12_trtic")]
 
@@ -557,40 +558,7 @@ position = Vector2(-279, 248)
 
 [node name="druckplatte4" parent="rätsel" node_paths=PackedStringArray("tuer") instance=ExtResource("22_37s47")]
 position = Vector2(-703, 147)
-tuer = NodePath("../tür waagrecht einmal auf")
-
-[node name="druckplatte6" parent="rätsel" node_paths=PackedStringArray("tuer") instance=ExtResource("22_37s47")]
-position = Vector2(-686, 375)
-tuer = NodePath("../Tür senkrecht rätsel2")
-
-[node name="druckplatte7" parent="rätsel" node_paths=PackedStringArray("tuer") instance=ExtResource("22_37s47")]
-position = Vector2(-718, 375)
-tuer = NodePath("../Tür senkrecht rätsel")
-
-[node name="Tür senkrecht rätsel" parent="rätsel" instance=ExtResource("29_suyxu")]
-position = Vector2(-713, 442)
-
-[node name="Tür senkrecht rätsel2" parent="rätsel" instance=ExtResource("29_suyxu")]
-position = Vector2(-680, 442)
-
-[node name="tür waagrecht einmal auf" parent="rätsel" instance=ExtResource("23_suyxu")]
-position = Vector2(-279, 181)
-
-[node name="druckplatte tp" parent="rätsel" instance=ExtResource("31_qouja")]
-position = Vector2(324, 394)
-
-[node name="Marker2D" parent="rätsel/druckplatte tp" index="2"]
-position = Vector2(11, -38)
-
-[node name="Tür senkrecht rätsel3" parent="rätsel" instance=ExtResource("29_suyxu")]
-position = Vector2(-185, 377)
-
-[node name="druckplatte8" parent="rätsel" node_paths=PackedStringArray("tuer") instance=ExtResource("22_37s47")]
-position = Vector2(-207, 339)
-tuer = NodePath("../Tür senkrecht rätsel3")
-
-[node name="block4" parent="rätsel" instance=ExtResource("17_rysoc")]
-position = Vector2(-219, 344)
+tuer = NodePath("../../tür waagrecht einmal auf")
 
 [node name="Enemy" type="Node" parent="."]
 
@@ -817,7 +785,6 @@ position = Vector2(843, -6)
 
 [node name="Herzkontainer" parent="Items" instance=ExtResource("26_bhx41")]
 position = Vector2(-343, 215)
-
 
 [node name="druckplatte2" parent="." node_paths=PackedStringArray("tuer") instance=ExtResource("22_37s47")]
 position = Vector2(-686, 375)
