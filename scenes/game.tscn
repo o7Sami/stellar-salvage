@@ -31,6 +31,7 @@
 [ext_resource type="PackedScene" uid="uid://d1ocvsrarb2rp" path="res://scenes/druckplatte_fake.tscn" id="27_qnb83"]
 [ext_resource type="PackedScene" uid="uid://j018hgxjvt5r" path="res://scenes/tür_senkrecht_rätsel.tscn" id="29_suyxu"]
 
+
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_gee14"]
 vertices = PackedVector2Array(8, 8, -8, 8, -8, -8, 8, -8)
 polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3)])
