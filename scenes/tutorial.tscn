@@ -606,6 +606,14 @@ position = Vector2(1626, 7)
 enemy_stats = ExtResource("25_qbchm")
 player = NodePath("../../Player")
 
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="heartsContainer" parent="CanvasLayer" instance=ExtResource("17_feaue")]
+offset_left = 1570.0
+offset_top = 22.0
+offset_right = 1570.0
+offset_bottom = 22.0
+
 [node name="Level" type="Node" parent="."]
 
 [node name="Munition_anzeige" parent="Level" instance=ExtResource("11_7a100")]
@@ -630,14 +638,6 @@ shape = SubResource("RectangleShape2D_vrdqu")
 [node name="Timer" type="Timer" parent="Level/Geschafft_Zone"]
 
 [node name="Schlüssel Anzeige2" parent="Level" instance=ExtResource("8_wr8iv")]
-
-[node name="CanvasLayer" type="CanvasLayer" parent="Level"]
-
-[node name="heartsContainer" parent="Level/CanvasLayer" instance=ExtResource("17_feaue")]
-offset_left = 1570.0
-offset_top = 22.0
-offset_right = 1570.0
-offset_bottom = 22.0
 
 [node name="Rätsel" type="Node" parent="."]
 

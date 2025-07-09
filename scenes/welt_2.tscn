@@ -8,6 +8,7 @@
 
 [ext_resource type="PackedScene" uid="uid://rpqoa0picvf8" path="res://scenes/schluessel.tscn" id="5_6gib5"]
 
+
 [ext_resource type="PackedScene" uid="uid://ds43hc1nltge4" path="res://scenes/tuer_senkrecht.tscn" id="5_8kohg"]
 [ext_resource type="Texture2D" uid="uid://b8ggav7imxf86" path="res://assets/sprites/Raumschiff-spritesheet2.png" id="5_o7lrs"]
 [ext_resource type="PackedScene" uid="uid://db3grh1s2ns81" path="res://scenes/schluessel_anzeige.tscn" id="6_ab7e1"]
@@ -23,6 +24,7 @@
 
 [ext_resource type="PackedScene" uid="uid://bcrmmbd577035" path="res://scenes/Enemy.tscn" id="18_mjmix"]
 [ext_resource type="Resource" uid="uid://s868gkfonb3m" path="res://Resources/Crew_Member.tres" id="19_3jf7h"]
+
 
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_gee14"]
