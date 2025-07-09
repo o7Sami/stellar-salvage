@@ -11,7 +11,7 @@ func _on_body_entered(_player) -> void:
 	Global.healthChanged.emit(Global.currentHealth)
 	SoundManager.Spieler_schaden_abspielen()
 	timer_2.start()
-	if Global.currentHealth == 0:
+	if Global.currentHealth < 1:
 		timer.start()
 
 func _on_timer_timeout() -> void:
@@ -26,7 +26,7 @@ func _on_timer_2_timeout() -> void:
 		Global.healthChanged.emit(Global.currentHealth)
 		SoundManager.Spieler_schaden_abspielen()
 		timer_2.start()
-	if Global.currentHealth == 0:
+	if Global.currentHealth < 1:
 		timer.start()
 
 
