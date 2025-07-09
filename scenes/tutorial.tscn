@@ -6,7 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://dk8ix1u3qgyvm" path="res://scenes/gun.tscn" id="3_cq4me"]
 [ext_resource type="Texture2D" uid="uid://b7ma55urv4buf" path="res://assets/sprites/world_tileset.png" id="4_6yjpi"]
 [ext_resource type="Texture2D" uid="uid://bu4xrnvmroe00" path="res://assets/sprites/Raumschiff-spritesheet.png" id="5_wr8iv"]
-[ext_resource type="PackedScene" path="res://scenes/schluessel.tscn" id="6_6yjpi"]
+[ext_resource type="PackedScene" uid="uid://rpqoa0picvf8" path="res://scenes/schluessel.tscn" id="6_6yjpi"]
 [ext_resource type="Texture2D" uid="uid://b8ggav7imxf86" path="res://assets/sprites/Raumschiff-spritesheet2.png" id="6_e13mp"]
 [ext_resource type="PackedScene" uid="uid://ds43hc1nltge4" path="res://scenes/tuer_senkrecht.tscn" id="7_gbqnl"]
 [ext_resource type="PackedScene" uid="uid://bpkv2hifwjvwr" path="res://scenes/hindernis_1.tscn" id="8_0epgs"]
