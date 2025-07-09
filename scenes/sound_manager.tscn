@@ -1,9 +1,9 @@
-[gd_scene load_steps=12 format=3 uid="uid://c8w53w48andoh"]
+[gd_scene load_steps=13 format=3 uid="uid://c8w53w48andoh"]
 
 [ext_resource type="Script" uid="uid://dq8dq6h64k76e" path="res://scripts/sound_manager.gd" id="1_gbdfy"]
 [ext_resource type="AudioStream" uid="uid://cdsqbi8p3vmj1" path="res://assets/sounds/fridge-freezer-groaning-and-making-noises-341201.ogg" id="2_shlr6"]
 [ext_resource type="AudioStream" uid="uid://jrstxlauku4s" path="res://assets/sounds/Tuer_oeffnen.ogg" id="3_5lwbd"]
-[ext_resource type="AudioStream" uid="uid://j2dbpmbbowgu" path="res://assets/sounds/Aufnahme-_7_.ogg" id="3_v1pt3"]
+[ext_resource type="AudioStream" uid="uid://dva5wi5fmx851" path="res://assets/sounds/mixkit-retro-arcade-casino-notification-211.ogg" id="3_wwv6j"]
 [ext_resource type="AudioStream" uid="uid://c8ov3lhjl3v7a" path="res://assets/sounds/Shooting sound.wav" id="4_5lwbd"]
 [ext_resource type="AudioStream" uid="uid://d13hdmw0eoggt" path="res://assets/sounds/Teleporter.ogg" id="6_v1pt3"]
 [ext_resource type="AudioStream" uid="uid://dt5koeni6k1eh" path="res://assets/sounds/hit_sound.ogg" id="7_mpi5b"]
@@ -11,6 +11,7 @@
 [ext_resource type="AudioStream" uid="uid://b0d620okp5hbm" path="res://assets/sounds/mixkit-man-in-pain-2197.ogg" id="9_gb18h"]
 [ext_resource type="AudioStream" uid="uid://bmxmvxmxgjjad" path="res://assets/sounds/mixkit-retro-arcade-game-over-470.wav" id="10_wwv6j"]
 [ext_resource type="AudioStream" uid="uid://s0wrtual8vu4" path="res://assets/music/mixkit-synth-suspense-music-681.ogg" id="11_wwv6j"]
+[ext_resource type="AudioStream" uid="uid://v3nhogbfvvr4" path="res://assets/sounds/mixkit-fast-heartbeat-493.ogg" id="12_55or6"]
 
 [node name="Sound-Manager" type="Node2D"]
 script = ExtResource("1_gbdfy")
@@ -20,7 +21,7 @@ stream = ExtResource("2_shlr6")
 volume_db = -23.369
 
 [node name="Schluessel" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("3_v1pt3")
+stream = ExtResource("3_wwv6j")
 
 [node name="Tuer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("3_5lwbd")
@@ -54,3 +55,6 @@ stream = ExtResource("11_wwv6j")
 volume_db = -10.082
 autoplay = true
 parameters/looping = true
+
+[node name="Heilen_sound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("12_55or6")
