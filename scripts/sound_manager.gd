@@ -30,3 +30,6 @@ func Spieler_schaden_abspielen():
 
 func verlieren_abspielen():
 	$verlieren_sound.play()
+
+func Heilen_abspielen():
+	$Heilen_sound.play()
