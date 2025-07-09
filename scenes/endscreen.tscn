@@ -44,8 +44,8 @@ grow_vertical = 2
 [node name="Frame0Delay-0_04s" type="Sprite2D" parent="MarginContainer"]
 modulate = Color(0.650128, 0.650128, 0.650128, 1)
 z_index = -10
-position = Vector2(119, -47)
-scale = Vector2(1.5, 1.5)
+position = Vector2(152.689, 11.7969)
+scale = Vector2(1.93056, 1.93056)
 texture = ExtResource("2_cuen1")
 flip_h = true
 
