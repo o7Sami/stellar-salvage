@@ -1,4 +1,4 @@
-[gd_scene load_steps=38 format=3 uid="uid://h0h3hr6yds11"]
+[gd_scene load_steps=37 format=3 uid="uid://h0h3hr6yds11"]
 
 [ext_resource type="Script" uid="uid://y2pd8st8yfb0" path="res://scripts/game.gd" id="1_264po"]
 [ext_resource type="Script" uid="uid://nlurm3dm33bo" path="res://scripts/gamer_manager.gd" id="1_u5sy4"]
@@ -29,10 +29,7 @@
 [ext_resource type="PackedScene" uid="uid://b5dtph6xxvwqu" path="res://scenes/herzkontainer.tscn" id="26_bhx41"]
 [ext_resource type="PackedScene" uid="uid://d1ocvsrarb2rp" path="res://scenes/druckplatte_fake.tscn" id="27_qnb83"]
 [ext_resource type="PackedScene" uid="uid://j018hgxjvt5r" path="res://scenes/tür_senkrecht_rätsel.tscn" id="29_suyxu"]
-
-[ext_resource type="PackedScene" path="res://scenes/schluessel.tscn" id="30_sgl2t"]
-
-[ext_resource type="PackedScene" path="res://scenes/druckplatte_tp.tscn" id="31_qouja"]
+[ext_resource type="PackedScene" uid="uid://rpqoa0picvf8" path="res://scenes/schluessel.tscn" id="30_sgl2t"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_gee14"]
 vertices = PackedVector2Array(8, 8, -8, 8, -8, -8, 8, -8)
@@ -535,7 +532,7 @@ position = Vector2(-654, -316)
 tuer = NodePath("../tür waagrecht rätsel3")
 
 [node name="druckplatte2" parent="rätsel" node_paths=PackedStringArray("tuer") instance=ExtResource("22_37s47")]
-position = Vector2(-302, 229)
+position = Vector2(-262, 201)
 tuer = NodePath("../tür waagrecht einmal auf2")
 
 [node name="druckplatte fake2" parent="rätsel" instance=ExtResource("27_qnb83")]
@@ -554,7 +551,7 @@ position = Vector2(-734, 274)
 position = Vector2(-703, 274)
 
 [node name="tür waagrecht einmal auf2" parent="rätsel" instance=ExtResource("23_suyxu")]
-position = Vector2(-279, 248)
+position = Vector2(-279, 247)
 
 [node name="druckplatte4" parent="rätsel" node_paths=PackedStringArray("tuer") instance=ExtResource("22_37s47")]
 position = Vector2(-703, 147)
@@ -777,9 +774,6 @@ position = Vector2(-761, -199)
 [node name="Munition9" parent="Items" instance=ExtResource("25_pl11u")]
 position = Vector2(-569, -39)
 
-[node name="Herzkontainer2" parent="Items" instance=ExtResource("26_bhx41")]
-position = Vector2(339, 398)
-
 [node name="Herzkontainer3" parent="Items" instance=ExtResource("26_bhx41")]
 position = Vector2(843, -6)
 
@@ -801,15 +795,7 @@ position = Vector2(-713, 442)
 position = Vector2(-680, 442)
 
 [node name="tür waagrecht einmal auf" parent="." instance=ExtResource("23_suyxu")]
-position = Vector2(-279, 181)
+position = Vector2(-279, 183)
 
 [node name="Schlüssel" parent="." instance=ExtResource("30_sgl2t")]
 position = Vector2(-265, 380)
-
-[node name="druckplatte tp" parent="." instance=ExtResource("31_qouja")]
-position = Vector2(324, 394)
-
-[node name="Marker2D" parent="druckplatte tp" index="2"]
-position = Vector2(11, -38)
-
-[editable path="druckplatte tp"]
