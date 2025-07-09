@@ -29,10 +29,8 @@
 [ext_resource type="PackedScene" uid="uid://b5dtph6xxvwqu" path="res://scenes/herzkontainer.tscn" id="26_bhx41"]
 [ext_resource type="PackedScene" uid="uid://d1ocvsrarb2rp" path="res://scenes/druckplatte_fake.tscn" id="27_qnb83"]
 [ext_resource type="PackedScene" uid="uid://j018hgxjvt5r" path="res://scenes/tür_senkrecht_rätsel.tscn" id="29_suyxu"]
-[ext_resource type="PackedScene" uid="uid://rpqoa0picvf8" path="res://scenes/schluessel.tscn" id="30_sgl2t"]
-
-[ext_resource type="PackedScene" uid="uid://dp1hlr01vbui0" path="res://scenes/druckplatte_tp.tscn" id="31_qouja"]
-
+[ext_resource type="PackedScene" path="res://scenes/schluessel.tscn" id="30_sgl2t"]
+[ext_resource type="PackedScene" path="res://scenes/druckplatte_tp.tscn" id="31_qouja"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_gee14"]
 vertices = PackedVector2Array(8, 8, -8, 8, -8, -8, 8, -8)
@@ -805,7 +803,6 @@ position = Vector2(-279, 181)
 
 [node name="Schlüssel" parent="." instance=ExtResource("30_sgl2t")]
 position = Vector2(-265, 380)
-
 
 [node name="druckplatte tp" parent="." instance=ExtResource("31_qouja")]
 position = Vector2(324, 394)
