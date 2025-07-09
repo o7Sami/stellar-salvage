@@ -20,6 +20,10 @@ config/icon="res://assets/sprites/icon.svg"
 Global="*res://scripts/global.gd"
 SoundManager="*res://scenes/sound_manager.tscn"
 
+[global_group]
+
+player=""
+
 [input]
 
 oben={
