@@ -25,7 +25,7 @@
 [ext_resource type="PackedScene" uid="uid://cpiusbsdurinc" path="res://scenes/tür_senkrecht_offenbleiben.tscn" id="23_sgl2t"]
 [ext_resource type="PackedScene" uid="uid://dvhu2yqsm8850" path="res://scenes/tuer_waagrecht_einmal_auf.tscn" id="23_suyxu"]
 [ext_resource type="PackedScene" uid="uid://clav3g6vblv0y" path="res://scenes/tür_waagrecht_rätsel.tscn" id="24_e1j6l"]
-[ext_resource type="PackedScene" uid="uid://cbsn52upkinr" path="res://scenes/leben_+.tscn" id="24_pl11u"]
+[ext_resource type="PackedScene" uid="uid://hcers7gx8ls0" path="res://scenes/leben_+.tscn" id="24_pl11u"]
 [ext_resource type="PackedScene" uid="uid://c54knp8vfdffx" path="res://scenes/munition.tscn" id="25_pl11u"]
 [ext_resource type="PackedScene" uid="uid://b5dtph6xxvwqu" path="res://scenes/herzkontainer.tscn" id="26_bhx41"]
 [ext_resource type="PackedScene" uid="uid://d1ocvsrarb2rp" path="res://scenes/druckplatte_fake.tscn" id="27_qnb83"]
