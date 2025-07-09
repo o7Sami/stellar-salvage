@@ -1,11 +1,12 @@
-[gd_scene load_steps=34 format=3 uid="uid://txbqvuvud6fm"]
+[gd_scene load_steps=35 format=3 uid="uid://txbqvuvud6fm"]
 
+[ext_resource type="Script" uid="uid://6uhx0kvuf65j" path="res://scripts/tutorial.gd" id="1_7a100"]
 [ext_resource type="Script" uid="uid://nlurm3dm33bo" path="res://scripts/gamer_manager.gd" id="1_c13y7"]
 [ext_resource type="PackedScene" uid="uid://7v2xeusb4eh6" path="res://scenes/player.tscn" id="2_4kmhl"]
 [ext_resource type="PackedScene" uid="uid://dk8ix1u3qgyvm" path="res://scenes/gun.tscn" id="3_cq4me"]
 [ext_resource type="Texture2D" uid="uid://b7ma55urv4buf" path="res://assets/sprites/world_tileset.png" id="4_6yjpi"]
 [ext_resource type="Texture2D" uid="uid://bu4xrnvmroe00" path="res://assets/sprites/Raumschiff-spritesheet.png" id="5_wr8iv"]
-[ext_resource type="PackedScene" path="res://scenes/schluessel.tscn" id="6_6yjpi"]
+[ext_resource type="PackedScene" uid="uid://rpqoa0picvf8" path="res://scenes/schluessel.tscn" id="6_6yjpi"]
 [ext_resource type="Texture2D" uid="uid://b8ggav7imxf86" path="res://assets/sprites/Raumschiff-spritesheet2.png" id="6_e13mp"]
 [ext_resource type="PackedScene" uid="uid://ds43hc1nltge4" path="res://scenes/tuer_senkrecht.tscn" id="7_gbqnl"]
 [ext_resource type="PackedScene" uid="uid://bpkv2hifwjvwr" path="res://scenes/hindernis_1.tscn" id="8_0epgs"]
@@ -17,7 +18,7 @@
 [ext_resource type="PackedScene" uid="uid://b22x7sii6gxwo" path="res://scenes/munition_anzeige.tscn" id="11_7a100"]
 [ext_resource type="PackedScene" uid="uid://crg4gjwhvvuqq" path="res://scenes/raumschiffteil.tscn" id="12_wr8iv"]
 [ext_resource type="Script" uid="uid://bfq624jv7mlo4" path="res://scripts/geschafft_zone.gd" id="13_e13mp"]
-[ext_resource type="PackedScene" path="res://scenes/hearts_container.tscn" id="17_feaue"]
+[ext_resource type="PackedScene" uid="uid://cfin8pwiexf2x" path="res://scenes/hearts_container.tscn" id="17_feaue"]
 [ext_resource type="PackedScene" uid="uid://j018hgxjvt5r" path="res://scenes/tür_senkrecht_rätsel.tscn" id="18_210s6"]
 [ext_resource type="PackedScene" uid="uid://jn1wmsj3832p" path="res://scenes/druckplatte.tscn" id="19_5qvs7"]
 [ext_resource type="PackedScene" uid="uid://clurnb1k5axha" path="res://scenes/blöcke.tscn" id="20_qbchm"]
@@ -346,6 +347,7 @@ sources/2 = SubResource("TileSetAtlasSource_cmspm")
 size = Vector2(63, 63)
 
 [node name="Tutorial" type="Node2D"]
+script = ExtResource("1_7a100")
 
 [node name="GameManager" type="Node" parent="."]
 unique_name_in_owner = true
@@ -634,10 +636,6 @@ shape = SubResource("RectangleShape2D_vrdqu")
 [node name="CanvasLayer" type="CanvasLayer" parent="Level"]
 
 [node name="heartsContainer" parent="Level/CanvasLayer" instance=ExtResource("17_feaue")]
-offset_left = 1570.0
-offset_top = 22.0
-offset_right = 1570.0
-offset_bottom = 22.0
 
 [node name="Rätsel" type="Node" parent="."]
 
@@ -654,7 +652,7 @@ position = Vector2(999, 0)
 [node name="Items" type="Node" parent="."]
 
 [node name="Herzkontainer" parent="Items" instance=ExtResource("21_gxgfo")]
-position = Vector2(866, 90)
+position = Vector2(838, 9)
 
 [node name="Schlüssel2" parent="Items" instance=ExtResource("6_6yjpi")]
 position = Vector2(391, 6)

@@ -21,7 +21,7 @@
 [ext_resource type="Resource" uid="uid://s868gkfonb3m" path="res://Resources/Crew_Member.tres" id="18_cdp84"]
 [ext_resource type="Resource" uid="uid://bdf3217ty6dvr" path="res://Resources/Captain.tres" id="19_y0p0s"]
 [ext_resource type="PackedScene" uid="uid://b5dtph6xxvwqu" path="res://scenes/herzkontainer.tscn" id="20_b6ygs"]
-[ext_resource type="PackedScene" uid="uid://hcers7gx8ls0" path="res://scenes/leben_+.tscn" id="21_dosvx"]
+[ext_resource type="PackedScene" uid="uid://cbsn52upkinr" path="res://scenes/leben_+.tscn" id="21_dosvx"]
 [ext_resource type="PackedScene" uid="uid://c54knp8vfdffx" path="res://scenes/munition.tscn" id="22_jfk6s"]
 [ext_resource type="PackedScene" uid="uid://d1ocvsrarb2rp" path="res://scenes/druckplatte_fake.tscn" id="24_y0p0s"]
 [ext_resource type="PackedScene" uid="uid://dnm672h6qj7vh" path="res://scenes/tür_waagrecht_einmal_auf.tscn" id="25_b6ygs"]
@@ -684,7 +684,7 @@ position = Vector2(391, -169)
 position = Vector2(630, 54)
 
 [node name="Herzkontainer" parent="Items" instance=ExtResource("20_b6ygs")]
-position = Vector2(81, 512)
+position = Vector2(8, 440)
 
 [node name="Herzkontainer2" parent="Items" instance=ExtResource("20_b6ygs")]
 position = Vector2(421, -414)

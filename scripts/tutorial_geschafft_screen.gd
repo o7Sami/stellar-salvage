@@ -12,7 +12,7 @@ func _process(delta: float) -> void:
 
 
 func _on_spiel_starten_pressed() -> void:
-
+	Global.MaxHealth = Global.startHealth
 	Global.aktuelle_Scene = 0
 	Global.Raumschiffteile_gesamt = 0
 	Global.currentHealth = Global.MaxHealth
