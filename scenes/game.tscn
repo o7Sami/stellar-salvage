@@ -529,7 +529,7 @@ position = Vector2(-654, -316)
 tuer = NodePath("../tür waagrecht rätsel3")
 
 [node name="druckplatte2" parent="rätsel" node_paths=PackedStringArray("tuer") instance=ExtResource("22_37s47")]
-position = Vector2(-302, 229)
+position = Vector2(-277, 199)
 tuer = NodePath("../tür waagrecht einmal auf2")
 
 [node name="druckplatte fake2" parent="rätsel" instance=ExtResource("27_qnb83")]
