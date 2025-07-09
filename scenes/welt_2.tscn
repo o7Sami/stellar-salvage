@@ -1,4 +1,6 @@
+
 [gd_scene load_steps=33 format=3 uid="uid://bpptqs177pmq"]
+
 
 [ext_resource type="Script" uid="uid://dyo30hm5x127b" path="res://scripts/welt_2.gd" id="1_0fyfn"]
 [ext_resource type="Script" uid="uid://nlurm3dm33bo" path="res://scripts/gamer_manager.gd" id="1_3ck8o"]
