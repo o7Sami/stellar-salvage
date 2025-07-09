@@ -8,7 +8,7 @@ var agrovated = 0
 @onready var schluessel_spawn: Marker2D = $SchluesselSpawn
 @onready var sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
 const SCHLUESSEL = preload("res://scenes/schluessel.tscn")
-
+const MUNI = preload("res://scenes/munition.tscn")
 
 func _ready():
 	match enemy_stats.type:
@@ -41,7 +41,12 @@ func makePath() -> void:
 	navigation_agent_2d.target_position = player.global_position
 
 func sterben():
-
+	if randi_range(1,3) == 2:
+		var pos = schluessel_spawn.position
+		var pos_global = to_global(pos) + Vector2(10,10)
+		var muni = MUNI.instantiate()
+		muni.position = Vector2(pos_global)
+		get_node("/root").add_child(muni)
 	if enemy_stats.dropKey == true:
 		var pos = schluessel_spawn.position
 		var pos_global = to_global(pos)
