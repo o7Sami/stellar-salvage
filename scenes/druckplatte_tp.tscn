@@ -1,0 +1,48 @@
+[gd_scene load_steps=6 format=3 uid="uid://dp1hlr01vbui0"]
+
+[ext_resource type="Texture2D" uid="uid://0ma8cnw8sh7n" path="res://assets/sprites/metal_blocks druck 2.png" id="1_cn6td"]
+[ext_resource type="Script" uid="uid://bjdc81hpcgp03" path="res://scripts/druckplatte_tp.gd" id="1_gdly8"]
+[ext_resource type="Texture2D" uid="uid://8djyr2mwhs07" path="res://assets/sprites/metal_blocks druck.png" id="2_gdly8"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_gky1s"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_cn6td")
+}],
+"loop": true,
+"name": &"down",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_gdly8")
+}],
+"loop": true,
+"name": &"up",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0i5vk"]
+size = Vector2(6, 5.25)
+
+[node name="druckplatte tp" type="Area2D"]
+collision_layer = 6
+collision_mask = 6
+script = ExtResource("1_gdly8")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(6, 5)
+scale = Vector2(0.748, 0.5755)
+sprite_frames = SubResource("SpriteFrames_gky1s")
+animation = &"up"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(6, 4)
+shape = SubResource("RectangleShape2D_0i5vk")
+
+[node name="Marker2D" type="Marker2D" parent="."]
+position = Vector2(33, 5)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]
