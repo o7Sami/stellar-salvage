@@ -1,4 +1,4 @@
-[gd_scene load_steps=37 format=3 uid="uid://h0h3hr6yds11"]
+[gd_scene load_steps=38 format=3 uid="uid://h0h3hr6yds11"]
 
 [ext_resource type="Script" uid="uid://y2pd8st8yfb0" path="res://scripts/game.gd" id="1_264po"]
 [ext_resource type="Script" uid="uid://nlurm3dm33bo" path="res://scripts/gamer_manager.gd" id="1_u5sy4"]
@@ -29,7 +29,11 @@
 [ext_resource type="PackedScene" uid="uid://b5dtph6xxvwqu" path="res://scenes/herzkontainer.tscn" id="26_bhx41"]
 [ext_resource type="PackedScene" uid="uid://d1ocvsrarb2rp" path="res://scenes/druckplatte_fake.tscn" id="27_qnb83"]
 [ext_resource type="PackedScene" uid="uid://j018hgxjvt5r" path="res://scenes/tür_senkrecht_rätsel.tscn" id="29_suyxu"]
+
+[ext_resource type="PackedScene" uid="uid://mpb8nmr2adgi" path="res://scenes/laser.tscn" id="31_qouja"]
+
 [ext_resource type="PackedScene" path="res://scenes/schluessel.tscn" id="30_sgl2t"]
+
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_gee14"]
 vertices = PackedVector2Array(8, 8, -8, 8, -8, -8, 8, -8)
@@ -802,3 +806,12 @@ position = Vector2(-279, 181)
 
 [node name="Schlüssel" parent="." instance=ExtResource("30_sgl2t")]
 position = Vector2(-265, 380)
+
+[node name="Laser_Samelpunkt" type="Node2D" parent="."]
+
+[node name="Laser" parent="Laser_Samelpunkt" node_paths=PackedStringArray("marker_2d") instance=ExtResource("31_qouja")]
+position = Vector2(270, 330)
+marker_2d = NodePath("../Marker2D")
+
+[node name="Marker2D" type="Marker2D" parent="Laser_Samelpunkt"]
+position = Vector2(397, 328)

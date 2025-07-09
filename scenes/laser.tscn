@@ -1,0 +1,28 @@
+[gd_scene load_steps=3 format=3 uid="uid://mpb8nmr2adgi"]
+
+[ext_resource type="Script" uid="uid://bqea7fgyqpy0p" path="res://scripts/laser.gd" id="1_6vqwg"]
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_7vci3"]
+a = Vector2(362, -1)
+b = Vector2(0, -1)
+
+[node name="Laser" type="Node2D"]
+script = ExtResource("1_6vqwg")
+
+[node name="reference" type="Sprite2D" parent="."]
+scale = Vector2(0.06, 0.06)
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
+rotation = -1.5708
+target_position = Vector2(0, 167.475)
+collision_mask = 255
+collide_with_areas = true
+
+[node name="Line2D" type="Line2D" parent="."]
+points = PackedVector2Array(0, 0, 200, 0)
+default_color = Color(0.780694, 4.54836e-06, 4.81307e-07, 1)
+
+[node name="Area2D" type="Area2D" parent="Line2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Line2D/Area2D"]
+shape = SubResource("SegmentShape2D_7vci3")
