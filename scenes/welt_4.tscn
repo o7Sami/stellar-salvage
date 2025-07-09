@@ -364,7 +364,7 @@ unique_name_in_owner = true
 script = ExtResource("1_vxduf")
 
 [node name="Player" parent="." instance=ExtResource("2_7vvae")]
-position = Vector2(591, -281)
+position = Vector2(47, 3)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 position = Vector2(-1, -6)

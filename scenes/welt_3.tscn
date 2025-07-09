@@ -30,7 +30,7 @@
 [ext_resource type="PackedScene" uid="uid://clav3g6vblv0y" path="res://scenes/tür_waagrecht_rätsel.tscn" id="28_8m51i"]
 [ext_resource type="PackedScene" uid="uid://j018hgxjvt5r" path="res://scenes/tür_senkrecht_rätsel.tscn" id="29_cqdg6"]
 [ext_resource type="PackedScene" uid="uid://clurnb1k5axha" path="res://scenes/blöcke.tscn" id="30_s0u1e"]
-[ext_resource type="PackedScene" path="res://scenes/tür_senkrecht_offenbleiben.tscn" id="31_s0u1e"]
+[ext_resource type="PackedScene" uid="uid://cpiusbsdurinc" path="res://scenes/tür_senkrecht_offenbleiben.tscn" id="31_s0u1e"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_gee14"]
 vertices = PackedVector2Array(8, 8, -8, 8, -8, -8, 8, -8)
@@ -371,7 +371,7 @@ unique_name_in_owner = true
 script = ExtResource("1_x24jm")
 
 [node name="Player" parent="." instance=ExtResource("2_7xv1t")]
-position = Vector2(-659, 418)
+position = Vector2(74, -32)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 position = Vector2(-1, -6)
@@ -478,7 +478,7 @@ position = Vector2(660, 414)
 [node name="Raumschiffteil_Anzeige" parent="Level" instance=ExtResource("7_2vhst")]
 
 [node name="Raumschiffteil" parent="Level" instance=ExtResource("8_fgb2u")]
-position = Vector2(522, -417)
+position = Vector2(-231, 433)
 
 [node name="Levelteleporter" parent="Level" instance=ExtResource("9_e1v6d")]
 position = Vector2(815, 265)

@@ -350,7 +350,7 @@ unique_name_in_owner = true
 script = ExtResource("1_3ck8o")
 
 [node name="Player" parent="." instance=ExtResource("2_8kohg")]
-position = Vector2(929, 214)
+position = Vector2(40, 19)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 position = Vector2(-1, -6)
@@ -462,7 +462,7 @@ position = Vector2(276, 300)
 position = Vector2(-758, -315)
 
 [node name="Raumschiffteil" parent="Level" instance=ExtResource("10_ab7e1")]
-position = Vector2(303, 428)
+position = Vector2(925, 263)
 
 [node name="Munition_anzeige" parent="Level" instance=ExtResource("17_735ko")]
 

@@ -22,7 +22,7 @@
 [ext_resource type="Resource" uid="uid://s868gkfonb3m" path="res://Resources/Crew_Member.tres" id="20_37s47"]
 [ext_resource type="Resource" uid="uid://bdf3217ty6dvr" path="res://Resources/Captain.tres" id="21_bt5mj"]
 [ext_resource type="PackedScene" uid="uid://jn1wmsj3832p" path="res://scenes/druckplatte.tscn" id="22_37s47"]
-[ext_resource type="PackedScene" path="res://scenes/tür_senkrecht_offenbleiben.tscn" id="23_sgl2t"]
+[ext_resource type="PackedScene" uid="uid://cpiusbsdurinc" path="res://scenes/tür_senkrecht_offenbleiben.tscn" id="23_sgl2t"]
 [ext_resource type="PackedScene" uid="uid://dvhu2yqsm8850" path="res://scenes/tuer_waagrecht_einmal_auf.tscn" id="23_suyxu"]
 [ext_resource type="PackedScene" uid="uid://clav3g6vblv0y" path="res://scenes/tür_waagrecht_rätsel.tscn" id="24_e1j6l"]
 [ext_resource type="PackedScene" uid="uid://cbsn52upkinr" path="res://scenes/leben_+.tscn" id="24_pl11u"]
