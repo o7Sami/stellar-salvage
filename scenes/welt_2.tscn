@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=3 uid="uid://bpptqs177pmq"]
+[gd_scene load_steps=31 format=3 uid="uid://bpptqs177pmq"]
 
 [ext_resource type="Script" uid="uid://dyo30hm5x127b" path="res://scripts/welt_2.gd" id="1_0fyfn"]
 [ext_resource type="Script" uid="uid://nlurm3dm33bo" path="res://scripts/gamer_manager.gd" id="1_3ck8o"]
@@ -21,7 +21,7 @@
 [ext_resource type="Resource" uid="uid://bdf3217ty6dvr" path="res://Resources/Captain.tres" id="19_2tt03"]
 [ext_resource type="Resource" uid="uid://s868gkfonb3m" path="res://Resources/Crew_Member.tres" id="19_3jf7h"]
 [ext_resource type="PackedScene" uid="uid://b5dtph6xxvwqu" path="res://scenes/herzkontainer.tscn" id="21_lttrg"]
-[ext_resource type="PackedScene" uid="uid://hcers7gx8ls0" path="res://scenes/leben_+.tscn" id="22_735ko"]
+[ext_resource type="PackedScene" uid="uid://cbsn52upkinr" path="res://scenes/leben_+.tscn" id="22_735ko"]
 [ext_resource type="PackedScene" uid="uid://c54knp8vfdffx" path="res://scenes/munition.tscn" id="23_b0mag"]
 [ext_resource type="PackedScene" uid="uid://dp1hlr01vbui0" path="res://scenes/druckplatte_tp.tscn" id="24_735ko"]
 
