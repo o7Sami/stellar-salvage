@@ -1,11 +1,11 @@
-[gd_scene load_steps=26 format=3 uid="uid://bpptqs177pmq"]
+[gd_scene load_steps=31 format=3 uid="uid://bpptqs177pmq"]
 
 [ext_resource type="Script" uid="uid://dyo30hm5x127b" path="res://scripts/welt_2.gd" id="1_0fyfn"]
 [ext_resource type="Script" uid="uid://nlurm3dm33bo" path="res://scripts/gamer_manager.gd" id="1_3ck8o"]
 [ext_resource type="PackedScene" uid="uid://7v2xeusb4eh6" path="res://scenes/player.tscn" id="2_8kohg"]
 [ext_resource type="PackedScene" uid="uid://dk8ix1u3qgyvm" path="res://scenes/gun.tscn" id="3_dqkyx"]
 [ext_resource type="Texture2D" uid="uid://b7ma55urv4buf" path="res://assets/sprites/world_tileset.png" id="4_g0txu"]
-[ext_resource type="PackedScene" uid="uid://rpqoa0picvf8" path="res://scenes/schluessel.tscn" id="5_6gib5"]
+
 [ext_resource type="PackedScene" uid="uid://ds43hc1nltge4" path="res://scenes/tuer_senkrecht.tscn" id="5_8kohg"]
 [ext_resource type="Texture2D" uid="uid://b8ggav7imxf86" path="res://assets/sprites/Raumschiff-spritesheet2.png" id="5_o7lrs"]
 [ext_resource type="PackedScene" uid="uid://db3grh1s2ns81" path="res://scenes/schluessel_anzeige.tscn" id="6_ab7e1"]
@@ -17,8 +17,13 @@
 [ext_resource type="PackedScene" uid="uid://crg4gjwhvvuqq" path="res://scenes/raumschiffteil.tscn" id="10_ab7e1"]
 [ext_resource type="PackedScene" uid="uid://02ue7my3paia" path="res://scenes/hindernis_2.tscn" id="10_gxjke"]
 [ext_resource type="PackedScene" uid="uid://cfin8pwiexf2x" path="res://scenes/hearts_container.tscn" id="16_gxjke"]
+[ext_resource type="PackedScene" uid="uid://b22x7sii6gxwo" path="res://scenes/munition_anzeige.tscn" id="17_735ko"]
 [ext_resource type="PackedScene" uid="uid://bcrmmbd577035" path="res://scenes/Enemy.tscn" id="18_mjmix"]
+[ext_resource type="Resource" uid="uid://bdf3217ty6dvr" path="res://Resources/Captain.tres" id="19_2tt03"]
 [ext_resource type="Resource" uid="uid://s868gkfonb3m" path="res://Resources/Crew_Member.tres" id="19_3jf7h"]
+[ext_resource type="PackedScene" uid="uid://b5dtph6xxvwqu" path="res://scenes/herzkontainer.tscn" id="21_lttrg"]
+[ext_resource type="PackedScene" uid="uid://cbsn52upkinr" path="res://scenes/leben_+.tscn" id="22_735ko"]
+[ext_resource type="PackedScene" uid="uid://c54knp8vfdffx" path="res://scenes/munition.tscn" id="23_b0mag"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_gee14"]
 vertices = PackedVector2Array(8, 8, -8, 8, -8, -8, 8, -8)
@@ -454,17 +459,9 @@ position = Vector2(-522, 271)
 [node name="hindernis 8" parent="Hindernisse" instance=ExtResource("10_gxjke")]
 position = Vector2(276, 300)
 
-[node name="Schlüssel" type="Node" parent="."]
-
-[node name="Schlüssel" parent="Schlüssel" instance=ExtResource("5_6gib5")]
-position = Vector2(44, -103)
-
-[node name="Schlüssel2" parent="Schlüssel" instance=ExtResource("5_6gib5")]
-position = Vector2(19, -82)
-
-[node name="Schlüssel Anzeige" parent="Schlüssel" instance=ExtResource("6_ab7e1")]
-
 [node name="Level" type="Node" parent="."]
+
+[node name="Schlüssel Anzeige" parent="Level" instance=ExtResource("6_ab7e1")]
 
 [node name="Raumschiffteil_Anzeige" parent="Level" instance=ExtResource("9_ab7e1")]
 
@@ -474,6 +471,8 @@ position = Vector2(-758, -315)
 [node name="Raumschiffteil" parent="Level" instance=ExtResource("10_ab7e1")]
 position = Vector2(303, 428)
 
+[node name="Munition_anzeige" parent="Level" instance=ExtResource("17_735ko")]
+
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="heartsContainer" parent="CanvasLayer" instance=ExtResource("16_gxjke")]
@@ -482,5 +481,237 @@ position = Vector2(303, 428)
 
 [node name="Enemy" parent="Gegner" node_paths=PackedStringArray("player") instance=ExtResource("18_mjmix")]
 position = Vector2(221, -19)
+enemy_stats = ExtResource("19_2tt03")
+player = NodePath("../../Player")
+
+[node name="Enemy2" parent="Gegner" node_paths=PackedStringArray("player") instance=ExtResource("18_mjmix")]
+position = Vector2(254, 368)
+enemy_stats = ExtResource("19_2tt03")
+player = NodePath("../../Player")
+
+[node name="Enemy3" parent="Gegner" node_paths=PackedStringArray("player") instance=ExtResource("18_mjmix")]
+position = Vector2(759, -60)
+enemy_stats = ExtResource("19_2tt03")
+player = NodePath("../../Player")
+
+[node name="Enemy4" parent="Gegner" node_paths=PackedStringArray("player") instance=ExtResource("18_mjmix")]
+position = Vector2(782, -399)
+enemy_stats = ExtResource("19_2tt03")
+player = NodePath("../../Player")
+
+[node name="Enemy5" parent="Gegner" node_paths=PackedStringArray("player") instance=ExtResource("18_mjmix")]
+position = Vector2(-21, -284)
+enemy_stats = ExtResource("19_2tt03")
+player = NodePath("../../Player")
+
+[node name="Enemy6" parent="Gegner" node_paths=PackedStringArray("player") instance=ExtResource("18_mjmix")]
+position = Vector2(-684, -402)
+enemy_stats = ExtResource("19_2tt03")
+player = NodePath("../../Player")
+
+[node name="Enemy7" parent="Gegner" node_paths=PackedStringArray("player") instance=ExtResource("18_mjmix")]
+position = Vector2(-329, -29)
+enemy_stats = ExtResource("19_2tt03")
+player = NodePath("../../Player")
+
+[node name="Enemy8" parent="Gegner" node_paths=PackedStringArray("player") instance=ExtResource("18_mjmix")]
+position = Vector2(-438, 319)
+enemy_stats = ExtResource("19_2tt03")
+player = NodePath("../../Player")
+
+[node name="Enemy9" parent="Gegner" node_paths=PackedStringArray("player") instance=ExtResource("18_mjmix")]
+position = Vector2(-103, -86)
+enemy_stats = ExtResource("19_2tt03")
+player = NodePath("../../Player")
+
+[node name="Enemy10" parent="Gegner" node_paths=PackedStringArray("player") instance=ExtResource("18_mjmix")]
+position = Vector2(-100, 83)
 enemy_stats = ExtResource("19_3jf7h")
 player = NodePath("../../Player")
+
+[node name="Enemy11" parent="Gegner" node_paths=PackedStringArray("player") instance=ExtResource("18_mjmix")]
+position = Vector2(107, -97)
+enemy_stats = ExtResource("19_3jf7h")
+player = NodePath("../../Player")
+
+[node name="Enemy12" parent="Gegner" node_paths=PackedStringArray("player") instance=ExtResource("18_mjmix")]
+position = Vector2(346, 81)
+enemy_stats = ExtResource("19_3jf7h")
+player = NodePath("../../Player")
+
+[node name="Enemy13" parent="Gegner" node_paths=PackedStringArray("player") instance=ExtResource("18_mjmix")]
+position = Vector2(515, 69)
+enemy_stats = ExtResource("19_3jf7h")
+player = NodePath("../../Player")
+
+[node name="Enemy14" parent="Gegner" node_paths=PackedStringArray("player") instance=ExtResource("18_mjmix")]
+position = Vector2(493, -100)
+enemy_stats = ExtResource("19_3jf7h")
+player = NodePath("../../Player")
+
+[node name="Enemy15" parent="Gegner" node_paths=PackedStringArray("player") instance=ExtResource("18_mjmix")]
+position = Vector2(692, 65)
+enemy_stats = ExtResource("19_3jf7h")
+player = NodePath("../../Player")
+
+[node name="Enemy16" parent="Gegner" node_paths=PackedStringArray("player") instance=ExtResource("18_mjmix")]
+position = Vector2(921, 3)
+enemy_stats = ExtResource("19_3jf7h")
+player = NodePath("../../Player")
+
+[node name="Enemy17" parent="Gegner" node_paths=PackedStringArray("player") instance=ExtResource("18_mjmix")]
+position = Vector2(912, -265)
+enemy_stats = ExtResource("19_3jf7h")
+player = NodePath("../../Player")
+
+[node name="Enemy18" parent="Gegner" node_paths=PackedStringArray("player") instance=ExtResource("18_mjmix")]
+position = Vector2(720, -318)
+enemy_stats = ExtResource("19_3jf7h")
+player = NodePath("../../Player")
+
+[node name="Enemy19" parent="Gegner" node_paths=PackedStringArray("player") instance=ExtResource("18_mjmix")]
+position = Vector2(563, -409)
+enemy_stats = ExtResource("19_3jf7h")
+player = NodePath("../../Player")
+
+[node name="Enemy20" parent="Gegner" node_paths=PackedStringArray("player") instance=ExtResource("18_mjmix")]
+position = Vector2(517, -265)
+enemy_stats = ExtResource("19_3jf7h")
+player = NodePath("../../Player")
+
+[node name="Enemy21" parent="Gegner" node_paths=PackedStringArray("player") instance=ExtResource("18_mjmix")]
+position = Vector2(308, -417)
+enemy_stats = ExtResource("19_3jf7h")
+player = NodePath("../../Player")
+
+[node name="Enemy22" parent="Gegner" node_paths=PackedStringArray("player") instance=ExtResource("18_mjmix")]
+position = Vector2(138, -390)
+enemy_stats = ExtResource("19_3jf7h")
+player = NodePath("../../Player")
+
+[node name="Enemy23" parent="Gegner" node_paths=PackedStringArray("player") instance=ExtResource("18_mjmix")]
+position = Vector2(155, -240)
+enemy_stats = ExtResource("19_3jf7h")
+player = NodePath("../../Player")
+
+[node name="Enemy24" parent="Gegner" node_paths=PackedStringArray("player") instance=ExtResource("18_mjmix")]
+position = Vector2(-90, -420)
+enemy_stats = ExtResource("19_3jf7h")
+player = NodePath("../../Player")
+
+[node name="Enemy25" parent="Gegner" node_paths=PackedStringArray("player") instance=ExtResource("18_mjmix")]
+position = Vector2(-347, -408)
+enemy_stats = ExtResource("19_3jf7h")
+player = NodePath("../../Player")
+
+[node name="Enemy26" parent="Gegner" node_paths=PackedStringArray("player") instance=ExtResource("18_mjmix")]
+position = Vector2(-524, -278)
+enemy_stats = ExtResource("19_3jf7h")
+player = NodePath("../../Player")
+
+[node name="Enemy27" parent="Gegner" node_paths=PackedStringArray("player") instance=ExtResource("18_mjmix")]
+position = Vector2(-665, -437)
+enemy_stats = ExtResource("19_3jf7h")
+player = NodePath("../../Player")
+
+[node name="Enemy28" parent="Gegner" node_paths=PackedStringArray("player") instance=ExtResource("18_mjmix")]
+position = Vector2(-707, -348)
+enemy_stats = ExtResource("19_3jf7h")
+player = NodePath("../../Player")
+
+[node name="Enemy29" parent="Gegner" node_paths=PackedStringArray("player") instance=ExtResource("18_mjmix")]
+position = Vector2(-523, -99)
+enemy_stats = ExtResource("19_3jf7h")
+player = NodePath("../../Player")
+
+[node name="Enemy30" parent="Gegner" node_paths=PackedStringArray("player") instance=ExtResource("18_mjmix")]
+position = Vector2(-676, 50)
+enemy_stats = ExtResource("19_3jf7h")
+player = NodePath("../../Player")
+
+[node name="Enemy31" parent="Gegner" node_paths=PackedStringArray("player") instance=ExtResource("18_mjmix")]
+position = Vector2(-465, 71)
+enemy_stats = ExtResource("19_3jf7h")
+player = NodePath("../../Player")
+
+[node name="Enemy32" parent="Gegner" node_paths=PackedStringArray("player") instance=ExtResource("18_mjmix")]
+position = Vector2(-675, -98)
+enemy_stats = ExtResource("19_3jf7h")
+player = NodePath("../../Player")
+
+[node name="Enemy33" parent="Gegner" node_paths=PackedStringArray("player") instance=ExtResource("18_mjmix")]
+position = Vector2(-281, -120)
+enemy_stats = ExtResource("19_3jf7h")
+player = NodePath("../../Player")
+
+[node name="Enemy34" parent="Gegner" node_paths=PackedStringArray("player") instance=ExtResource("18_mjmix")]
+position = Vector2(-655, 222)
+enemy_stats = ExtResource("19_3jf7h")
+player = NodePath("../../Player")
+
+[node name="Enemy35" parent="Gegner" node_paths=PackedStringArray("player") instance=ExtResource("18_mjmix")]
+position = Vector2(-658, 377)
+enemy_stats = ExtResource("19_3jf7h")
+player = NodePath("../../Player")
+
+[node name="Enemy36" parent="Gegner" node_paths=PackedStringArray("player") instance=ExtResource("18_mjmix")]
+position = Vector2(-284, 232)
+enemy_stats = ExtResource("19_3jf7h")
+player = NodePath("../../Player")
+
+[node name="Enemy37" parent="Gegner" node_paths=PackedStringArray("player") instance=ExtResource("18_mjmix")]
+position = Vector2(-329, 382)
+enemy_stats = ExtResource("19_3jf7h")
+player = NodePath("../../Player")
+
+[node name="Enemy38" parent="Gegner" node_paths=PackedStringArray("player") instance=ExtResource("18_mjmix")]
+position = Vector2(-103, 222)
+enemy_stats = ExtResource("19_3jf7h")
+player = NodePath("../../Player")
+
+[node name="Enemy39" parent="Gegner" node_paths=PackedStringArray("player") instance=ExtResource("18_mjmix")]
+position = Vector2(24, 388)
+enemy_stats = ExtResource("19_3jf7h")
+player = NodePath("../../Player")
+
+[node name="Enemy40" parent="Gegner" node_paths=PackedStringArray("player") instance=ExtResource("18_mjmix")]
+position = Vector2(139, 222)
+enemy_stats = ExtResource("19_3jf7h")
+player = NodePath("../../Player")
+
+[node name="Enemy41" parent="Gegner" node_paths=PackedStringArray("player") instance=ExtResource("18_mjmix")]
+position = Vector2(299, 227)
+enemy_stats = ExtResource("19_3jf7h")
+player = NodePath("../../Player")
+
+[node name="Items" type="Node" parent="."]
+
+[node name="Herzkontainer" parent="Items" instance=ExtResource("21_lttrg")]
+position = Vector2(943, 114)
+
+[node name="Herzkontainer2" parent="Items" instance=ExtResource("21_lttrg")]
+position = Vector2(-7, -395)
+
+[node name="Leben +" parent="Items" instance=ExtResource("22_735ko")]
+position = Vector2(-658, 255)
+
+[node name="Munition" parent="Items" instance=ExtResource("23_b0mag")]
+position = Vector2(-487, 249)
+
+[node name="Munition2" parent="Items" instance=ExtResource("23_b0mag")]
+position = Vector2(133, 313)
+
+[node name="Munition3" parent="Items" instance=ExtResource("23_b0mag")]
+position = Vector2(602, 117)
+
+[node name="Munition4" parent="Items" instance=ExtResource("23_b0mag")]
+position = Vector2(217, -424)
+
+[node name="Munition5" parent="Items" instance=ExtResource("23_b0mag")]
+position = Vector2(855, -202)
+
+[node name="Munition6" parent="Items" instance=ExtResource("23_b0mag")]
+position = Vector2(-8, -56)
+
+[node name="Munition7" parent="Items" instance=ExtResource("23_b0mag")]
+position = Vector2(-344, -200)
