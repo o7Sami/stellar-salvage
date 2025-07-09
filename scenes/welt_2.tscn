@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://7v2xeusb4eh6" path="res://scenes/player.tscn" id="2_8kohg"]
 [ext_resource type="PackedScene" uid="uid://dk8ix1u3qgyvm" path="res://scenes/gun.tscn" id="3_dqkyx"]
 [ext_resource type="Texture2D" uid="uid://b7ma55urv4buf" path="res://assets/sprites/world_tileset.png" id="4_g0txu"]
-[ext_resource type="PackedScene" uid="uid://rpqoa0picvf8" path="res://scenes/schluessel.tscn" id="5_6gib5"]
+
 [ext_resource type="PackedScene" uid="uid://ds43hc1nltge4" path="res://scenes/tuer_senkrecht.tscn" id="5_8kohg"]
 [ext_resource type="Texture2D" uid="uid://b8ggav7imxf86" path="res://assets/sprites/Raumschiff-spritesheet2.png" id="5_o7lrs"]
 [ext_resource type="PackedScene" uid="uid://db3grh1s2ns81" path="res://scenes/schluessel_anzeige.tscn" id="6_ab7e1"]
@@ -459,17 +459,9 @@ position = Vector2(-522, 271)
 [node name="hindernis 8" parent="Hindernisse" instance=ExtResource("10_gxjke")]
 position = Vector2(276, 300)
 
-[node name="Schlüssel" type="Node" parent="."]
-
-[node name="Schlüssel" parent="Schlüssel" instance=ExtResource("5_6gib5")]
-position = Vector2(44, -103)
-
-[node name="Schlüssel2" parent="Schlüssel" instance=ExtResource("5_6gib5")]
-position = Vector2(19, -82)
-
-[node name="Schlüssel Anzeige" parent="Schlüssel" instance=ExtResource("6_ab7e1")]
-
 [node name="Level" type="Node" parent="."]
+
+[node name="Schlüssel Anzeige" parent="Level" instance=ExtResource("6_ab7e1")]
 
 [node name="Raumschiffteil_Anzeige" parent="Level" instance=ExtResource("9_ab7e1")]
 
