@@ -1,5 +1,7 @@
 
+
 [gd_scene load_steps=29 format=3 uid="uid://cicf6k4kpasfw"]
+
 
 
 [ext_resource type="Script" uid="uid://3dq6d8ytf0jj" path="res://scripts/welt_4.gd" id="1_mno6a"]
@@ -19,6 +21,7 @@
 [ext_resource type="PackedScene" uid="uid://c8bw258exya2i" path="res://scenes/levelteleporter.tscn" id="9_mno6a"]
 [ext_resource type="PackedScene" uid="uid://02ue7my3paia" path="res://scenes/hindernis_2.tscn" id="10_804ny"]
 [ext_resource type="PackedScene" uid="uid://cfin8pwiexf2x" path="res://scenes/hearts_container.tscn" id="16_804ny"]
+[ext_resource type="PackedScene" uid="uid://b22x7sii6gxwo" path="res://scenes/munition_anzeige.tscn" id="17_n4dm7"]
 
 [ext_resource type="PackedScene" uid="uid://b22x7sii6gxwo" path="res://scenes/munition_anzeige.tscn" id="17_n4dm7"]
 [ext_resource type="PackedScene" uid="uid://bcrmmbd577035" path="res://scenes/Enemy.tscn" id="18_t0pu2"]
@@ -573,9 +576,11 @@ position = Vector2(592, -36)
 position = Vector2(-523, -76)
 
 
+
 [node name="Munition_anzeige" parent="Level" instance=ExtResource("17_n4dm7")]
 
 [node name="Schlüssel Anzeige" parent="Level" instance=ExtResource("6_vxduf")]
+
 
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
