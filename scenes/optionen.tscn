@@ -1,0 +1,175 @@
+[gd_scene load_steps=9 format=3 uid="uid://drpf35rnllpk8"]
+
+[ext_resource type="Texture2D" uid="uid://d4dct5ifv400i" path="res://assets/sprites/Weltall.png" id="1_potj3"]
+[ext_resource type="Script" uid="uid://1jqnav4xfqh4" path="res://scripts/optionen.gd" id="1_pum5c"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_pum5c"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3rwvi"]
+bg_color = Color(0.733005, 0.733005, 0.733005, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+shadow_color = Color(0, 0, 0, 0.203922)
+shadow_size = 5
+shadow_offset = Vector2(0, 3.41)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ncmrf"]
+bg_color = Color(0.473976, 0.473976, 0.473976, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+shadow_color = Color(0, 0, 0, 0.203922)
+shadow_size = 5
+shadow_offset = Vector2(0, 3.41)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7yi6w"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+shadow_color = Color(0, 0, 0, 0.203922)
+shadow_size = 5
+shadow_offset = Vector2(0, 3.41)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pg8y7"]
+bg_color = Color(0.733005, 0.733005, 0.733005, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+shadow_color = Color(0, 0, 0, 0.203922)
+shadow_size = 5
+shadow_offset = Vector2(0, 3.41)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_to5gx"]
+bg_color = Color(0.450648, 0.450648, 0.450648, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+shadow_color = Color(0, 0, 0, 0.203922)
+shadow_size = 5
+shadow_offset = Vector2(0, 3.41)
+
+[node name="Optionen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_pum5c")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -81.5
+offset_top = -81.5
+offset_right = 81.5
+offset_bottom = 81.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="MarginContainer"]
+position = Vector2(45.5, 109.5)
+scale = Vector2(1.72111, 1.72111)
+texture = ExtResource("1_potj3")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+z_index = 1
+layout_mode = 2
+theme_override_constants/separation = 5
+
+[node name="Einfach" type="Button" parent="MarginContainer/VBoxContainer"]
+texture_filter = 2
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 27
+theme_override_styles/focus = SubResource("StyleBoxEmpty_pum5c")
+theme_override_styles/hover = SubResource("StyleBoxFlat_3rwvi")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_ncmrf")
+theme_override_styles/normal = SubResource("StyleBoxFlat_7yi6w")
+action_mode = 0
+text = "Einfach"
+
+[node name="Mittel" type="Button" parent="MarginContainer/VBoxContainer"]
+texture_filter = 2
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 27
+theme_override_styles/focus = SubResource("StyleBoxEmpty_pum5c")
+theme_override_styles/hover = SubResource("StyleBoxFlat_3rwvi")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_ncmrf")
+theme_override_styles/normal = SubResource("StyleBoxFlat_7yi6w")
+action_mode = 0
+text = "Normal"
+
+[node name="Schwer" type="Button" parent="MarginContainer/VBoxContainer"]
+texture_filter = 2
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 27
+theme_override_styles/focus = SubResource("StyleBoxEmpty_pum5c")
+theme_override_styles/hover = SubResource("StyleBoxFlat_pg8y7")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_to5gx")
+theme_override_styles/normal = SubResource("StyleBoxFlat_7yi6w")
+text = "Experte"
+
+[node name="Menü" type="Button" parent="MarginContainer/VBoxContainer"]
+texture_filter = 2
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 27
+theme_override_styles/focus = SubResource("StyleBoxEmpty_pum5c")
+theme_override_styles/hover = SubResource("StyleBoxFlat_pg8y7")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_to5gx")
+theme_override_styles/normal = SubResource("StyleBoxFlat_7yi6w")
+text = "Zurück"
+
+[node name="Label" type="Label" parent="."]
+z_index = 1
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -350.5
+offset_top = -272.0
+offset_right = 350.5
+offset_bottom = -135.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_y = 10
+theme_override_font_sizes/font_size = 100
+text = "Schwierigkeitsgrad"
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Einfach" to="." method="_on_einfach_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Mittel" to="." method="_on_mittel_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Schwer" to="." method="_on_schwer_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Menü" to="." method="_on_menü_pressed"]
